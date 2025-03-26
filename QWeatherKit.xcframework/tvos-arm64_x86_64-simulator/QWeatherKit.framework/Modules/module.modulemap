@@ -1,0 +1,11 @@
+framework module QWeatherKit {
+  umbrella header "QWeatherKit.h"
+  export *
+
+  module * { export * }
+}
+
+module QWeatherKit.Swift {
+  header "QWeatherKit-Swift.h"
+  requires objc
+}
