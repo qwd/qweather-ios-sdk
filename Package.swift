@@ -19,8 +19,6 @@ let package = Package(
         .binaryTarget(
             name: "QWeatherKit",
             path: "./QWeatherKit.xcframework"
-                // url: "https://a.hecdn.net/download/api_sdk/QWeather_iOS_SDK_Pub_V4.20.zip",
-                // checksum: "007db4a13ec45b7dba2a4bbd50fab30af4210d9af1e3bab97126b55fb485b709"
         )
     ]
 )
