@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		023BE73F2D93CC6700FAC527 /* QWeatherKit in Frameworks */ = {isa = PBXBuildFile; productRef = 023BE73E2D93CC6700FAC527 /* QWeatherKit */; };
 		024972982D92B50900D4B497 /* QWeatherKit in Frameworks */ = {isa = PBXBuildFile; productRef = 024972972D92B50900D4B497 /* QWeatherKit */; };
-		02F6D0512D939779004217C3 /* QWeatherKit in Frameworks */ = {isa = PBXBuildFile; productRef = 02F6D0502D939779004217C3 /* QWeatherKit */; };
+		23D63EA4B5DB3774DC0D8CA9 /* libPods-ExampleObjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E79E7B02EFA122561C08A701 /* libPods-ExampleObjc.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		024971342D92B0C700D4B497 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02F6D0352D93975B004217C3 /* ExampleObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleObjc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D4F18EF46FFBB3314F8538B /* Pods-ExampleObjc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleObjc.release.xcconfig"; path = "Target Support Files/Pods-ExampleObjc/Pods-ExampleObjc.release.xcconfig"; sourceTree = "<group>"; };
+		AED3B4B536AC2257B0AEBFAE /* Pods-ExampleObjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleObjc.debug.xcconfig"; path = "Target Support Files/Pods-ExampleObjc/Pods-ExampleObjc.debug.xcconfig"; sourceTree = "<group>"; };
+		E79E7B02EFA122561C08A701 /* libPods-ExampleObjc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExampleObjc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,6 +33,8 @@
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		024971362D92B0C700D4B497 /* Example */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = Example;
 			sourceTree = "<group>";
 		};
@@ -47,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				023BE73F2D93CC6700FAC527 /* QWeatherKit in Frameworks */,
 				024972982D92B50900D4B497 /* QWeatherKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02F6D0512D939779004217C3 /* QWeatherKit in Frameworks */,
+				23D63EA4B5DB3774DC0D8CA9 /* libPods-ExampleObjc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +76,7 @@
 				02F6D0362D93975B004217C3 /* ExampleObjc */,
 				02F6D04F2D939779004217C3 /* Frameworks */,
 				024971352D92B0C700D4B497 /* Products */,
+				A44883C1978CC17542926975 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,8 +92,19 @@
 		02F6D04F2D939779004217C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E79E7B02EFA122561C08A701 /* libPods-ExampleObjc.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A44883C1978CC17542926975 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AED3B4B536AC2257B0AEBFAE /* Pods-ExampleObjc.debug.xcconfig */,
+				1D4F18EF46FFBB3314F8538B /* Pods-ExampleObjc.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +128,7 @@
 			name = Example;
 			packageProductDependencies = (
 				024972972D92B50900D4B497 /* QWeatherKit */,
+				023BE73E2D93CC6700FAC527 /* QWeatherKit */,
 			);
 			productName = Example;
 			productReference = 024971342D92B0C700D4B497 /* Example.app */;
@@ -118,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02F6D04E2D93975C004217C3 /* Build configuration list for PBXNativeTarget "ExampleObjc" */;
 			buildPhases = (
+				0D1118FDFAC17897DA3DDC7D /* [CP] Check Pods Manifest.lock */,
 				02F6D0312D93975B004217C3 /* Sources */,
 				02F6D0322D93975B004217C3 /* Frameworks */,
 				02F6D0332D93975B004217C3 /* Resources */,
@@ -130,9 +151,6 @@
 				02F6D0362D93975B004217C3 /* ExampleObjc */,
 			);
 			name = ExampleObjc;
-			packageProductDependencies = (
-				02F6D0502D939779004217C3 /* QWeatherKit */,
-			);
 			productName = ExampleObjc;
 			productReference = 02F6D0352D93975B004217C3 /* ExampleObjc.app */;
 			productType = "com.apple.product-type.application";
@@ -165,7 +183,7 @@
 			mainGroup = 0249712B2D92B0C700D4B497;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				024972962D92B50900D4B497 /* XCLocalSwiftPackageReference "../../QWeatherKit" */,
+				023BE73D2D93CC6700FAC527 /* XCRemoteSwiftPackageReference "QWeatherKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 024971352D92B0C700D4B497 /* Products */;
@@ -194,6 +212,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D1118FDFAC17897DA3DDC7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExampleObjc-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		024971302D92B0C700D4B497 /* Sources */ = {
@@ -407,6 +450,7 @@
 		};
 		02F6D04B2D93975C004217C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AED3B4B536AC2257B0AEBFAE /* Pods-ExampleObjc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -436,6 +480,7 @@
 		};
 		02F6D04C2D93975C004217C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D4F18EF46FFBB3314F8538B /* Pods-ExampleObjc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -496,21 +541,25 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		024972962D92B50900D4B497 /* XCLocalSwiftPackageReference "../../QWeatherKit" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../QWeatherKit;
+/* Begin XCRemoteSwiftPackageReference section */
+		023BE73D2D93CC6700FAC527 /* XCRemoteSwiftPackageReference "QWeatherKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/qwd/QWeatherKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		024972972D92B50900D4B497 /* QWeatherKit */ = {
+		023BE73E2D93CC6700FAC527 /* QWeatherKit */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 023BE73D2D93CC6700FAC527 /* XCRemoteSwiftPackageReference "QWeatherKit" */;
 			productName = QWeatherKit;
 		};
-		02F6D0502D939779004217C3 /* QWeatherKit */ = {
+		024972972D92B50900D4B497 /* QWeatherKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 024972962D92B50900D4B497 /* XCLocalSwiftPackageReference "../../QWeatherKit" */;
 			productName = QWeatherKit;
 		};
 /* End XCSwiftPackageProductDependency section */
