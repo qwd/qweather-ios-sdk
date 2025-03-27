@@ -6,7 +6,7 @@
 //
 
 #import "ViewController.h"
-#import <QWeatherKit/QWeatherKit-Swift.h>
+#import <QWeatherSDK/QWeatherSDK-Swift.h>
 
 @interface ViewController ()
 

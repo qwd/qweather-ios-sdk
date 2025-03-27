@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import QWeatherKit
+import QWeatherSDK
 
 
 struct ContentView: View {

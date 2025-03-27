@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "QWeatherKit",
+    name: "QWeatherSDK",
     platforms: [
         .iOS(.v15),
         .macOS(.v11),
@@ -12,13 +12,13 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "QWeatherKit",
-            targets: ["QWeatherKit"])
+            name: "QWeatherSDK",
+            targets: ["QWeatherSDK"])
     ],
     targets: [
         .binaryTarget(
-            name: "QWeatherKit",
-            path: "./QWeatherKit.xcframework"
+            name: "QWeatherSDK",
+            path: "./QWeatherSDK.xcframework"
         )
     ]
 )
