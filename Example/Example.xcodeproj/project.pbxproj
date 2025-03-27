@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		023AA99F2D9563B400A92097 /* QWeatherSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 023AA99E2D9563B400A92097 /* QWeatherSDK */; };
-		024972982D92B50900D4B497 /* QWeatherKit in Frameworks */ = {isa = PBXBuildFile; productRef = 024972972D92B50900D4B497 /* QWeatherKit */; };
 		23D63EA4B5DB3774DC0D8CA9 /* libPods-ExampleObjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E79E7B02EFA122561C08A701 /* libPods-ExampleObjc.a */; };
 /* End PBXBuildFile section */
 
@@ -51,8 +49,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				023AA99F2D9563B400A92097 /* QWeatherSDK in Frameworks */,
-				024972982D92B50900D4B497 /* QWeatherKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,8 +120,6 @@
 			);
 			name = Example;
 			packageProductDependencies = (
-				024972972D92B50900D4B497 /* QWeatherKit */,
-				023AA99E2D9563B400A92097 /* QWeatherSDK */,
 			);
 			productName = Example;
 			productReference = 024971342D92B0C700D4B497 /* Example.app */;
@@ -180,7 +174,6 @@
 			mainGroup = 0249712B2D92B0C700D4B497;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				023AA99D2D9563B400A92097 /* XCLocalSwiftPackageReference "../../qweatherkit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 024971352D92B0C700D4B497 /* Products */;
@@ -537,24 +530,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCLocalSwiftPackageReference section */
-		023AA99D2D9563B400A92097 /* XCLocalSwiftPackageReference "../../qweatherkit" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../../qweatherkit;
-		};
-/* End XCLocalSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		023AA99E2D9563B400A92097 /* QWeatherSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = QWeatherSDK;
-		};
-		024972972D92B50900D4B497 /* QWeatherKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = QWeatherKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0249712C2D92B0C700D4B497 /* Project object */;
 }
