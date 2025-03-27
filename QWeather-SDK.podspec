@@ -29,5 +29,5 @@ Pod::Spec.new do |s|
   s.swift_version = '6.0'
 
   s.static_framework = true
-  s.vendored_frameworks = "QWeather-SDK.xcframework"
+  s.vendored_frameworks = "QWeatherSDK.xcframework"
 end
