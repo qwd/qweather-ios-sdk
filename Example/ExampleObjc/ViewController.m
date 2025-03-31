@@ -22,8 +22,16 @@
 
 
 -(void)configWeather{
-    [QWeatherObjc initConfigWithHost:@"{YOUR-HOST}"];
-    [QWeatherObjc setupToken:@"{JWT-TOKEN}"];
+    // Initialize QWeather instance with API host URL
+    [QWeatherObjc initConfigWithHost:@"{YOUR_HOST}"];
+    
+    [QWeatherObjc setupTokenGeneratorWithGenerater:^NSString * _Nonnull{
+        // Provide a closure to dynamically generate authentication tokens
+        // In production, implement token refresh logic here instead of hardcoding
+        return  @"{YOUR_TOKEN}"; // Return JWT token for API authentication
+    }];
+    
+    // Enable debug logging (set to false in production)
     [QWeatherObjc setupLogEnable:YES];
 }
 

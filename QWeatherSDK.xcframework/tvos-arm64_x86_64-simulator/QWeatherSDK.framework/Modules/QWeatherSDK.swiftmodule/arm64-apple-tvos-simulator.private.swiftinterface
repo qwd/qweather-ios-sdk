@@ -9,18 +9,20 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public enum Basin : Swift.Int, Swift.Sendable {
-  case AL
-  case EP
-  case NP
-  case SP
-  case NI
-  case SI
-  public var code: Swift.String {
-    get
-  }
+  case AL = 0
+  case EP = 1
+  case NP = 2
+  case SP = 3
+  case NI = 4
+  case SI = 5
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
+    get
+  }
+}
+extension QWeatherSDK.Basin {
+  public var code: Swift.String {
     get
   }
 }
@@ -93,14 +95,16 @@ extension QWeatherSDK.Lang {
 }
 @objc public enum Poi : Swift.Int, Swift.Sendable {
   case SCENIC = 0
-  case CSTA
-  case TSTA
-  public var code: Swift.String {
-    get
-  }
+  case CSTA = 1
+  case TSTA = 2
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
+    get
+  }
+}
+extension QWeatherSDK.Poi {
+  public var code: Swift.String {
     get
   }
 }
@@ -354,24 +358,28 @@ extension QWeatherSDK.Lang {
   case YE = 246
   case ZM = 247
   case ZW = 248
-  public var code: Swift.String {
-    get
-  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-@objc public enum Unit : Swift.Int, Swift.Sendable {
-  case METRIC = 0
-  case IMPERIAL
+extension QWeatherSDK.Range {
   public var code: Swift.String {
     get
   }
+}
+@objc public enum Unit : Swift.Int, Swift.Sendable {
+  case METRIC = 0
+  case IMPERIAL = 1
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
+    get
+  }
+}
+extension QWeatherSDK.Unit {
+  public var code: Swift.String {
     get
   }
 }
@@ -1398,8 +1406,8 @@ extension QWeatherSDK.QWeatherError : Foundation.LocalizedError {
 @_hasMissingDesignatedInitializers public actor QWeather {
   public static var instance: QWeatherSDK.QWeather!
   public static func getInstance(_ host: Swift.String) throws -> QWeatherSDK.QWeather
-  public func setupToken(_ token: Swift.String) async -> Self
-  public func setupHost(_ host: Swift.String) async -> Self
+  public func setupTokenGenerator(_ generator: @escaping @Sendable () -> Swift.String) -> Self
+  public func setupHost(_ host: Swift.String) -> Self
   public func setupLogEnable(_ enable: Swift.Bool) async -> Self
   public func geoCityLookup(_ parameter: QWeatherSDK.GeoCityLookupParameter) async throws -> QWeatherSDK.GeoCityLookupResponse
   public func geoCityTop(_ parameter: QWeatherSDK.GeoCityTopParameter) async throws -> QWeatherSDK.GeoCityTopResponse
@@ -1449,7 +1457,7 @@ extension QWeatherSDK.QWeatherError : Foundation.LocalizedError {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class QWeatherObjc : ObjectiveC.NSObject {
   @objc public static func initConfig(host: Swift.String)
   @objc public static func setupHost(_ host: Swift.String)
-  @objc public static func setupToken(_ token: Swift.String)
+  @objc public static func setupTokenGenerator(generater: @escaping @Sendable () -> Swift.String)
   @objc public static func setupLogEnable(_ enable: Swift.Bool)
   @objc @_Concurrency.MainActor public static func geoCityLookup(_ parameter: QWeatherSDK.GeoCityLookupParameter, completionHandler: @escaping (QWeatherSDK.GeoCityLookupResponse?, Foundation.NSError?) -> Swift.Void)
   @objc @_Concurrency.MainActor public static func geoCityTop(_ parameter: QWeatherSDK.GeoCityTopParameter, completionHandler: @escaping (QWeatherSDK.GeoCityTopResponse?, Foundation.NSError?) -> Swift.Void)

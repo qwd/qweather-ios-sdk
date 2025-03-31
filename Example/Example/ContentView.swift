@@ -21,9 +21,12 @@ struct ContentView: View {
         Task {
             do {
                 let _ = try await QWeather
-                    .getInstance("{YOUR-HOST}")
-                    .setupToken("{JWT-TOKEN}")
-                    .setupLogEnable(true)
+                    .getInstance("{YOUR_HOST}")  // Initialize QWeather instance with API host URL
+                    .setupTokenGenerator({ // Provide a closure to dynamically generate authentication tokens
+                        // In production, implement token refresh logic here instead of hardcoding
+                        return "{YOUR_TOKEN}"  // Return JWT token for API authentication
+                    })
+                    .setupLogEnable(true)  // Enable debug logging (set to false in production)
             } catch {
                 print(error.localizedDescription)
             }

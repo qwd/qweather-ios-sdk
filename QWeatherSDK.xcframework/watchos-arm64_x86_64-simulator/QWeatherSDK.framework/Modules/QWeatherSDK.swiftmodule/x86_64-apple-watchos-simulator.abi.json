@@ -272,46 +272,6 @@
             "fixedbinaryorder": 5
           },
           {
-            "kind": "Var",
-            "name": "code",
-            "printedName": "code",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11QWeatherSDK5BasinO4codeSSvp",
-            "mangledName": "$s11QWeatherSDK5BasinO4codeSSvp",
-            "moduleName": "QWeatherSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11QWeatherSDK5BasinO4codeSSvg",
-                "mangledName": "$s11QWeatherSDK5BasinO4codeSSvg",
-                "moduleName": "QWeatherSDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -379,6 +339,48 @@
                 "mangledName": "$s11QWeatherSDK5BasinO8rawValueSivg",
                 "moduleName": "QWeatherSDK",
                 "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11QWeatherSDK5BasinO4codeSSvp",
+            "mangledName": "$s11QWeatherSDK5BasinO4codeSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11QWeatherSDK5BasinO4codeSSvg",
+                "mangledName": "$s11QWeatherSDK5BasinO4codeSSvg",
+                "moduleName": "QWeatherSDK",
+                "isFromExtension": true,
                 "accessorKind": "get"
               }
             ]
@@ -2919,46 +2921,6 @@
             "fixedbinaryorder": 2
           },
           {
-            "kind": "Var",
-            "name": "code",
-            "printedName": "code",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11QWeatherSDK3PoiO4codeSSvp",
-            "mangledName": "$s11QWeatherSDK3PoiO4codeSSvp",
-            "moduleName": "QWeatherSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11QWeatherSDK3PoiO4codeSSvg",
-                "mangledName": "$s11QWeatherSDK3PoiO4codeSSvg",
-                "moduleName": "QWeatherSDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -3026,6 +2988,48 @@
                 "mangledName": "$s11QWeatherSDK3PoiO8rawValueSivg",
                 "moduleName": "QWeatherSDK",
                 "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11QWeatherSDK3PoiO4codeSSvp",
+            "mangledName": "$s11QWeatherSDK3PoiO4codeSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11QWeatherSDK3PoiO4codeSSvg",
+                "mangledName": "$s11QWeatherSDK3PoiO4codeSSvg",
+                "moduleName": "QWeatherSDK",
+                "isFromExtension": true,
                 "accessorKind": "get"
               }
             ]
@@ -13325,46 +13329,6 @@
             "fixedbinaryorder": 248
           },
           {
-            "kind": "Var",
-            "name": "code",
-            "printedName": "code",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11QWeatherSDK5RangeO4codeSSvp",
-            "mangledName": "$s11QWeatherSDK5RangeO4codeSSvp",
-            "moduleName": "QWeatherSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11QWeatherSDK5RangeO4codeSSvg",
-                "mangledName": "$s11QWeatherSDK5RangeO4codeSSvg",
-                "moduleName": "QWeatherSDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -13432,6 +13396,48 @@
                 "mangledName": "$s11QWeatherSDK5RangeO8rawValueSivg",
                 "moduleName": "QWeatherSDK",
                 "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11QWeatherSDK5RangeO4codeSSvp",
+            "mangledName": "$s11QWeatherSDK5RangeO4codeSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11QWeatherSDK5RangeO4codeSSvg",
+                "mangledName": "$s11QWeatherSDK5RangeO4codeSSvg",
+                "moduleName": "QWeatherSDK",
+                "isFromExtension": true,
                 "accessorKind": "get"
               }
             ]
@@ -13604,46 +13610,6 @@
             "fixedbinaryorder": 1
           },
           {
-            "kind": "Var",
-            "name": "code",
-            "printedName": "code",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:11QWeatherSDK4UnitO4codeSSvp",
-            "mangledName": "$s11QWeatherSDK4UnitO4codeSSvp",
-            "moduleName": "QWeatherSDK",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:11QWeatherSDK4UnitO4codeSSvg",
-                "mangledName": "$s11QWeatherSDK4UnitO4codeSSvg",
-                "moduleName": "QWeatherSDK",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -13711,6 +13677,48 @@
                 "mangledName": "$s11QWeatherSDK4UnitO8rawValueSivg",
                 "moduleName": "QWeatherSDK",
                 "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11QWeatherSDK4UnitO4codeSSvp",
+            "mangledName": "$s11QWeatherSDK4UnitO4codeSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11QWeatherSDK4UnitO4codeSSvg",
+                "mangledName": "$s11QWeatherSDK4UnitO4codeSSvg",
+                "moduleName": "QWeatherSDK",
+                "isFromExtension": true,
                 "accessorKind": "get"
               }
             ]
@@ -59850,8 +59858,8 @@
           },
           {
             "kind": "Function",
-            "name": "setupToken",
-            "printedName": "setupToken(_:)",
+            "name": "setupTokenGenerator",
+            "printedName": "setupTokenGenerator(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -59859,15 +59867,27 @@
                 "printedName": "Self"
               },
               {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Swift.String",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:11QWeatherSDK0A0C10setupTokenyACXDSSYaF",
-            "mangledName": "$s11QWeatherSDK0A0C10setupTokenyACXDSSYaF",
+            "usr": "s:11QWeatherSDK0A0C19setupTokenGeneratoryACXDSSyYbcF",
+            "mangledName": "$s11QWeatherSDK0A0C19setupTokenGeneratoryACXDSSyYbcF",
             "moduleName": "QWeatherSDK",
             "declAttributes": [
               "AccessControl"
@@ -59892,8 +59912,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:11QWeatherSDK0A0C9setupHostyACXDSSYaF",
-            "mangledName": "$s11QWeatherSDK0A0C9setupHostyACXDSSYaF",
+            "usr": "s:11QWeatherSDK0A0C9setupHostyACXDSSF",
+            "mangledName": "$s11QWeatherSDK0A0C9setupHostyACXDSSF",
             "moduleName": "QWeatherSDK",
             "declAttributes": [
               "AccessControl"
@@ -61200,8 +61220,8 @@
           },
           {
             "kind": "Function",
-            "name": "setupToken",
-            "printedName": "setupToken(_:)",
+            "name": "setupTokenGenerator",
+            "printedName": "setupTokenGenerator(generater:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -61209,17 +61229,30 @@
                 "printedName": "()"
               },
               {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Swift.String",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@QWeatherSDK@objc(cs)QWeatherObjc(cm)setupToken:",
-            "mangledName": "$s11QWeatherSDK0A4ObjcC10setupTokenyySSFZ",
+            "usr": "c:@M@QWeatherSDK@objc(cs)QWeatherObjc(cm)setupTokenGeneratorWithGenerater:",
+            "mangledName": "$s11QWeatherSDK0A4ObjcC19setupTokenGenerator9generaterySSyYbc_tFZ",
             "moduleName": "QWeatherSDK",
             "static": true,
+            "objc_name": "setupTokenGeneratorWithGenerater:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -64356,2270 +64389,2277 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Basin.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Basin.swift",
       "kind": "IntegerLiteral",
-      "offset": 478,
-      "length": 2,
+      "offset": 448,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Basin.swift",
+      "kind": "IntegerLiteral",
+      "offset": 488,
+      "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Basin.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Basin.swift",
       "kind": "IntegerLiteral",
-      "offset": 516,
-      "length": 2,
+      "offset": 530,
+      "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Basin.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Basin.swift",
       "kind": "IntegerLiteral",
-      "offset": 557,
-      "length": 2,
+      "offset": 575,
+      "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Basin.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Basin.swift",
       "kind": "IntegerLiteral",
-      "offset": 596,
-      "length": 2,
+      "offset": 618,
+      "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Basin.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Basin.swift",
       "kind": "IntegerLiteral",
-      "offset": 635,
-      "length": 2,
+      "offset": 661,
+      "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 160,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 178,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 196,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 214,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 232,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 250,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 268,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 286,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 304,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 322,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 340,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 359,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 378,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 397,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 416,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 435,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Indices.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Indices.swift",
       "kind": "IntegerLiteral",
       "offset": 454,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 159,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 180,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 196,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 212,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 228,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 244,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 260,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 276,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 292,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 308,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 324,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 341,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 358,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 375,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 392,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 409,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 426,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 443,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 460,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 477,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 494,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 511,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 528,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 545,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 562,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 579,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 597,
       "length": 2,
       "value": "26"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 614,
       "length": 2,
       "value": "27"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 631,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 648,
       "length": 2,
       "value": "29"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Lang.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Lang.swift",
       "kind": "IntegerLiteral",
       "offset": 665,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Poi.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Poi.swift",
       "kind": "IntegerLiteral",
       "offset": 157,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Poi.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Poi.swift",
       "kind": "IntegerLiteral",
-      "offset": 194,
-      "length": 4,
+      "offset": 201,
+      "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Poi.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Poi.swift",
       "kind": "IntegerLiteral",
-      "offset": 234,
-      "length": 4,
+      "offset": 245,
+      "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 157,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 173,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 189,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 205,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 221,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 237,
       "length": 1,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 253,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 269,
       "length": 1,
       "value": "7"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 285,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 301,
       "length": 1,
       "value": "9"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 317,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 334,
       "length": 2,
       "value": "11"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 351,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 368,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 385,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 402,
       "length": 2,
       "value": "15"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 419,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 436,
       "length": 2,
       "value": "17"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 453,
       "length": 2,
       "value": "18"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 470,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 487,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 504,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 521,
       "length": 2,
       "value": "22"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 538,
       "length": 2,
       "value": "23"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 555,
       "length": 2,
       "value": "24"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 572,
       "length": 2,
       "value": "25"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 589,
       "length": 2,
       "value": "26"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 606,
       "length": 2,
       "value": "27"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 623,
       "length": 2,
       "value": "28"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 640,
       "length": 2,
       "value": "29"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 657,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 674,
       "length": 2,
       "value": "31"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 691,
       "length": 2,
       "value": "32"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 708,
       "length": 2,
       "value": "33"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 725,
       "length": 2,
       "value": "34"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 742,
       "length": 2,
       "value": "35"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 759,
       "length": 2,
       "value": "36"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 776,
       "length": 2,
       "value": "37"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 793,
       "length": 2,
       "value": "38"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 810,
       "length": 2,
       "value": "39"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 827,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 844,
       "length": 2,
       "value": "41"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 861,
       "length": 2,
       "value": "42"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 878,
       "length": 2,
       "value": "43"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 895,
       "length": 2,
       "value": "44"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 912,
       "length": 2,
       "value": "45"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 929,
       "length": 2,
       "value": "46"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 946,
       "length": 2,
       "value": "47"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 963,
       "length": 2,
       "value": "48"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 980,
       "length": 2,
       "value": "49"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 997,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1014,
       "length": 2,
       "value": "51"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1031,
       "length": 2,
       "value": "52"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1048,
       "length": 2,
       "value": "53"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1065,
       "length": 2,
       "value": "54"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1082,
       "length": 2,
       "value": "55"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1099,
       "length": 2,
       "value": "56"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1116,
       "length": 2,
       "value": "57"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1133,
       "length": 2,
       "value": "58"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1150,
       "length": 2,
       "value": "59"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1167,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1184,
       "length": 2,
       "value": "61"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1201,
       "length": 2,
       "value": "62"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1218,
       "length": 2,
       "value": "63"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1235,
       "length": 2,
       "value": "64"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1252,
       "length": 2,
       "value": "65"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1269,
       "length": 2,
       "value": "66"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1286,
       "length": 2,
       "value": "67"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1303,
       "length": 2,
       "value": "68"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1320,
       "length": 2,
       "value": "69"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1337,
       "length": 2,
       "value": "70"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1354,
       "length": 2,
       "value": "71"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1371,
       "length": 2,
       "value": "72"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1388,
       "length": 2,
       "value": "73"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1405,
       "length": 2,
       "value": "74"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1422,
       "length": 2,
       "value": "75"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1439,
       "length": 2,
       "value": "76"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1456,
       "length": 2,
       "value": "77"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1473,
       "length": 2,
       "value": "78"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1490,
       "length": 2,
       "value": "79"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1507,
       "length": 2,
       "value": "80"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1524,
       "length": 2,
       "value": "81"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1541,
       "length": 2,
       "value": "82"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1558,
       "length": 2,
       "value": "83"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1575,
       "length": 2,
       "value": "84"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1592,
       "length": 2,
       "value": "85"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1609,
       "length": 2,
       "value": "86"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1626,
       "length": 2,
       "value": "87"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1643,
       "length": 2,
       "value": "88"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1660,
       "length": 2,
       "value": "89"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1677,
       "length": 2,
       "value": "90"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1694,
       "length": 2,
       "value": "91"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1711,
       "length": 2,
       "value": "92"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1728,
       "length": 2,
       "value": "93"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1745,
       "length": 2,
       "value": "94"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1762,
       "length": 2,
       "value": "95"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1779,
       "length": 2,
       "value": "96"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1796,
       "length": 2,
       "value": "97"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1813,
       "length": 2,
       "value": "98"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1830,
       "length": 2,
       "value": "99"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1847,
       "length": 3,
       "value": "100"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1865,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1883,
       "length": 3,
       "value": "102"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1901,
       "length": 3,
       "value": "103"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1919,
       "length": 3,
       "value": "104"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1937,
       "length": 3,
       "value": "105"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1955,
       "length": 3,
       "value": "106"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1973,
       "length": 3,
       "value": "107"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 1991,
       "length": 3,
       "value": "108"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2009,
       "length": 3,
       "value": "109"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2027,
       "length": 3,
       "value": "110"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2045,
       "length": 3,
       "value": "111"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2063,
       "length": 3,
       "value": "112"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2081,
       "length": 3,
       "value": "113"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2099,
       "length": 3,
       "value": "114"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2117,
       "length": 3,
       "value": "115"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2135,
       "length": 3,
       "value": "116"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2153,
       "length": 3,
       "value": "117"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2171,
       "length": 3,
       "value": "118"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2189,
       "length": 3,
       "value": "119"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2207,
       "length": 3,
       "value": "120"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2225,
       "length": 3,
       "value": "121"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2243,
       "length": 3,
       "value": "122"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2261,
       "length": 3,
       "value": "123"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2279,
       "length": 3,
       "value": "124"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2297,
       "length": 3,
       "value": "125"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2315,
       "length": 3,
       "value": "126"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2333,
       "length": 3,
       "value": "127"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2351,
       "length": 3,
       "value": "128"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2369,
       "length": 3,
       "value": "129"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2387,
       "length": 3,
       "value": "130"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2405,
       "length": 3,
       "value": "131"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2423,
       "length": 3,
       "value": "132"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2441,
       "length": 3,
       "value": "133"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2459,
       "length": 3,
       "value": "134"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2477,
       "length": 3,
       "value": "135"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2495,
       "length": 3,
       "value": "136"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2513,
       "length": 3,
       "value": "137"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2531,
       "length": 3,
       "value": "138"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2549,
       "length": 3,
       "value": "139"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2567,
       "length": 3,
       "value": "140"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2585,
       "length": 3,
       "value": "141"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2603,
       "length": 3,
       "value": "142"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2621,
       "length": 3,
       "value": "143"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2639,
       "length": 3,
       "value": "144"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2657,
       "length": 3,
       "value": "145"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2675,
       "length": 3,
       "value": "146"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2693,
       "length": 3,
       "value": "147"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2711,
       "length": 3,
       "value": "148"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2729,
       "length": 3,
       "value": "149"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2747,
       "length": 3,
       "value": "150"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2765,
       "length": 3,
       "value": "151"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2783,
       "length": 3,
       "value": "152"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2801,
       "length": 3,
       "value": "153"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2819,
       "length": 3,
       "value": "154"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2837,
       "length": 3,
       "value": "155"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2855,
       "length": 3,
       "value": "156"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2873,
       "length": 3,
       "value": "157"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2891,
       "length": 3,
       "value": "158"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2909,
       "length": 3,
       "value": "159"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2927,
       "length": 3,
       "value": "160"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2945,
       "length": 3,
       "value": "161"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2963,
       "length": 3,
       "value": "162"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2981,
       "length": 3,
       "value": "163"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 2999,
       "length": 3,
       "value": "164"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3017,
       "length": 3,
       "value": "165"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3035,
       "length": 3,
       "value": "166"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3053,
       "length": 3,
       "value": "167"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3071,
       "length": 3,
       "value": "168"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3089,
       "length": 3,
       "value": "169"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3107,
       "length": 3,
       "value": "170"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3125,
       "length": 3,
       "value": "171"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3143,
       "length": 3,
       "value": "172"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3161,
       "length": 3,
       "value": "173"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3179,
       "length": 3,
       "value": "174"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3197,
       "length": 3,
       "value": "175"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3215,
       "length": 3,
       "value": "176"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3233,
       "length": 3,
       "value": "177"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3251,
       "length": 3,
       "value": "178"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3269,
       "length": 3,
       "value": "179"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3287,
       "length": 3,
       "value": "180"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3305,
       "length": 3,
       "value": "181"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3323,
       "length": 3,
       "value": "182"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3341,
       "length": 3,
       "value": "183"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3359,
       "length": 3,
       "value": "184"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3377,
       "length": 3,
       "value": "185"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3395,
       "length": 3,
       "value": "186"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3413,
       "length": 3,
       "value": "187"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3431,
       "length": 3,
       "value": "188"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3449,
       "length": 3,
       "value": "189"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3467,
       "length": 3,
       "value": "190"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3485,
       "length": 3,
       "value": "191"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3503,
       "length": 3,
       "value": "192"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3521,
       "length": 3,
       "value": "193"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3539,
       "length": 3,
       "value": "194"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3557,
       "length": 3,
       "value": "195"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3575,
       "length": 3,
       "value": "196"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3593,
       "length": 3,
       "value": "197"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3611,
       "length": 3,
       "value": "198"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3629,
       "length": 3,
       "value": "199"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3647,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3665,
       "length": 3,
       "value": "201"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3683,
       "length": 3,
       "value": "202"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3701,
       "length": 3,
       "value": "203"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3719,
       "length": 3,
       "value": "204"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3737,
       "length": 3,
       "value": "205"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3755,
       "length": 3,
       "value": "206"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3773,
       "length": 3,
       "value": "207"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3791,
       "length": 3,
       "value": "208"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3809,
       "length": 3,
       "value": "209"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3827,
       "length": 3,
       "value": "210"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3845,
       "length": 3,
       "value": "211"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3863,
       "length": 3,
       "value": "212"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3881,
       "length": 3,
       "value": "213"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3899,
       "length": 3,
       "value": "214"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3917,
       "length": 3,
       "value": "215"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3935,
       "length": 3,
       "value": "216"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3953,
       "length": 3,
       "value": "217"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3971,
       "length": 3,
       "value": "218"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 3989,
       "length": 3,
       "value": "219"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4007,
       "length": 3,
       "value": "220"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4025,
       "length": 3,
       "value": "221"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4043,
       "length": 3,
       "value": "222"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4061,
       "length": 3,
       "value": "223"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4079,
       "length": 3,
       "value": "224"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4097,
       "length": 3,
       "value": "225"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4115,
       "length": 3,
       "value": "226"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4133,
       "length": 3,
       "value": "227"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4151,
       "length": 3,
       "value": "228"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4169,
       "length": 3,
       "value": "229"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4187,
       "length": 3,
       "value": "230"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4205,
       "length": 3,
       "value": "231"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4223,
       "length": 3,
       "value": "232"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4241,
       "length": 3,
       "value": "233"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4259,
       "length": 3,
       "value": "234"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4277,
       "length": 3,
       "value": "235"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4295,
       "length": 3,
       "value": "236"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4313,
       "length": 3,
       "value": "237"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4331,
       "length": 3,
       "value": "238"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4349,
       "length": 3,
       "value": "239"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4367,
       "length": 3,
       "value": "240"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4385,
       "length": 3,
       "value": "241"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4403,
       "length": 3,
       "value": "242"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4421,
       "length": 3,
       "value": "243"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4439,
       "length": 3,
       "value": "244"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4457,
       "length": 3,
       "value": "245"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4475,
       "length": 3,
       "value": "246"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4493,
       "length": 3,
       "value": "247"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Range.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Range.swift",
       "kind": "IntegerLiteral",
       "offset": 4511,
       "length": 3,
       "value": "248"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Unit.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Unit.swift",
       "kind": "IntegerLiteral",
       "offset": 158,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/basic\/Unit.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Unit.swift",
       "kind": "IntegerLiteral",
-      "offset": 169,
-      "length": 8,
+      "offset": 180,
+      "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/response\/air\/v1\/Station.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/response\/air\/v1\/Station.swift",
       "kind": "StringLiteral",
       "offset": 306,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/response\/air\/AirStation.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/response\/air\/AirStation.swift",
       "kind": "StringLiteral",
       "offset": 664,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/response\/geo\/Location.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/response\/geo\/Location.swift",
       "kind": "StringLiteral",
       "offset": 628,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/response\/tropical\/Storm.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/response\/tropical\/Storm.swift",
       "kind": "StringLiteral",
       "offset": 539,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/response\/warning\/Warning.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/response\/warning\/Warning.swift",
       "kind": "StringLiteral",
       "offset": 741,
       "length": 4,
       "value": "\"id\""
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/response\/warning\/WarningListResponse.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/response\/warning\/WarningListResponse.swift",
       "kind": "StringLiteral",
       "offset": 363,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/util\/Backoff.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/util\/Backoff.swift",
       "kind": "StringLiteral",
       "offset": 151,
       "length": 9,
       "value": "\"Backoff\""
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/util\/Backoff.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/util\/Backoff.swift",
       "kind": "IntegerLiteral",
       "offset": 321,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/util\/Backoff.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/util\/Backoff.swift",
       "kind": "IntegerLiteral",
       "offset": 426,
       "length": 2,
       "value": "66"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/util\/Backoff.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/util\/Backoff.swift",
       "kind": "BooleanLiteral",
       "offset": 462,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/util\/Backoff.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/util\/Backoff.swift",
       "kind": "Array",
       "offset": 542,
       "length": 60,
       "value": "[2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 2048, 4096, 7200]"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/util\/QWeatherError.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/util\/QWeatherError.swift",
       "kind": "IntegerLiteral",
       "offset": 579,
       "length": 3,
       "value": "101"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/util\/QWeatherError.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/util\/QWeatherError.swift",
       "kind": "IntegerLiteral",
       "offset": 601,
       "length": 3,
       "value": "102"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/util\/QWeatherError.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/util\/QWeatherError.swift",
       "kind": "IntegerLiteral",
       "offset": 630,
       "length": 3,
       "value": "103"
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/QWeather.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/QWeather.swift",
       "kind": "StringLiteral",
-      "offset": 253,
+      "offset": 280,
       "length": 7,
       "value": "\"5.0.0\""
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/QWeather.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/QWeather.swift",
       "kind": "StringLiteral",
-      "offset": 1062,
+      "offset": 800,
       "length": 31,
       "value": "\"Can not get app's identifier.\""
     },
     {
-      "filePath": "\/Users\/lesliehan\/workspace\/qweatherkit-source-code\/QWeatherSDK\/QWeather.swift",
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/QWeather.swift",
       "kind": "BooleanLiteral",
-      "offset": 1237,
+      "offset": 975,
       "length": 5,
       "value": "false"
     }

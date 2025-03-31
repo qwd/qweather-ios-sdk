@@ -1121,7 +1121,7 @@ SWIFT_CLASS("_TtC11QWeatherSDK12QWeatherObjc")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initConfigWithHost:(NSString * _Nonnull)host SWIFT_METHOD_FAMILY(none);
 + (void)setupHost:(NSString * _Nonnull)host;
-+ (void)setupToken:(NSString * _Nonnull)token;
++ (void)setupTokenGeneratorWithGenerater:(NSString * _Nonnull (^ _Nonnull)(void))generater;
 + (void)setupLogEnable:(BOOL)enable;
 + (void)geoCityLookup:(GeoCityLookupParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoCityLookupResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)geoCityTop:(GeoCityTopParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoCityTopResponse * _Nullable, NSError * _Nullable))completionHandler;
@@ -2954,7 +2954,7 @@ SWIFT_CLASS("_TtC11QWeatherSDK12QWeatherObjc")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 + (void)initConfigWithHost:(NSString * _Nonnull)host SWIFT_METHOD_FAMILY(none);
 + (void)setupHost:(NSString * _Nonnull)host;
-+ (void)setupToken:(NSString * _Nonnull)token;
++ (void)setupTokenGeneratorWithGenerater:(NSString * _Nonnull (^ _Nonnull)(void))generater;
 + (void)setupLogEnable:(BOOL)enable;
 + (void)geoCityLookup:(GeoCityLookupParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoCityLookupResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)geoCityTop:(GeoCityTopParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoCityTopResponse * _Nullable, NSError * _Nullable))completionHandler;
