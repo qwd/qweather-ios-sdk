@@ -20,12 +20,24 @@ struct ContentView: View {
     private func configWeather(){
         Task {
             do {
+                
+                // The SDK provides two token generation mechanisms: TokenGenerator and closure-based implementation. Developers can choose either approach based on their needs. It is important to note that if both methods are configured simultaneously, the closure implementation will be automatically disabled. For security purposes, please ensure proper management of sensitive information such as private key, project ID, and credential ID, avoiding storage or transmission in plaintext.
+                
+                let jwt = JWTGenerator(privateKey: "{YOUR_PRIVATE_KEY}",
+                                       pid: "{YOUR_PROJECT_ID}",
+                                       kid: "YOUR_KID");
+                
+                // Developers can also customize a token generator by conforming to the TokenGenerator protocol.
+                
                 let _ = try await QWeather
                     .getInstance("{YOUR_HOST}")  // Initialize QWeather instance with API host URL
+                    .setupTokenGenerator(jwt)
+                    /*
                     .setupTokenGenerator({ // Provide a closure to dynamically generate authentication tokens
                         // In production, implement token refresh logic here instead of hardcoding
                         return "{YOUR_TOKEN}"  // Return JWT token for API authentication
                     })
+                     */
                     .setupLogEnable(true)  // Enable debug logging (set to false in production)
             } catch {
                 print(error.localizedDescription)

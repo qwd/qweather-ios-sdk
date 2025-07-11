@@ -25,11 +25,17 @@
     // Initialize QWeather instance with API host URL
     [QWeatherObjc initConfigWithHost:@"{YOUR_HOST}"];
     
+    // Set the token generator using the method provided by the SDK.
+    [QWeatherObjc setupTokenGeneratorWithPrivateKey:@"{YOUR_PRIVATE_KEY}" // Pravite Key
+                                              pid:@"{YOUR_PROJECT_ID}" // Project ID
+                                              kid:@"{YOUR_KID}"]; // Credential ID
+    /*
     [QWeatherObjc setupTokenGeneratorWithGenerater:^NSString * _Nonnull{
         // Provide a closure to dynamically generate authentication tokens
         // In production, implement token refresh logic here instead of hardcoding
         return  @"{YOUR_TOKEN}"; // Return JWT token for API authentication
     }];
+    */
     
     // Enable debug logging (set to false in production)
     [QWeatherObjc setupLogEnable:YES];

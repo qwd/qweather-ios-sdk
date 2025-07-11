@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "QWeather-SDK"
-  s.version      = "5.0.0"
+  s.version      = "5.1.1"
   s.summary      = "Official QWeather SDK"
   s.description  = "<<-DESC
                     QWeather Develop Service is based on advanced meteorological and artificial intelligence algorithms, provides a wide range and accurate weather data services for developers to help you display the weather in your applications or to help your business decisions.
