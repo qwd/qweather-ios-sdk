@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		027A76622DA6813000DBC470 /* QWeatherSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028181342D9A3AF000826B02 /* QWeatherSDK.xcframework */; };
-		027A76632DA6813000DBC470 /* QWeatherSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 028181342D9A3AF000826B02 /* QWeatherSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0238B7962E20EE2100E732E7 /* QWeatherSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028181342D9A3AF000826B02 /* QWeatherSDK.xcframework */; };
+		0238B7972E20EE2100E732E7 /* QWeatherSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 028181342D9A3AF000826B02 /* QWeatherSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		027A76642DA6813000DBC470 /* Embed Frameworks */ = {
+		0238B7982E20EE2100E732E7 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				027A76632DA6813000DBC470 /* QWeatherSDK.xcframework in Embed Frameworks */,
+				0238B7972E20EE2100E732E7 /* QWeatherSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -65,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				027A76622DA6813000DBC470 /* QWeatherSDK.xcframework in Frameworks */,
+				0238B7962E20EE2100E732E7 /* QWeatherSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,7 +127,7 @@
 				024971302D92B0C700D4B497 /* Sources */,
 				024971312D92B0C700D4B497 /* Frameworks */,
 				024971322D92B0C700D4B497 /* Resources */,
-				027A76642DA6813000DBC470 /* Embed Frameworks */,
+				0238B7982E20EE2100E732E7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
