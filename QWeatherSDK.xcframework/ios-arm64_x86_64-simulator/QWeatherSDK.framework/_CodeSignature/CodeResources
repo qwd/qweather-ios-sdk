@@ -6,63 +6,63 @@
 	<dict>
 		<key>Headers/QWeatherSDK-Swift.h</key>
 		<data>
-		fMj/DuPbo/LFTj4UcKdw52irG4s=
+		OWmqdkpRK5qtEZuGnW30YCpFYBo=
 		</data>
 		<key>Headers/QWeatherSDK.h</key>
 		<data>
-		dxyQVhFFPP/F0R3I2qs8ny66nj0=
+		rJPqWJtzsbe9jNzd0Onnj2mVeN4=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zpdnwDB3+9tGFNDHZ6Woo99ylBw=
+		0kM+RgmBIpqLRs/ycV3+T0GZudE=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		r1vFCH0l5+VM89WOBiM8CUgHOIU=
+		ZlvFMflOJRk7oVnzLg1teixjbNI=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		aNre4/dLsGI9/iBT1JoLJ8m83uU=
+		rvdSOM6KK8MUm20bKVAfYoBNVMA=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		GR/GWapGIxZDRls//0Sknlk6Jr0=
+		Vy7cX7SlhlYRUE01NnDvrHsLlKg=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		l7GMsFm043qPQr583Us3+H0+Mv0=
+		aFUfl622aA9BHhvbNG3dkVQ69P4=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		LifuscDf1m8p4bLJFMtKthMUpg0=
+		xuH5237ipmgeVPPasCWT64LejQI=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		l7GMsFm043qPQr583Us3+H0+Mv0=
+		aFUfl622aA9BHhvbNG3dkVQ69P4=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		cKa/MyWs9OGfbCRU6D0tWIfaSs4=
+		gaHLNECoZo3DdLV+S3ccksk9Vm0=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		GR/GWapGIxZDRls//0Sknlk6Jr0=
+		Vy7cX7SlhlYRUE01NnDvrHsLlKg=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		/aeRSJ+UOaGSaACPVQv5B1IWOrA=
+		Tv5ACP98WEWfaK47Bj1h3g0zjlA=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QNM6DwdTT/F5+oXWtNKI3YXUQ0Y=
+		Ejc4OAmCjB3PQPNnMJ4+zvA9rdQ=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		/aeRSJ+UOaGSaACPVQv5B1IWOrA=
+		Tv5ACP98WEWfaK47Bj1h3g0zjlA=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		smwzXoxjyaYCjnmWy8QmbHmKZW0=
+		GcdKH6xDZvZY3teWtLM8Rhp1tuA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -73,164 +73,104 @@
 	<dict>
 		<key>Headers/QWeatherSDK-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			fMj/DuPbo/LFTj4UcKdw52irG4s=
-			</data>
 			<key>hash2</key>
 			<data>
-			FWtZorOgfZauXS1nfIIo0wo7NMPTeOeWCyIgfMZBJsg=
+			LZ9sc4OM6A1DajJwcOjK76qKKqKvWlh5up9tlubqurI=
 			</data>
 		</dict>
 		<key>Headers/QWeatherSDK.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dxyQVhFFPP/F0R3I2qs8ny66nj0=
-			</data>
 			<key>hash2</key>
 			<data>
-			z6WmjhLeuJAFijIS8NsR7ev5mx+f0NNvKS9GxjEJRjE=
+			CrXe98fmS3Ye14XJKe+GbRJvgvEasc+YlfRSnSoonYA=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			r1vFCH0l5+VM89WOBiM8CUgHOIU=
-			</data>
 			<key>hash2</key>
 			<data>
-			HF9t9aDkaU0MnQP8x8a/424A1+mrSUZxI4zOPRNpXrU=
+			Os2M1cQ1Aig44eFRcP1lg0ENq5O7V30feDDAjadL9Ko=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			aNre4/dLsGI9/iBT1JoLJ8m83uU=
-			</data>
 			<key>hash2</key>
 			<data>
-			N/HKKPRJV7QYEblQwy95UP5W4AucHcErlwuKLYDQBl8=
+			/wiSzjpxxfCiPU4tHfJid2mf6I/vYxiJjWLabeDQAOQ=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GR/GWapGIxZDRls//0Sknlk6Jr0=
-			</data>
 			<key>hash2</key>
 			<data>
-			Q56wV6M6hjhnPCPindRBfLjXyPD1EYY8eJS15w+PiEM=
+			PFdoi4QepQ8cmI7bx+BrHKhiwW09As1Dxgmlfnz63Fc=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			l7GMsFm043qPQr583Us3+H0+Mv0=
-			</data>
 			<key>hash2</key>
 			<data>
-			SWsEsPPmO2sV1yBn+JBKYl8m+OuaC90L6Smkk/v9hyQ=
+			Q//s7rtxTTXy+IPkMyXVRBkyARk+CKSCWkH9j7MrZOg=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			LifuscDf1m8p4bLJFMtKthMUpg0=
-			</data>
 			<key>hash2</key>
 			<data>
-			ljSxVjYy5RrPDPQ2Mh4agvWnNXqNzkPTO6Xq/IyrOHE=
+			egTSQFcu8cbNttZoH5H6KE+MUczxowViBeGLwB70SGI=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			l7GMsFm043qPQr583Us3+H0+Mv0=
-			</data>
 			<key>hash2</key>
 			<data>
-			SWsEsPPmO2sV1yBn+JBKYl8m+OuaC90L6Smkk/v9hyQ=
+			Q//s7rtxTTXy+IPkMyXVRBkyARk+CKSCWkH9j7MrZOg=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			cKa/MyWs9OGfbCRU6D0tWIfaSs4=
-			</data>
 			<key>hash2</key>
 			<data>
-			1hCbiWI3eBlWVnO3uVxInyHtZtD16RpBckptXW+5qIU=
+			4XSKV5Kr8b+Xvkz17LB7HsLtkJGfU+z0ZFLa38hxMlo=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GR/GWapGIxZDRls//0Sknlk6Jr0=
-			</data>
 			<key>hash2</key>
 			<data>
-			Q56wV6M6hjhnPCPindRBfLjXyPD1EYY8eJS15w+PiEM=
+			PFdoi4QepQ8cmI7bx+BrHKhiwW09As1Dxgmlfnz63Fc=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/aeRSJ+UOaGSaACPVQv5B1IWOrA=
-			</data>
 			<key>hash2</key>
 			<data>
-			s09HileXpLj5mDvqThrqMqY3e42JTGMOyLo5qK0/lEA=
+			n4X5ffZEoKrPSabMivgOFNjayTi3jJT5h0k0ygoiaFk=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QNM6DwdTT/F5+oXWtNKI3YXUQ0Y=
-			</data>
 			<key>hash2</key>
 			<data>
-			MLdrqsap+IA+/XCu9bL1rMRwcEbKCutIq81iJCI5ftE=
+			eUt/s3I9g7UZdx7+fRC5ZB0M9cDAL3yMRAwf9J/1EVE=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			/aeRSJ+UOaGSaACPVQv5B1IWOrA=
-			</data>
 			<key>hash2</key>
 			<data>
-			s09HileXpLj5mDvqThrqMqY3e42JTGMOyLo5qK0/lEA=
+			n4X5ffZEoKrPSabMivgOFNjayTi3jJT5h0k0ygoiaFk=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			smwzXoxjyaYCjnmWy8QmbHmKZW0=
-			</data>
 			<key>hash2</key>
 			<data>
-			bFy5teRSOnYdkLaJpD1vTgYyjWvMgnWdbRMfUXWWrYA=
+			h9aSiLerpUTFtzFs3URn6bb6pEapfRl4cXEldUhh+Bc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			+y71d31d8yStEcK1CVzyWLryJSo=
-			</data>
 			<key>hash2</key>
 			<data>
 			qTdx//RgS7u0M+Gbr4owOhla28y1kbcN5Q0aEtzbosE=

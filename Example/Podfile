@@ -1,8 +1,8 @@
 
 def share_pods
-  pod 'QWeather-SDK', '~> 5.1.0'
-#  pod 'QWeather-SDK', :path => '../'
-#  pod 'QWeather-SDK', :git => 'https://github.com/qwd/qweather-ios-sdk.git', :tag => '5.1.0'
+#  pod 'QWeather-SDK', '~> 5.2.0'
+  pod 'QWeather-SDK', :path => '../'
+#  pod 'QWeather-SDK', :git => 'https://github.com/qwd/qweather-ios-sdk.git', :tag => '5.2.0'
 end
 
 target 'ExampleObjc' do
