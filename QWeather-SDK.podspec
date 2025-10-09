@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "QWeather-SDK"
-  s.version      = "5.2.0"
+  s.version      = "5.2.1"
   s.summary      = "Official QWeather SDK"
   s.description  = "<<-DESC
                     QWeather Develop Service is based on advanced meteorological and artificial intelligence algorithms, provides a wide range and accurate weather data services for developers to help you display the weather in your applications or to help your business decisions.
@@ -23,8 +23,8 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "11.0"
   s.watchos.deployment_target = "8.0"
   s.tvos.deployment_target = '15.0'
-
   s.source = { :git => 'https://github.com/qwd/qweather-ios-sdk.git', :tag => s.version.to_s }
+  # s.source       = { :path => '.' }
   s.swift_version = '6.0'
 
   s.static_framework = true

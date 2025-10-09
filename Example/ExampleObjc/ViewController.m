@@ -235,7 +235,7 @@
     }];
 }
 
--(void)gridWeatherNow{
+-(void)testGridWeatherNow{
     GridWeatherParameter *parameter = [GridWeatherParameter instanceWithLongitude:116.41 latitude:39.92 lang:@(LangZH_HANS) unit:@(UnitMETRIC)];
     [QWeatherObjc gridNow:parameter completionHandler:^(GridNowResponse * _Nullable response, NSError * _Nullable error) {
         if (response) {
@@ -247,7 +247,7 @@
     }];
 }
 
--(void)gridWeather3d{
+-(void)testGridWeather3d{
     GridWeatherParameter *parameter = [GridWeatherParameter instanceWithLongitude:116.41 latitude:39.92 lang:@(LangZH_HANS) unit:@(UnitMETRIC)];
     [QWeatherObjc grid3d:parameter completionHandler:^(GridDailyResponse * _Nullable response, NSError * _Nullable error) {
         if (response) {
@@ -259,7 +259,7 @@
     }];
 }
 
--(void)gridWeather7d{
+-(void)testGridWeather7d{
     GridWeatherParameter *parameter = [GridWeatherParameter instanceWithLongitude:116.41 latitude:39.92 lang:@(LangZH_HANS) unit:@(UnitMETRIC)];
     [QWeatherObjc grid7d:parameter completionHandler:^(GridDailyResponse * _Nullable response, NSError * _Nullable error) {
         if (response) {
@@ -273,7 +273,7 @@
 
 
 
--(void)gridWeather24h{
+-(void)testGridWeather24h{
     GridWeatherParameter *parameter = [GridWeatherParameter instanceWithLongitude:116.41 latitude:39.92 lang:@(LangZH_HANS) unit:@(UnitMETRIC)];
     [QWeatherObjc grid24h:parameter completionHandler:^(GridHourlyResponse * _Nullable response, NSError * _Nullable error) {
         if (response) {
@@ -285,7 +285,7 @@
     }];
 }
 
--(void)gridWeather72h{
+-(void)testGridWeather72h{
     GridWeatherParameter *parameter = [GridWeatherParameter instanceWithLongitude:116.41 latitude:39.92 lang:@(LangZH_HANS) unit:@(UnitMETRIC)];
     [QWeatherObjc grid24h:parameter completionHandler:^(GridHourlyResponse * _Nullable response, NSError * _Nullable error) {
         if (response) {
@@ -297,7 +297,7 @@
     }];
 }
 
--(void)warningNow{
+-(void)testWarningNow{
     WarningNowParameter *parameter = [WarningNowParameter instanceWithLocation:@"101120501" lang:@(LangZH_HANS)];
     [QWeatherObjc warningNow:parameter completionHandler:^(WarningResponse * _Nullable response, NSError * _Nullable error) {
         if (response) {
@@ -309,9 +309,21 @@
     }];
 }
 
--(void)warningList{
+-(void)testWarningList{
     WarningListParameter *parameter = [WarningListParameter instanceWithRange:RangeCN];
     [QWeatherObjc warningList:parameter completionHandler:^(WarningListResponse * _Nullable response, NSError * _Nullable error) {
+        if (response) {
+            NSLog(@"%@", response.description);
+        }
+        if (error) {
+            NSLog(@"%@", error.localizedDescription);
+        }
+    }];
+}
+
+-(void)testWeatherAlertCurrent{
+    WeatherAlertCurrentParameter *parameter = [WeatherAlertCurrentParameter instanceWithLongitude:112.64 latitude:41.28 localTime:YES lang:@(LangZH_HANS)];
+    [QWeatherObjc weatherAlertCurrent:parameter completionHandler:^(WeatherAlertCurrentResponse * _Nullable response, NSError * _Nullable error) {
         if (response) {
             NSLog(@"%@", response.description);
         }

@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		027901982E7BB01900A46C7F /* QWeatherSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028181342D9A3AF000826B02 /* QWeatherSDK.xcframework */; };
-		027901992E7BB01900A46C7F /* QWeatherSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 028181342D9A3AF000826B02 /* QWeatherSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0256A5202EEA60D40058FC11 /* QWeatherSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 028181342D9A3AF000826B02 /* QWeatherSDK.xcframework */; };
+		0256A5212EEA60D40058FC11 /* QWeatherSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 028181342D9A3AF000826B02 /* QWeatherSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3352759DD221C0A7E6C779E3 /* libPods-ExampleObjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E79E7B02EFA122561C08A701 /* libPods-ExampleObjc.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		0279019A2E7BB01900A46C7F /* Embed Frameworks */ = {
+		0256A5222EEA60D40058FC11 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				027901992E7BB01900A46C7F /* QWeatherSDK.xcframework in Embed Frameworks */,
+				0256A5212EEA60D40058FC11 /* QWeatherSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				027901982E7BB01900A46C7F /* QWeatherSDK.xcframework in Frameworks */,
+				0256A5202EEA60D40058FC11 /* QWeatherSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +131,7 @@
 				024971302D92B0C700D4B497 /* Sources */,
 				024971312D92B0C700D4B497 /* Frameworks */,
 				024971322D92B0C700D4B497 /* Resources */,
-				0279019A2E7BB01900A46C7F /* Embed Frameworks */,
+				0256A5222EEA60D40058FC11 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
