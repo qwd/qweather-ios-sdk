@@ -392,8 +392,7 @@
         "moduleName": "QWeatherSDK",
         "declAttributes": [
           "AccessControl",
-          "ObjC",
-          "RawDocComment"
+          "ObjC"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -21906,6 +21905,646 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "WeatherAlertCurrentParameter",
+        "printedName": "WeatherAlertCurrentParameter",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "longitude",
+            "printedName": "longitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC9longitudeSdvp",
+            "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC9longitudeSdvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC9longitudeSdvg",
+                "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC9longitudeSdvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "latitude",
+            "printedName": "latitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC8latitudeSdvp",
+            "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC8latitudeSdvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC8latitudeSdvg",
+                "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC8latitudeSdvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "localTime",
+            "printedName": "localTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC9localTimeSbvp",
+            "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC9localTimeSbvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC9localTimeSbvg",
+                "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC9localTimeSbvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "lang",
+            "printedName": "lang",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QWeatherSDK.Lang?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Lang",
+                    "printedName": "QWeatherSDK.Lang",
+                    "usr": "c:@M@QWeatherSDK@E@Lang"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC4langAA4LangOSgvp",
+            "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC4langAA4LangOSgvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QWeatherSDK.Lang?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Lang",
+                        "printedName": "QWeatherSDK.Lang",
+                        "usr": "c:@M@QWeatherSDK@E@Lang"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC4langAA4LangOSgvg",
+                "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC4langAA4LangOSgvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "color",
+            "printedName": "color",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC5colorSSSgvp",
+            "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC5colorSSSgvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC5colorSSSgvg",
+                "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC5colorSSSgvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "topLevel",
+            "printedName": "topLevel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC8topLevelSbSgvp",
+            "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC8topLevelSbSgvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC8topLevelSbSgvg",
+                "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC8topLevelSbSgvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(longitude:latitude:localTime:lang:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertCurrentParameter",
+                "printedName": "QWeatherSDK.WeatherAlertCurrentParameter",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentParameter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QWeatherSDK.Lang?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Lang",
+                    "printedName": "QWeatherSDK.Lang",
+                    "usr": "c:@M@QWeatherSDK@E@Lang"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11QWeatherSDK28WeatherAlertCurrentParameterC9longitude8latitude9localTime4langACSd_SdSbAA4LangOSgtcfc",
+            "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC9longitude8latitude9localTime4langACSd_SdSbAA4LangOSgtcfc",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "instance",
+            "printedName": "instance(longitude:latitude:localTime:lang:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSelf",
+                "printedName": "Self"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.NSNumber?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSNumber",
+                    "printedName": "Foundation.NSNumber",
+                    "usr": "c:objc(cs)NSNumber"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentParameter(cm)instanceWithLongitude:latitude:localTime:lang:",
+            "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC8instance9longitude8latitude9localTime4langACXDSd_SdSbSo8NSNumberCSgtFZ",
+            "moduleName": "QWeatherSDK",
+            "static": true,
+            "objc_name": "instanceWithLongitude:latitude:localTime:lang:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setColor",
+            "printedName": "setColor(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertCurrentParameter",
+                "printedName": "QWeatherSDK.WeatherAlertCurrentParameter",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentParameter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentParameter(im)setColor:",
+            "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC8setColoryACSSF",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTopLevel",
+            "printedName": "setTopLevel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertCurrentParameter",
+                "printedName": "QWeatherSDK.WeatherAlertCurrentParameter",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentParameter"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentParameter(im)setTopLevel:",
+            "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC11setTopLevelyACSbF",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertCurrentParameter",
+                "printedName": "QWeatherSDK.WeatherAlertCurrentParameter",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentParameter"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentParameter(im)init",
+            "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterCACycfc",
+            "moduleName": "QWeatherSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentParameter",
+        "mangledName": "$s11QWeatherSDK28WeatherAlertCurrentParameterC",
+        "moduleName": "QWeatherSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QWeatherSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "WeatherParameter",
         "printedName": "WeatherParameter",
         "children": [
@@ -22577,6 +23216,16 @@
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QWeatherSDK",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -43664,14 +44313,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@QWeatherSDK@objc(cs)IndicesDaily(py)text",
-            "mangledName": "$s11QWeatherSDK12IndicesDailyC4textSSvp",
+            "mangledName": "$s11QWeatherSDK12IndicesDailyC4textSSSgvp",
             "moduleName": "QWeatherSDK",
             "declAttributes": [
               "Final",
@@ -43690,14 +44347,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@QWeatherSDK@objc(cs)IndicesDaily(im)text",
-                "mangledName": "$s11QWeatherSDK12IndicesDailyC4textSSvg",
+                "mangledName": "$s11QWeatherSDK12IndicesDailyC4textSSSgvg",
                 "moduleName": "QWeatherSDK",
                 "implicit": true,
                 "declAttributes": [
@@ -54343,6 +55008,2801 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "WeatherAlertCurrentResponse",
+        "printedName": "WeatherAlertCurrentResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertMetadata",
+                "printedName": "QWeatherSDK.WeatherAlertMetadata",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMetadata"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentResponse(py)metadata",
+            "mangledName": "$s11QWeatherSDK27WeatherAlertCurrentResponseC8metadataAA0cD8MetadataCvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WeatherAlertMetadata",
+                    "printedName": "QWeatherSDK.WeatherAlertMetadata",
+                    "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMetadata"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentResponse(im)metadata",
+                "mangledName": "$s11QWeatherSDK27WeatherAlertCurrentResponseC8metadataAA0cD8MetadataCvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "alerts",
+            "printedName": "alerts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[QWeatherSDK.WeatherAlert]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[QWeatherSDK.WeatherAlert]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WeatherAlert",
+                        "printedName": "QWeatherSDK.WeatherAlert",
+                        "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentResponse(py)alerts",
+            "mangledName": "$s11QWeatherSDK27WeatherAlertCurrentResponseC6alertsSayAA0cD0CGSgvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[QWeatherSDK.WeatherAlert]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[QWeatherSDK.WeatherAlert]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "WeatherAlert",
+                            "printedName": "QWeatherSDK.WeatherAlert",
+                            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentResponse(im)alerts",
+                "mangledName": "$s11QWeatherSDK27WeatherAlertCurrentResponseC6alertsSayAA0cD0CGSgvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertCurrentResponse",
+                "printedName": "QWeatherSDK.WeatherAlertCurrentResponse",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11QWeatherSDK27WeatherAlertCurrentResponseC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11QWeatherSDK27WeatherAlertCurrentResponseC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "QWeatherSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11QWeatherSDK27WeatherAlertCurrentResponseC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11QWeatherSDK27WeatherAlertCurrentResponseC6encode2toys7Encoder_p_tKF",
+            "moduleName": "QWeatherSDK",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentResponse",
+        "mangledName": "$s11QWeatherSDK27WeatherAlertCurrentResponseC",
+        "moduleName": "QWeatherSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WeatherAlertMetadata",
+        "printedName": "WeatherAlertMetadata",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tag",
+            "printedName": "tag",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMetadata(py)tag",
+            "mangledName": "$s11QWeatherSDK20WeatherAlertMetadataC3tagSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMetadata(im)tag",
+                "mangledName": "$s11QWeatherSDK20WeatherAlertMetadataC3tagSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "zeroResult",
+            "printedName": "zeroResult",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMetadata(py)zeroResult",
+            "mangledName": "$s11QWeatherSDK20WeatherAlertMetadataC10zeroResultSbvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMetadata(im)zeroResult",
+                "mangledName": "$s11QWeatherSDK20WeatherAlertMetadataC10zeroResultSbvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "attributions",
+            "printedName": "attributions",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMetadata(py)attributions",
+            "mangledName": "$s11QWeatherSDK20WeatherAlertMetadataC12attributionsSaySSGSgvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMetadata(im)attributions",
+                "mangledName": "$s11QWeatherSDK20WeatherAlertMetadataC12attributionsSaySSGSgvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertMetadata",
+                "printedName": "QWeatherSDK.WeatherAlertMetadata",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMetadata"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11QWeatherSDK20WeatherAlertMetadataC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11QWeatherSDK20WeatherAlertMetadataC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "QWeatherSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11QWeatherSDK20WeatherAlertMetadataC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11QWeatherSDK20WeatherAlertMetadataC6encode2toys7Encoder_p_tKF",
+            "moduleName": "QWeatherSDK",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMetadata",
+        "mangledName": "$s11QWeatherSDK20WeatherAlertMetadataC",
+        "moduleName": "QWeatherSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WeatherAlertMessageType",
+        "printedName": "WeatherAlertMessageType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMessageType(py)code",
+            "mangledName": "$s11QWeatherSDK23WeatherAlertMessageTypeC4codeSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMessageType(im)code",
+                "mangledName": "$s11QWeatherSDK23WeatherAlertMessageTypeC4codeSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "supersedes",
+            "printedName": "supersedes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMessageType(py)supersedes",
+            "mangledName": "$s11QWeatherSDK23WeatherAlertMessageTypeC10supersedesSaySSGvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMessageType(im)supersedes",
+                "mangledName": "$s11QWeatherSDK23WeatherAlertMessageTypeC10supersedesSaySSGvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertMessageType",
+                "printedName": "QWeatherSDK.WeatherAlertMessageType",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMessageType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11QWeatherSDK23WeatherAlertMessageTypeC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11QWeatherSDK23WeatherAlertMessageTypeC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "QWeatherSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11QWeatherSDK23WeatherAlertMessageTypeC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11QWeatherSDK23WeatherAlertMessageTypeC6encode2toys7Encoder_p_tKF",
+            "moduleName": "QWeatherSDK",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMessageType",
+        "mangledName": "$s11QWeatherSDK23WeatherAlertMessageTypeC",
+        "moduleName": "QWeatherSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WeatherAlert",
+        "printedName": "WeatherAlert",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "alertId",
+            "printedName": "alertId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)alertId",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC7alertIdSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)alertId",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC7alertIdSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "senderName",
+            "printedName": "senderName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)senderName",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC10senderNameSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)senderName",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC10senderNameSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "issuedTime",
+            "printedName": "issuedTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)issuedTime",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC10issuedTimeSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)issuedTime",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC10issuedTimeSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "messageType",
+            "printedName": "messageType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertMessageType",
+                "printedName": "QWeatherSDK.WeatherAlertMessageType",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMessageType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)messageType",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC11messageTypeAA0cd7MessageF0Cvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WeatherAlertMessageType",
+                    "printedName": "QWeatherSDK.WeatherAlertMessageType",
+                    "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertMessageType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)messageType",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC11messageTypeAA0cd7MessageF0Cvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "eventType",
+            "printedName": "eventType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertEventType",
+                "printedName": "QWeatherSDK.WeatherAlertEventType",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertEventType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)eventType",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC9eventTypeAA0cd5EventF0Cvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WeatherAlertEventType",
+                    "printedName": "QWeatherSDK.WeatherAlertEventType",
+                    "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertEventType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)eventType",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC9eventTypeAA0cd5EventF0Cvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "urgency",
+            "printedName": "urgency",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)urgency",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC7urgencySSSgvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)urgency",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC7urgencySSSgvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "severity",
+            "printedName": "severity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)severity",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC8severitySSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)severity",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC8severitySSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "certainty",
+            "printedName": "certainty",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)certainty",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC9certaintySSSgvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)certainty",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC9certaintySSSgvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "icon",
+            "printedName": "icon",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)icon",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC4iconSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)icon",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC4iconSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "color",
+            "printedName": "color",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "QWeatherSDK.WeatherAlertColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WeatherAlertColor",
+                    "printedName": "QWeatherSDK.WeatherAlertColor",
+                    "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)color",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC5colorAA0cD5ColorCSgvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "QWeatherSDK.WeatherAlertColor?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WeatherAlertColor",
+                        "printedName": "QWeatherSDK.WeatherAlertColor",
+                        "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)color",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC5colorAA0cD5ColorCSgvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "effectiveTime",
+            "printedName": "effectiveTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)effectiveTime",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC13effectiveTimeSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)effectiveTime",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC13effectiveTimeSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "onsetTime",
+            "printedName": "onsetTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)onsetTime",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC9onsetTimeSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)onsetTime",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC9onsetTimeSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expireTime",
+            "printedName": "expireTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)expireTime",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC10expireTimeSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)expireTime",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC10expireTimeSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headline",
+            "printedName": "headline",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)headline",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC8headlineSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)headline",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC8headlineSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "desc",
+            "printedName": "desc",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)desc",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC4descSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)desc",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC4descSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "criteria",
+            "printedName": "criteria",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)criteria",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC8criteriaSSSgvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)criteria",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC8criteriaSSSgvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "responseTypes",
+            "printedName": "responseTypes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)responseTypes",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC13responseTypesSaySSGvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)responseTypes",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC13responseTypesSaySSGvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "instruction",
+            "printedName": "instruction",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(py)instruction",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC11instructionSSSgvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert(im)instruction",
+                "mangledName": "$s11QWeatherSDK12WeatherAlertC11instructionSSSgvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlert",
+                "printedName": "QWeatherSDK.WeatherAlert",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11QWeatherSDK12WeatherAlertC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "QWeatherSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11QWeatherSDK12WeatherAlertC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11QWeatherSDK12WeatherAlertC6encode2toys7Encoder_p_tKF",
+            "moduleName": "QWeatherSDK",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlert",
+        "mangledName": "$s11QWeatherSDK12WeatherAlertC",
+        "moduleName": "QWeatherSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WeatherAlertEventType",
+        "printedName": "WeatherAlertEventType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertEventType(py)name",
+            "mangledName": "$s11QWeatherSDK21WeatherAlertEventTypeC4nameSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertEventType(im)name",
+                "mangledName": "$s11QWeatherSDK21WeatherAlertEventTypeC4nameSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertEventType(py)code",
+            "mangledName": "$s11QWeatherSDK21WeatherAlertEventTypeC4codeSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertEventType(im)code",
+                "mangledName": "$s11QWeatherSDK21WeatherAlertEventTypeC4codeSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertEventType",
+                "printedName": "QWeatherSDK.WeatherAlertEventType",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertEventType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11QWeatherSDK21WeatherAlertEventTypeC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11QWeatherSDK21WeatherAlertEventTypeC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "QWeatherSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11QWeatherSDK21WeatherAlertEventTypeC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11QWeatherSDK21WeatherAlertEventTypeC6encode2toys7Encoder_p_tKF",
+            "moduleName": "QWeatherSDK",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertEventType",
+        "mangledName": "$s11QWeatherSDK21WeatherAlertEventTypeC",
+        "moduleName": "QWeatherSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WeatherAlertColor",
+        "printedName": "WeatherAlertColor",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "code",
+            "printedName": "code",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor(py)code",
+            "mangledName": "$s11QWeatherSDK17WeatherAlertColorC4codeSSvp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor(im)code",
+                "mangledName": "$s11QWeatherSDK17WeatherAlertColorC4codeSSvg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "red",
+            "printedName": "red",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor(py)red",
+            "mangledName": "$s11QWeatherSDK17WeatherAlertColorC3redSivp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor(im)red",
+                "mangledName": "$s11QWeatherSDK17WeatherAlertColorC3redSivg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "green",
+            "printedName": "green",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor(py)green",
+            "mangledName": "$s11QWeatherSDK17WeatherAlertColorC5greenSivp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor(im)green",
+                "mangledName": "$s11QWeatherSDK17WeatherAlertColorC5greenSivg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "blue",
+            "printedName": "blue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor(py)blue",
+            "mangledName": "$s11QWeatherSDK17WeatherAlertColorC4blueSivp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor(im)blue",
+                "mangledName": "$s11QWeatherSDK17WeatherAlertColorC4blueSivg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "alpha",
+            "printedName": "alpha",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor(py)alpha",
+            "mangledName": "$s11QWeatherSDK17WeatherAlertColorC5alphaSivp",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor(im)alpha",
+                "mangledName": "$s11QWeatherSDK17WeatherAlertColorC5alphaSivg",
+                "moduleName": "QWeatherSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertColor",
+                "printedName": "QWeatherSDK.WeatherAlertColor",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11QWeatherSDK17WeatherAlertColorC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s11QWeatherSDK17WeatherAlertColorC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "QWeatherSDK",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11QWeatherSDK17WeatherAlertColorC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s11QWeatherSDK17WeatherAlertColorC6encode2toys7Encoder_p_tKF",
+            "moduleName": "QWeatherSDK",
+            "implicit": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertColor",
+        "mangledName": "$s11QWeatherSDK17WeatherAlertColorC",
+        "moduleName": "QWeatherSDK",
+        "declAttributes": [
+          "Final",
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "QWeatherSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "WeatherDaily",
         "printedName": "WeatherDaily",
         "children": [
@@ -61896,8 +65356,10 @@
             "usr": "s:11QWeatherSDK0A0C10warningNowyAA15WarningResponseCAA0eD9ParameterCYaKF",
             "mangledName": "$s11QWeatherSDK0A0C10warningNowyAA15WarningResponseCAA0eD9ParameterCYaKF",
             "moduleName": "QWeatherSDK",
+            "deprecated": true,
             "declAttributes": [
               "AccessControl",
+              "Available",
               "RawDocComment"
             ],
             "throwing": true,
@@ -61925,8 +65387,39 @@
             "usr": "s:11QWeatherSDK0A0C11warningListyAA07WarningD8ResponseCAA0eD9ParameterCYaKF",
             "mangledName": "$s11QWeatherSDK0A0C11warningListyAA07WarningD8ResponseCAA0eD9ParameterCYaKF",
             "moduleName": "QWeatherSDK",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "weatherAlertCurrent",
+            "printedName": "weatherAlertCurrent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertCurrentResponse",
+                "printedName": "QWeatherSDK.WeatherAlertCurrentResponse",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentResponse"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertCurrentParameter",
+                "printedName": "QWeatherSDK.WeatherAlertCurrentParameter",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentParameter"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11QWeatherSDK0A0C19weatherAlertCurrentyAA07WeatherdE8ResponseCAA0fdE9ParameterCYaKF",
+            "mangledName": "$s11QWeatherSDK0A0C19weatherAlertCurrentyAA07WeatherdE8ResponseCAA0fdE9ParameterCYaKF",
+            "moduleName": "QWeatherSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -62010,8 +65503,10 @@
             "usr": "s:11QWeatherSDK0A0C6airNowyAA03AirD8ResponseCAA0E9ParameterCYaKF",
             "mangledName": "$s11QWeatherSDK0A0C6airNowyAA03AirD8ResponseCAA0E9ParameterCYaKF",
             "moduleName": "QWeatherSDK",
+            "deprecated": true,
             "declAttributes": [
               "AccessControl",
+              "Available",
               "RawDocComment"
             ],
             "throwing": true,
@@ -62039,8 +65534,10 @@
             "usr": "s:11QWeatherSDK0A0C5air5dyAA16AirDailyResponseCAA0D9ParameterCYaKF",
             "mangledName": "$s11QWeatherSDK0A0C5air5dyAA16AirDailyResponseCAA0D9ParameterCYaKF",
             "moduleName": "QWeatherSDK",
+            "deprecated": true,
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "Available"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -64277,10 +67774,12 @@
             "mangledName": "$s11QWeatherSDK0A4ObjcC10warningNow_17completionHandleryAA07WarningE9ParameterC_yAA0H8ResponseCSg_So7NSErrorCSgtYbctFZ",
             "moduleName": "QWeatherSDK",
             "static": true,
+            "deprecated": true,
             "declAttributes": [
               "Final",
               "AccessControl",
               "ObjC",
+              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -64354,10 +67853,89 @@
             "mangledName": "$s11QWeatherSDK0A4ObjcC11warningList_17completionHandleryAA07WarningE9ParameterC_yAA0hE8ResponseCSg_So7NSErrorCSgtYbctFZ",
             "moduleName": "QWeatherSDK",
             "static": true,
+            "deprecated": true,
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "weatherAlertCurrent",
+            "printedName": "weatherAlertCurrent(_:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WeatherAlertCurrentParameter",
+                "printedName": "QWeatherSDK.WeatherAlertCurrentParameter",
+                "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentParameter"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(QWeatherSDK.WeatherAlertCurrentResponse?, Foundation.NSError?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(QWeatherSDK.WeatherAlertCurrentResponse?, Foundation.NSError?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "QWeatherSDK.WeatherAlertCurrentResponse?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "WeatherAlertCurrentResponse",
+                            "printedName": "QWeatherSDK.WeatherAlertCurrentResponse",
+                            "usr": "c:@M@QWeatherSDK@objc(cs)WeatherAlertCurrentResponse"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSError?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSError",
+                            "printedName": "Foundation.NSError",
+                            "usr": "c:objc(cs)NSError"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@QWeatherSDK@objc(cs)QWeatherObjc(cm)weatherAlertCurrent:completionHandler:",
+            "mangledName": "$s11QWeatherSDK0A4ObjcC19weatherAlertCurrent_17completionHandleryAA07WeathereF9ParameterC_yAA0ieF8ResponseCSg_So7NSErrorCSgtYbctFZ",
+            "moduleName": "QWeatherSDK",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -64583,10 +68161,12 @@
             "mangledName": "$s11QWeatherSDK0A4ObjcC6airNow_17completionHandleryAA12AirParameterC_yAA0hE8ResponseCSg_So7NSErrorCSgtYbctFZ",
             "moduleName": "QWeatherSDK",
             "static": true,
+            "deprecated": true,
             "declAttributes": [
               "Final",
               "AccessControl",
               "ObjC",
+              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -64660,10 +68240,12 @@
             "mangledName": "$s11QWeatherSDK0A4ObjcC5air5d_17completionHandleryAA12AirParameterC_yAA0G13DailyResponseCSg_So7NSErrorCSgtYbctFZ",
             "moduleName": "QWeatherSDK",
             "static": true,
+            "deprecated": true,
             "declAttributes": [
               "Final",
               "AccessControl",
-              "ObjC"
+              "ObjC",
+              "Available"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -65823,42 +69405,42 @@
     {
       "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Basin.swift",
       "kind": "IntegerLiteral",
-      "offset": 448,
+      "offset": 241,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Basin.swift",
       "kind": "IntegerLiteral",
-      "offset": 488,
+      "offset": 281,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Basin.swift",
       "kind": "IntegerLiteral",
-      "offset": 530,
+      "offset": 323,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Basin.swift",
       "kind": "IntegerLiteral",
-      "offset": 575,
+      "offset": 368,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Basin.swift",
       "kind": "IntegerLiteral",
-      "offset": 618,
+      "offset": 411,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/basic\/Basin.swift",
       "kind": "IntegerLiteral",
-      "offset": 661,
+      "offset": 454,
       "length": 1,
       "value": "5"
     },
@@ -68019,6 +71601,20 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/response\/warning\/WeatherAlertResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1977,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/response\/warning\/WeatherAlertResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 2297,
+      "length": 13,
+      "value": "\"description\""
+    },
+    {
       "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/util\/Backoff.swift",
       "kind": "StringLiteral",
       "offset": 151,
@@ -68100,7 +71696,7 @@
       "kind": "StringLiteral",
       "offset": 375,
       "length": 7,
-      "value": "\"5.2.0\""
+      "value": "\"5.2.1\""
     },
     {
       "filePath": "\/Users\/lesliehan\/workspace\/qweathersdk\/5.0\/qweather-ios-sdk-source-code\/QWeatherSDK\/QWeather.swift",

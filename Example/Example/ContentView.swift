@@ -25,7 +25,7 @@ struct ContentView: View {
                 
                 let jwt = JWTGenerator(privateKey: "{YOUR_PRIVATE_KEY}",
                                        pid: "{YOUR_PROJECT_ID}",
-                                       kid: "YOUR_KID");
+                                       kid: "{YOUR_KID}");
                 
                 // Developers can also customize a token generator by conforming to the TokenGenerator protocol.
                 
@@ -338,6 +338,17 @@ struct ContentView: View {
         }
     }
     
+    func testWeatherAlertCurrent() async {
+        do {
+            let parameter = WeatherAlertCurrentParameter(longitude: 112.64, latitude: 41.28, localTime: true, lang: .ZH_HANS)
+            let response = try await QWeather.instance.weatherAlertCurrent(parameter)
+            print(response)
+        } catch QWeatherError.errorResponse(let error) {
+            print(error)
+        } catch {
+            print(error)
+        }
+    }
     
     func testIndicesDaily1d() async {
         do {

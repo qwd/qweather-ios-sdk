@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/QWeatherSDK-Swift.h</key>
 		<data>
-		OWmqdkpRK5qtEZuGnW30YCpFYBo=
+		zNTIJw8+gi9ZYfEZNYsr3f8hA54=
 		</data>
 		<key>Headers/QWeatherSDK.h</key>
 		<data>
@@ -14,55 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		yS9FbxvDYszd3jqPe/lXlhOidgk=
-		</data>
-		<key>Modules/QWeatherSDK.swiftmodule/Project/arm64-apple-watchos-simulator.swiftsourceinfo</key>
-		<data>
-		97s7Cw4ESnnJHqR/QLy68xlhW3c=
-		</data>
-		<key>Modules/QWeatherSDK.swiftmodule/Project/x86_64-apple-watchos-simulator.swiftsourceinfo</key>
-		<data>
-		1HvSKFim+SQzNrD+wI7klyhZZ/U=
+		uGJd+Mgo/BDMZX3Bgbt3098qn08=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<data>
-		Vy7cX7SlhlYRUE01NnDvrHsLlKg=
+		3Dn8hkguun+H1Lyd778lOyYgRuc=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		VoLnVthMx8D4ANCjPMrBUu7Ea2k=
+		Gqk0TdW5OZNjsqDPLBHVfgwGUPY=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		PtyE9kcnqkw6dO+OigWnPpf7/qY=
+		cZP5GsfkpFoF5clEQOgjkFPj8Cw=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		VoLnVthMx8D4ANCjPMrBUu7Ea2k=
+		Gqk0TdW5OZNjsqDPLBHVfgwGUPY=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		2gLO1BCTjyn3y9b9IHUTQ/5NOEk=
+		2qJ9IoXqOaTdbsS6LwzCDQNveck=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<data>
-		Vy7cX7SlhlYRUE01NnDvrHsLlKg=
+		3Dn8hkguun+H1Lyd778lOyYgRuc=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<data>
-		jTO4V44wyijM/9MIHdFQNZx6K00=
+		D7cjwBeA8pjeDIodssk12EOSVBk=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<data>
-		uoOyTxe3y20hOaAevPTXDwyHppQ=
+		yEq34g3vV5JCvNAKBNlU2XTO9Sc=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<data>
-		jTO4V44wyijM/9MIHdFQNZx6K00=
+		D7cjwBeA8pjeDIodssk12EOSVBk=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<data>
-		PG+KKNRUtXL+ZctmTq9NJ5JAo7M=
+		zGxUBhticYKKh4S5QlPsHcMTTgI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LZ9sc4OM6A1DajJwcOjK76qKKqKvWlh5up9tlubqurI=
+			GqOmV9eVKJSIXiq+sjafZnNTkVcw7iF0ZM/o/+DPjaw=
 			</data>
 		</dict>
 		<key>Headers/QWeatherSDK.h</key>
@@ -85,88 +77,74 @@
 			CrXe98fmS3Ye14XJKe+GbRJvgvEasc+YlfRSnSoonYA=
 			</data>
 		</dict>
-		<key>Modules/QWeatherSDK.swiftmodule/Project/arm64-apple-watchos-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VajKHGurXBI7WiGcXlaGeOQ67I1lgrKY1ya4pD3jVlw=
-			</data>
-		</dict>
-		<key>Modules/QWeatherSDK.swiftmodule/Project/x86_64-apple-watchos-simulator.swiftsourceinfo</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			NFJybXpkVBw5MpInUR4I63F7kvWRD92bgqgzIOA0T30=
-			</data>
-		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PFdoi4QepQ8cmI7bx+BrHKhiwW09As1Dxgmlfnz63Fc=
+			nI0Jn8IFn//3yHIW2EuKLeeNuCUEGgLNgWLE2Jb77qs=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nyOBJKzIoyicwJtLzEdQ1kABVDiWP68cEklUBt2VouQ=
+			zSc7uRVYEoYQGwocdzuQjENk2WQg/g9cf5xFniQGmOo=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VYHFVYRjhEOHka016RIvBbshVptNHMmLlFGyJBk4+Mg=
+			wkpfYbh9j9JklHuI+ECHmIBMp8DOnZLYc/wUuJSUcI4=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nyOBJKzIoyicwJtLzEdQ1kABVDiWP68cEklUBt2VouQ=
+			zSc7uRVYEoYQGwocdzuQjENk2WQg/g9cf5xFniQGmOo=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			w808XCt7rfi9DGcJCvPwgvle9HC8T9FpJ4OU6eSNJqs=
+			WenxGbqgXl1ZXsWwkMwkSRg6yG8Ql/5trHhND/W7zc0=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-watchos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PFdoi4QepQ8cmI7bx+BrHKhiwW09As1Dxgmlfnz63Fc=
+			nI0Jn8IFn//3yHIW2EuKLeeNuCUEGgLNgWLE2Jb77qs=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-watchos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZLXpM5ZwAzaOi9A2TtwhlXXioRQsgM89vGYznt2ayZs=
+			Bb8XrBnso5lXvb8st5Rq5oLDqPkQoLTpbpBX8Hv3Wr8=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-watchos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VtAXr7SH8jzR61M2n0ds2ZPexVNv1Z4m+uO70VzMwBM=
+			KflIE4vocCA6ZQ/ylRBWtAgnL/E6YFvP3BjCEulflgc=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-watchos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZLXpM5ZwAzaOi9A2TtwhlXXioRQsgM89vGYznt2ayZs=
+			Bb8XrBnso5lXvb8st5Rq5oLDqPkQoLTpbpBX8Hv3Wr8=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-watchos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NJRVod1wYrNkbpphB55Xny3XyBdTN+4vzuY9emqoFiE=
+			qUQZZq+XRqkcFe606seUMjNRxR5BQ9El1EB+9o5AZ1s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
