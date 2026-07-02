@@ -8,7 +8,7 @@ Get minute-level precipitation forecast data every 5 minutes for the next 2 hour
 
 | Interface code| Interface  | Class |
 | ---------- | ----------- | ------------ |
-| minutely | Minutely Precipitation  | [MinutelyResponse](https://dev.qweather.com/en/docs/ios-sdk/minutely/ios-minutely-precipitation/#response) |
+| minutely | Minutely Precipitation  | [MinutelyResponse](https://dev.qweather.com/en/docs/api/minutely/minutely-precipitation/#response) |
 
 ## Parameters
 
@@ -53,4 +53,4 @@ MinutelyParameter * paramater = [MinutelyParameter instanceWithLongitude:116.41 
 
 ## Response
 
-[MinutelyResponse](https://dev.qweather.com/en/docs/ios-sdk/minutely/ios-minutely-precipitation/#response)
+[MinutelyResponse](https://dev.qweather.com/en/docs/api/minutely/minutely-precipitation/#response)

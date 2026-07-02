@@ -6,7 +6,7 @@ POI Range iOS SDK provides the ability to query all POI information within a spe
 
 | Interface code | Interface       | Class        |
 | --------- | -------------------------- | ------------ |
-| geoPoiRange | POI Range  | [GeoPoiResponse](https://dev.qweather.com/en/docs/ios-sdk/geoapi/ios-poi-range/#response) |
+| geoPoiRange | POI Range  | [GeoPoiResponse](https://dev.qweather.com/en/docs/api/geoapi/poi-range/#response) |
 
 ## Parameters
 
@@ -58,4 +58,4 @@ POI Range iOS SDK provides the ability to query all POI information within a spe
 
 ## Response
 
-[GeoPoiResponse](https://dev.qweather.com/en/docs/ios-sdk/geoapi/ios-poi-range/#response)
+[GeoPoiResponse](https://dev.qweather.com/en/docs/api/geoapi/poi-range/#response)

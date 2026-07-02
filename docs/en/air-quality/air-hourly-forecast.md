@@ -8,7 +8,7 @@ We recommend to read [Air Quality Info](https://dev.qweather.com/en/docs/resourc
 
 | Interface code | Interface                 | Class       |
 | --------------- | ---------------------------- | ------------ |
-| airHourly | Air quality hourly forecast    | [AirV1HourlyResponse](https://dev.qweather.com/en/docs/ios-sdk/air-quality/ios-air-hourly-forecast/#response) |
+| airHourly | Air quality hourly forecast    | [AirV1HourlyResponse](https://dev.qweather.com/en/docs/api/air-quality/air-hourly-forecast/#response) |
 
 ## Parameters
 
@@ -55,5 +55,5 @@ AirV1Parameter *parameter = [AirV1Parameter instanceWithLongitude:116.41 latitud
 
 ## Response
 
-[AirV1HourlyResponse](https://dev.qweather.com/en/docs/ios-sdk/air-quality/ios-air-hourly-forecast/#response)
+[AirV1HourlyResponse](https://dev.qweather.com/en/docs/api/air-quality/air-hourly-forecast/#response)
 

@@ -4,12 +4,12 @@
 
 Storm Forecast provides tropical cyclones information for a specific tropical cyclone, the data including forecast tropical cyclones location, level, pressure, wind and etc.
 
-> **Note:** For inactive storms, the returned data is **NULL**, please get the storms status by [Storm List](https://dev.qweather.com/en/docs/ios-sdk/tropical-cyclone/ios-storm-list/) first.
+> **Note:** For inactive storms, the returned data is **NULL**, please get the storms status by [Storm List](./storm-list.md) first.
 
 
 | Interface code              | Interface     | Class                 |
 | --------------------------- | ------------- | ---------------------- |
-| tropicalStormForecast      | Storm forecast data | [StormForecastResponse](https://dev.qweather.com/en/docs/ios-sdk/tropical-cyclone/ios-storm-forecast/#response) |
+| tropicalStormForecast      | Storm forecast data | [StormForecastResponse](https://dev.qweather.com/en/docs/api/tropical-cyclone/storm-forecast/#response) |
 
 ## Parameters
 
@@ -52,7 +52,7 @@ StormParameter *parameter = [StormParameter instanceWithStormid:@"NP_2421"];
      
 ## Response
 
-[StormForecastResponse](https://dev.qweather.com/en/docs/ios-sdk/tropical-cyclone/ios-storm-forecast/#response)
+[StormForecastResponse](https://dev.qweather.com/en/docs/api/tropical-cyclone/storm-forecast/#response)
 
 ### Typhoon level
 

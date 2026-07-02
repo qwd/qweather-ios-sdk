@@ -8,7 +8,7 @@
 
 | 接口代码        | 接口     | 数据类             |
 | ------------------- | -------- | ---------------- |
-| tropicalStormList | 台风列表 | [StormListResponse](https://dev.qweather.com/docs/ios-sdk/tropical-cyclone/ios-storm-list/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| tropicalStormList | 台风列表 | [StormListResponse](https://dev.qweather.com/docs/api/tropical-cyclone/storm-list/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
 
 ## 参数
 
@@ -60,5 +60,5 @@ StormListParameter *parameter = [StormListParameter instanceWithBasin:BasinNP ye
      
 ## 返回数据
 
-[StormListResponse](https://dev.qweather.com/docs/ios-sdk/tropical-cyclone/ios-storm-list/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
+[StormListResponse](https://dev.qweather.com/docs/api/tropical-cyclone/storm-list/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
 

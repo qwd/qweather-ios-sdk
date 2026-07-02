@@ -4,12 +4,12 @@
 
 Weather forecast data based on numerical models, to provide daily weather forecasts at specified coordinates around the world, with a spatial resolution of 3-5 kilometers.
 
-> **Hint:** The grid weather data is based on Numerical Weather Prediction (NWP) models, and it is not suitable for comparison with observation station data. For station-based city weather data, please refer to the [City Weather API](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-weather-daily-forecast/). Grid weather uses UTC+0 as the time zone.
+> **Hint:** The grid weather data is based on Numerical Weather Prediction (NWP) models, and it is not suitable for comparison with observation station data. For station-based city weather data, please refer to the [Weather Daily Forecast](./weather-daily-forecast.md). Grid weather uses UTC+0 as the time zone.
 
 | Interface code    | Interface   | Class           |
 | ----------------- | ----------- | --------------- |
-| grid3d | 3 Days Forecast by Grid| [GridDailyResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-grid-weather-daily-forecast/#response) |
-| grid7d | 7 Days Forecast by Grid| [GridDailyResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-grid-weather-daily-forecast/#response) |
+| grid3d | 3 Days Forecast by Grid| [GridDailyResponse](https://dev.qweather.com/en/docs/api/weather/grid-weather-daily-forecast/#response) |
+| grid7d | 7 Days Forecast by Grid| [GridDailyResponse](https://dev.qweather.com/en/docs/api/weather/grid-weather-daily-forecast/#response) |
 
 
 ## Parameters
@@ -77,4 +77,4 @@ void (^handler)(GridDailyResponse *, NSError *) = ^(GridDailyResponse *response,
 
 ## Response
 
-[GridDailyResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-grid-weather-daily-forecast/#response)
+[GridDailyResponse](https://dev.qweather.com/en/docs/api/weather/grid-weather-daily-forecast/#response)

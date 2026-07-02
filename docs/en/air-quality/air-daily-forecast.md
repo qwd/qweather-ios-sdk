@@ -8,7 +8,7 @@ We recommend to read [Air Quality Info](https://dev.qweather.com/en/docs/resourc
 
 | Interface code | Interface                         | Class       |
 | --------------- | ---------------------------- | ------------ |
-| airDaily | Air quality daily forecast     | [AirV1DailyResponse](https://dev.qweather.com/en/docs/ios-sdk/air-quality/ios-air-daily-forecast/#response) |
+| airDaily | Air quality daily forecast     | [AirV1DailyResponse](https://dev.qweather.com/en/docs/api/air-quality/air-daily-forecast/#response) |
 
 ## Parameters 
 
@@ -55,4 +55,4 @@ AirV1Parameter *parameter = [AirV1Parameter instanceWithLongitude:116.41 latitud
 
 ## Response
 
-[AirV1DailyResponse](https://dev.qweather.com/en/docs/ios-sdk/air-quality/ios-air-daily-forecast/#response)
+[AirV1DailyResponse](https://dev.qweather.com/en/docs/api/air-quality/air-daily-forecast/#response)

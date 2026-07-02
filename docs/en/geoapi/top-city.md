@@ -6,7 +6,7 @@ Get a list of popular cities around the world.
 
 | Interface code | Interface     | Class              |
 | -------------- | ------------- | ------------------ |
-| geoCityTop    | Top city      | [GeoCityTopResponse](https://dev.qweather.com/en/docs/ios-sdk/geoapi/ios-top-city/#response) |
+| geoCityTop    | Top city      | [GeoCityTopResponse](https://dev.qweather.com/en/docs/api/geoapi/top-city/#response) |
 
 ## Parameters
 
@@ -50,4 +50,4 @@ GeoCityTopParameter *parameter = [GeoCityTopParameter instanceWithRange:@(RangeC
 
 ## Response
 
-[GeoCityTopResponse](https://dev.qweather.com/en/docs/ios-sdk/geoapi/ios-top-city/#response)
+[GeoCityTopResponse](https://dev.qweather.com/en/docs/api/geoapi/top-city/#response)

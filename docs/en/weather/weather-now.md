@@ -6,7 +6,7 @@ Get real-time weather data for 200,000+ cities around the world, including tempe
 
 | Interface code     | Interface         | Class            |
 | ------------------------- | ----------------- | ---------------- |
-| weatherNow  | Real-time weather | [WeatherNowResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-weather-now/#response) |
+| weatherNow  | Real-time weather | [WeatherNowResponse](https://dev.qweather.com/en/docs/api/weather/weather-now/#response) |
 
 ## Parameters
 
@@ -51,5 +51,5 @@ WeatherParameter * parameter = [WeatherParameter instanceWithLocation:@"10101010
 
 ## Response
 
-[WeatherNowResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-weather-now/#response)
+[WeatherNowResponse](https://dev.qweather.com/en/docs/api/weather/weather-now/#response)
 

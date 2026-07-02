@@ -8,7 +8,7 @@ Get the last 10 days of air quality history data.
 
 | Interface code     | Interface              | Class                      |
 | ------------------ | ---------------------- | -------------------------- |
-| historicalAir     | Historical air quality | [HistoricalAirResponse](https://dev.qweather.com/en/docs/ios-sdk/time-machine/ios-time-machine-weather/#response)      |
+| historicalAir     | Historical air quality | [HistoricalAirResponse](https://dev.qweather.com/en/docs/api/time-machine/time-machine-weather/#response)      |
 
 ## Parameters
 
@@ -61,4 +61,4 @@ HistoricalAirParameter *parameter = [HistoricalAirParameter instanceWithLocation
 
 ## Response
 
-[HistoricalAirResponse](https://dev.qweather.com/en/docs/ios-sdk/time-machine/ios-time-machine-weather/#response) 
+[HistoricalAirResponse](https://dev.qweather.com/en/docs/api/time-machine/time-machine-weather/#response) 

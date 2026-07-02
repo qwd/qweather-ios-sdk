@@ -4,11 +4,11 @@
 
 Weather forecast data based on numerical models, to provide current weather data at specified coordinates around the world, with a spatial resolution of 3-5 kilometers.
 
-> **Hint:** The grid weather data is based on Numerical Weather Prediction (NWP) models, and it is not suitable for comparison with observation station data. For station-based city weather data, please refer to the [City Weather API](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-weather-now/). Grid weather uses UTC+0 as the time zone.
+> **Hint:** The grid weather data is based on Numerical Weather Prediction (NWP) models, and it is not suitable for comparison with observation station data. For station-based city weather data, please refer to the [Real-time weather](./weather-now.md). Grid weather uses UTC+0 as the time zone.
 
 | Interface code          | Interface     | Class            |
 | --------------------------- | ---- | ------------------ |
-| gridNow |  Grid Weather Real-time| [GridNowResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-grid-weather-now/#response) |
+| gridNow |  Grid Weather Real-time| [GridNowResponse](https://dev.qweather.com/en/docs/api/weather/grid-weather-now/#response) |
 
 
 ## Parameters 
@@ -55,4 +55,4 @@ GridWeatherParameter *parameter = [GridWeatherParameter instanceWithLongitude:11
 
 ## Response
 
-[GridNowResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-grid-weather-now/#response)
+[GridNowResponse](https://dev.qweather.com/en/docs/api/weather/grid-weather-now/#response)

@@ -8,7 +8,7 @@ Get global solar elevation angle and azimuth.
 
 | Interface code                   | Interface       | Class            |
 | -------------------------------- | ---------- | ----------------- |
-| astronomySolarElevationAngle | Solar elevation angle data | [AstronomySolarElevationAngleResponse](https://dev.qweather.com/en/docs/ios-sdk/astronomy/ios-solar-elevation-angle/#response) |
+| astronomySolarElevationAngle | Solar elevation angle data | [AstronomySolarElevationAngleResponse](https://dev.qweather.com/en/docs/api/astronomy/solar-elevation-angle/#response) |
 
 ## Parameters
 
@@ -75,4 +75,4 @@ SolarElevationAngleParameter *parameter = [SolarElevationAngleParameter instance
 
 ## Response
 
-[AstronomySolarElevationAngleResponse](https://dev.qweather.com/en/docs/ios-sdk/astronomy/ios-solar-elevation-angle/#response)
+[AstronomySolarElevationAngleResponse](https://dev.qweather.com/en/docs/api/astronomy/solar-elevation-angle/#response)

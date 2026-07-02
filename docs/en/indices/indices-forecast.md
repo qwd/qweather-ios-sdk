@@ -9,8 +9,8 @@ Get weather indices forecast data for cities in China and around the world.
 
 | Interface code   | Interface             | Class            |
 | ---------------- | ------------------ | ---------------- |
-| indices1d | Today Weather Indices           | [IndicesDailyResponse](https://dev.qweather.com/en/docs/ios-sdk/indices/ios-indices-forecast/#response) |
-| indices3d | Weather Indices 3-days forecast | [IndicesDailyResponse](https://dev.qweather.com/en/docs/ios-sdk/indices/ios-indices-forecast/#response) |
+| indices1d | Today Weather Indices           | [IndicesDailyResponse](https://dev.qweather.com/en/docs/api/indices/indices-forecast/#response) |
+| indices3d | Weather Indices 3-days forecast | [IndicesDailyResponse](https://dev.qweather.com/en/docs/api/indices/indices-forecast/#response) |
 
 ## Parameters
 
@@ -75,7 +75,7 @@ void (^handler)(IndicesDailyResponse *, NSError *) = ^(IndicesDailyResponse *res
 
 ## Response
 
-[IndicesDailyResponse](https://dev.qweather.com/en/docs/ios-sdk/indices/ios-indices-forecast/#response)
+[IndicesDailyResponse](https://dev.qweather.com/en/docs/api/indices/indices-forecast/#response)
 
 ### Index type and level
 

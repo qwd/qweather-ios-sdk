@@ -7,7 +7,7 @@
 
 | 接口代码       | 接口     | 数据类             |
 | ----------------------- | ---- | ------------------ |
-| oceanTide | 潮汐 | [OceanTideResponse](https://dev.qweather.com/docs/ios-sdk/ocean/ios-tide/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| oceanTide | 潮汐 | [OceanTideResponse](https://dev.qweather.com/docs/api/ocean/tide/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
 
 ## 参数
 
@@ -60,4 +60,4 @@ OceanParameter *parameter = [OceanParameter instanceWithLocation:@"P2236" date:d
 
 ## 返回数据
 
-[OceanTideResponse](https://dev.qweather.com/docs/ios-sdk/ocean/ios-tide/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
+[OceanTideResponse](https://dev.qweather.com/docs/api/ocean/tide/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)

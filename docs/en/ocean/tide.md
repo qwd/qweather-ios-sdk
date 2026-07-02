@@ -6,7 +6,7 @@ Global tidal data for the next 10 days, including tide table and hourly tide for
 
 | Interface code        | Interface     | Class             |
 | ----------------------- | ---- | ------------------ |
-| oceanTide | Tide | [OceanTideResponse](https://dev.qweather.com/en/docs/ios-sdk/ocean/ios-tide/#response) |
+| oceanTide | Tide | [OceanTideResponse](https://dev.qweather.com/en/docs/api/ocean/tide/#response) |
 
 ## Parameters
 
@@ -58,5 +58,5 @@ OceanParameter *parameter = [OceanParameter instanceWithLocation:@"P2236" date:d
 
 ## Response
 
-[OceanTideResponse](https://dev.qweather.com/en/docs/ios-sdk/ocean/ios-tide/#response)
+[OceanTideResponse](https://dev.qweather.com/en/docs/api/ocean/tide/#response)
 

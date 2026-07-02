@@ -6,11 +6,11 @@ Get weather daily forecasts for the next 3-30 days for cities around the world.
 
 | Interface code     | Interface         | Class            |
 | ------------------------- | ----------------- | ---------------- |
-| weather3d   | 3-days forecast    | [WeatherDailyResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-weather-daily-forecast/#response) |
-| weather7d   | 7-days forecast    | [WeatherDailyResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-weather-daily-forecast/#response)  |
-| weather10d  | 10-days forecast   | [WeatherDailyResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-weather-daily-forecast/#response)  |
-| weather15d  | 15-days forecast   | [WeatherDailyResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-weather-daily-forecast/#response)  |
-| weather30d  | 30-days forecast   | [WeatherDailyResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-weather-daily-forecast/#response)  |
+| weather3d   | 3-days forecast    | [WeatherDailyResponse](https://dev.qweather.com/en/docs/api/weather/weather-daily-forecast/#response) |
+| weather7d   | 7-days forecast    | [WeatherDailyResponse](https://dev.qweather.com/en/docs/api/weather/weather-daily-forecast/#response)  |
+| weather10d  | 10-days forecast   | [WeatherDailyResponse](https://dev.qweather.com/en/docs/api/weather/weather-daily-forecast/#response)  |
+| weather15d  | 15-days forecast   | [WeatherDailyResponse](https://dev.qweather.com/en/docs/api/weather/weather-daily-forecast/#response)  |
+| weather30d  | 30-days forecast   | [WeatherDailyResponse](https://dev.qweather.com/en/docs/api/weather/weather-daily-forecast/#response)  |
 
 ## Parameters
 
@@ -105,4 +105,4 @@ void (^handler)(WeatherDailyResponse *, NSError *) = ^(WeatherDailyResponse *res
 
 ## Response
 
-[WeatherDailyResponse](https://dev.qweather.com/en/docs/ios-sdk/weather/ios-weather-daily-forecast/#response) 
+[WeatherDailyResponse](https://dev.qweather.com/en/docs/api/weather/weather-daily-forecast/#response) 

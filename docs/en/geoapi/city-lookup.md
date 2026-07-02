@@ -10,7 +10,7 @@ In addition, GeoAPI - City Lookup can also help you to implement fuzzy search in
 
 | Interface code | Interface     | Class                 |
 | -------------- | ------------- | --------------------- |
-| geoCityLookup | City lookup   | [GeoCityLookupResponse](https://dev.qweather.com/en/docs/ios-sdk/astronomy/ios-sunrise-sunset/#response) |
+| geoCityLookup | City lookup   | [GeoCityLookupResponse](https://dev.qweather.com/en/docs/api/geoapi/city-lookup/#response) |
 
 ## Parameters
 
@@ -60,5 +60,5 @@ GeoCityLookupParameter *parameter = [GeoCityLookupParameter instanceWithLocation
 
 ## Response
 
-[GeoCityLookupResponse](https://dev.qweather.com/en/docs/ios-sdk/astronomy/ios-sunrise-sunset/#response)
+[GeoCityLookupResponse](https://dev.qweather.com/en/docs/api/geoapi/city-lookup/#response)
 

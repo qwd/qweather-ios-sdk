@@ -9,7 +9,7 @@ Get a list of tropical cyclones for the last 2 years in major ocean basins aroun
 
 | Interface code     | Interface          | Class             |
 | ------------------ | ------------------ | ----------------- |
-| tropicalStormList | Storm list | [StormListResponse](https://dev.qweather.com/en/docs/ios-sdk/tropical-cyclone/ios-storm-list/#response) |
+| tropicalStormList | Storm list | [StormListResponse](https://dev.qweather.com/en/docs/api/tropical-cyclone/storm-list/#response) |
 
 ## Parameters
 
@@ -59,5 +59,5 @@ StormListParameter *parameter = [StormListParameter instanceWithBasin:BasinNP ye
      
 ## Response
 
-[StormListResponse](https://dev.qweather.com/en/docs/ios-sdk/tropical-cyclone/ios-storm-list/#response)
+[StormListResponse](https://dev.qweather.com/en/docs/api/tropical-cyclone/storm-list/#response)
 
