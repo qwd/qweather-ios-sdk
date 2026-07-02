@@ -7,7 +7,7 @@
 
 | 接口代码   | 接口      | 数据类                   |
 | --------- | -------------- | ----------------- |
-|  minutely | 分钟级降水 | [MinutelyResponse](https://dev.qweather.com/docs/ios-sdk/minutely/ios-minutely-precipitation/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+|  minutely | 分钟级降水 | [MinutelyResponse](https://dev.qweather.com/docs/api/minutely/minutely-precipitation/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
 
 ## 参数
 
@@ -53,4 +53,4 @@ MinutelyParameter * paramater = [MinutelyParameter instanceWithLongitude:116.41 
 
 ## 返回数据
 
-[MinutelyResponse](https://dev.qweather.com/docs/ios-sdk/minutely/ios-minutely-precipitation/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
+[MinutelyResponse](https://dev.qweather.com/docs/api/minutely/minutely-precipitation/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)

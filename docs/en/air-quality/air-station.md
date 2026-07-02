@@ -8,7 +8,7 @@ Monitoring Station Data API provides pollutant concentration values from air qua
 
 | Interface code | Interface         | Class       |
 | --------------- | ---------------- | ------------ |
-| airStation | Monitoring Station Data  | [AirV1StationResponse](https://dev.qweather.com/en/docs/ios-sdk/air-quality/ios-air-station/#response) |
+| airStation | Monitoring Station Data  | [AirV1StationResponse](https://dev.qweather.com/en/docs/api/air-quality/air-station/#response) |
 
 ## Parameters 
 
@@ -53,4 +53,4 @@ AirV1StationParameter * parameter = [AirV1StationParameter instanceWithLocationI
 
 ## Response
 
-[AirV1StationResponse](https://dev.qweather.com/en/docs/ios-sdk/air-quality/ios-air-station/#response)
+[AirV1StationResponse](https://dev.qweather.com/en/docs/api/air-quality/air-station/#response)

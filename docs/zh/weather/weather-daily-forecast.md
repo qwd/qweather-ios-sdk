@@ -6,11 +6,11 @@
 
 | 接口代码     | 接口         | 数据类               |
 | ----------- | ------------ | -------------------- |
-| weather3d  | 3天预报       | [WeatherDailyResponse](https://dev.qweather.com/docs/ios-sdk/weather/ios-weather-daily-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
-| weather7d  | 7天预报       | [WeatherDailyResponse](https://dev.qweather.com/docs/ios-sdk/weather/ios-weather-daily-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
-| weather10d | 10天预报      | [WeatherDailyResponse](https://dev.qweather.com/docs/ios-sdk/weather/ios-weather-daily-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
-| weather15d | 15天预报      | [WeatherDailyResponse](https://dev.qweather.com/docs/ios-sdk/weather/ios-weather-daily-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
-| weather30d | 30天预报      | [WeatherDailyResponse](https://dev.qweather.com/docs/ios-sdk/weather/ios-weather-daily-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| weather3d  | 3天预报       | [WeatherDailyResponse](https://dev.qweather.com/docs/api/weather/weather-daily-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| weather7d  | 7天预报       | [WeatherDailyResponse](https://dev.qweather.com/docs/api/weather/weather-daily-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| weather10d | 10天预报      | [WeatherDailyResponse](https://dev.qweather.com/docs/api/weather/weather-daily-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| weather15d | 15天预报      | [WeatherDailyResponse](https://dev.qweather.com/docs/api/weather/weather-daily-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| weather30d | 30天预报      | [WeatherDailyResponse](https://dev.qweather.com/docs/api/weather/weather-daily-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
 
 ## 参数
 
@@ -105,4 +105,4 @@ void (^handler)(WeatherDailyResponse *, NSError *) = ^(WeatherDailyResponse *res
 
 ## 返回数据
 
-[WeatherDailyResponse](https://dev.qweather.com/docs/ios-sdk/weather/ios-weather-daily-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
+[WeatherDailyResponse](https://dev.qweather.com/docs/api/weather/weather-daily-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)

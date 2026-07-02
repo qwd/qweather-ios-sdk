@@ -14,7 +14,7 @@ We recommend to read [Air Quality Info](https://dev.qweather.com/en/docs/resourc
 
 | Interface code | Interface         | Class       |
 | --------------- | ---------------- | ------------ |
-| airCurrent | Current Air Quality  | [AirV1CurrentResponse](https://dev.qweather.com/en/docs/ios-sdk/air-quality/ios-air-current/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| airCurrent | Current Air Quality  | [AirV1CurrentResponse](https://dev.qweather.com/en/docs/api/air-quality/air-current/#response) |
 
 ## Parameters 
 
@@ -61,4 +61,4 @@ AirV1Parameter *parameter = [AirV1Parameter instanceWithLongitude:116.41 latitud
 
 ## Response
 
-[AirV1CurrentResponse](https://dev.qweather.com/en/docs/ios-sdk/air-quality/ios-air-current/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) 
+[AirV1CurrentResponse](https://dev.qweather.com/en/docs/api/air-quality/air-current/#response) 

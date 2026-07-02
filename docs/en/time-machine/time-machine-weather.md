@@ -15,7 +15,7 @@ Get the last 10 days of weather history data.
 
 | Interface code      | Interface              | Class                      |
 | ------------------- | ---------------------- | -------------------------- |
-| historicalWeather      | Historical weather     | [HistoricalWeatherResponse](https://dev.qweather.com/en/docs/ios-sdk/time-machine/ios-time-machine-weather/#response)      |
+| historicalWeather      | Historical weather     | [HistoricalWeatherResponse](https://dev.qweather.com/en/docs/api/time-machine/time-machine-weather/#response)      |
 
 ## Parameters
 
@@ -69,4 +69,4 @@ HistoricalWeatherParameter *parameter = [HistoricalWeatherParameter instanceWith
 
 ## Response
 
-[HistoricalWeatherResponse](https://dev.qweather.com/en/docs/ios-sdk/time-machine/ios-time-machine-weather/#response)
+[HistoricalWeatherResponse](https://dev.qweather.com/en/docs/api/time-machine/time-machine-weather/#response)

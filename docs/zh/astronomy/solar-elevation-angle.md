@@ -6,7 +6,7 @@
 
 | 接口代码                 | 接口       | 数据类            |
 | -------------------------------- | ---------- | ----------------- |
-| astronomySolarElevationAngle | 太阳高度角 | [AstronomySolarElevationAngleResponse](https://dev.qweather.com/docs/ios-sdk/astronomy/ios-solar-elevation-angle/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| astronomySolarElevationAngle | 太阳高度角 | [AstronomySolarElevationAngleResponse](https://dev.qweather.com/docs/api/astronomy/solar-elevation-angle/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
 
 ## 参数
 
@@ -74,4 +74,4 @@ SolarElevationAngleParameter *parameter = [SolarElevationAngleParameter instance
 
 ## 返回数据
 
-[AstronomySolarElevationAngleResponse](https://dev.qweather.com/docs/ios-sdk/astronomy/ios-solar-elevation-angle/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
+[AstronomySolarElevationAngleResponse](https://dev.qweather.com/docs/api/astronomy/solar-elevation-angle/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)

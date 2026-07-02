@@ -6,7 +6,7 @@
 
 | 接口代码          | 接口           | 数据类                |
 | ---------------- | -------------- | ------------------- |
-| tropicalStormTrack | 台风实况和路径   | [StormTrackResponse](https://dev.qweather.com/docs/ios-sdk/tropical-cyclone/ios-storm-track/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| tropicalStormTrack | 台风实况和路径   | [StormTrackResponse](https://dev.qweather.com/docs/api/tropical-cyclone/storm-track/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
 
 ## 参数
 
@@ -49,6 +49,6 @@ StormParameter *parameter = [StormParameter instanceWithStormid:@"NP_2421"];
      
 ## 返回数据
 
-[StormTrackResponse](https://dev.qweather.com/docs/ios-sdk/tropical-cyclone/ios-storm-track/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
+[StormTrackResponse](https://dev.qweather.com/docs/api/tropical-cyclone/storm-track/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
 
-[台风等级](https://dev.qweather.com/docs/ios-sdk/tropical-cyclone/ios-storm-track/#%E5%8F%B0%E9%A3%8E%E7%AD%89%E7%BA%A7)
+[台风等级](https://dev.qweather.com/docs/api/tropical-cyclone/storm-track/#%E5%8F%B0%E9%A3%8E%E7%AD%89%E7%BA%A7)

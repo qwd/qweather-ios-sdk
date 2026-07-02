@@ -7,7 +7,7 @@ Get the sunrise and sunset times for any location around the world for the next 
 
 | Interface code            | Interface     | Class       |
 | -------------------------- | -------- | ------------ |
-| astronomySun | Sunrise and Sunset | [AstronomySunResponse](https://dev.qweather.com/en/docs/ios-sdk/astronomy/ios-sunrise-sunset/#response) |
+| astronomySun | Sunrise and Sunset | [AstronomySunResponse](https://dev.qweather.com/en/docs/api/astronomy/sunrise-sunset/#response) |
 
 ## Parameters
 
@@ -57,4 +57,4 @@ AstronomySunParameter *parameter = [AstronomySunParameter instanceWithLocation:@
      
 ## Response
 
-[AstronomySunResponse](https://dev.qweather.com/en/docs/ios-sdk/astronomy/ios-sunrise-sunset/#response)
+[AstronomySunResponse](https://dev.qweather.com/en/docs/api/astronomy/sunrise-sunset/#response)

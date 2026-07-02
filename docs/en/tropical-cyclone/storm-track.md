@@ -6,7 +6,7 @@ Get the tropical cyclones location, level, pressure, windspeed, and track path o
 
 | Interface code  | Interface | Class |
 | ---------------- | -------------- | ---------------------- |
-| tropicalStormTrack | Storm Track  | [StormTrackResponse](https://dev.qweather.com/en/docs/ios-sdk/tropical-cyclone/ios-storm-track/#response) |
+| tropicalStormTrack | Storm Track  | [StormTrackResponse](https://dev.qweather.com/en/docs/api/tropical-cyclone/storm-track/#response) |
 
 ## Parameters
 
@@ -49,7 +49,7 @@ StormParameter *parameter = [StormParameter instanceWithStormid:@"NP_2421"];
      
 ## Response
 
-[StormTrackResponse](https://dev.qweather.com/en/docs/ios-sdk/tropical-cyclone/ios-storm-track/#response)
+[StormTrackResponse](https://dev.qweather.com/en/docs/api/tropical-cyclone/storm-track/#response)
 
 ### Typhoon level
 

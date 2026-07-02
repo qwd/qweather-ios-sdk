@@ -6,7 +6,7 @@ POI Lookup API provides basic information of POI(scenic spot, tide stations, etc
 
 | Interface code | Interface         | Class        |
 | ---------- | --------------------------- | ------------ |
-| geoPoiLookup | POI Lookup  | [GeoPoiResponse](https://dev.qweather.com/en/docs/ios-sdk/geoapi/ios-poi-lookup/#response) |
+| geoPoiLookup | POI Lookup  | [GeoPoiResponse](https://dev.qweather.com/en/docs/api/geoapi/poi-lookup/#response) |
 
 ## Parameters
 
@@ -53,4 +53,4 @@ GeoPoiLookupParameter *parameter = [GeoPoiLookupParameter  instanceWithLocation:
 
 ## Response
 
-[GeoPoiResponse](https://dev.qweather.com/en/docs/ios-sdk/geoapi/ios-poi-lookup/#response)
+[GeoPoiResponse](https://dev.qweather.com/en/docs/api/geoapi/poi-lookup/#response)

@@ -6,7 +6,7 @@ Get moonrise and moonset and hourly moon phase data for the next 60 days at any 
 
 | Interface code              | Interface           | Class        |
 | --------------------------- | -------------- | ------------- |
-| astronomyMoon | Moon and Moon Phase | [AstronomyMoonResponse](https://dev.qweather.com/en/docs/ios-sdk/astronomy/ios-moon-and-moon-phase/#response) |
+| astronomyMoon | Moon and Moon Phase | [AstronomyMoonResponse](https://dev.qweather.com/en/docs/api/astronomy/moon-and-moon-phase/#response) |
 
 ## Parameters
 
@@ -57,4 +57,4 @@ AstronomyMoonParameter *parameter = [AstronomyMoonParameter instanceWithLocation
 
 ## Response
 
-[AstronomyMoonResponse](https://dev.qweather.com/en/docs/ios-sdk/astronomy/ios-moon-and-moon-phase/#response)
+[AstronomyMoonResponse](https://dev.qweather.com/en/docs/api/astronomy/moon-and-moon-phase/#response)

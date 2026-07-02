@@ -9,7 +9,7 @@ Get officially issued real-time severe weather alert data around the world.
 
 | Interface code     | Interface    | Class           |
 | -------------------- | -------- | ---------------- |
-| weatherAlertCurrent | Weather Alert | [WeatherAlertCurrentResponse](https://dev.qweather.com/en/docs/ios-sdk/warning/ios-weather-alert/#response) |
+| weatherAlertCurrent | Weather Alert | [WeatherAlertCurrentResponse](https://dev.qweather.com/en/docs/api/warning/weather-alert/#response) |
 
 ## Parameters
 
@@ -61,4 +61,4 @@ WeatherAlertCurrentParameter *parameter = [WeatherAlertCurrentParameter instance
 
 ## Response
 
-[WeatherAlertCurrentResponse](https://dev.qweather.com/en/docs/ios-sdk/warning/ios-weather-alert/#response)
+[WeatherAlertCurrentResponse](https://dev.qweather.com/en/docs/api/warning/weather-alert/#response)

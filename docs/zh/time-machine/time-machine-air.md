@@ -8,7 +8,7 @@
 
 | 接口代码        | 接口            | 数据类                 |
 | -------------- | -------------- | --------------------- |
-| historicalAir | 历史空气质量     | [HistoricalAirResponse](https://dev.qweather.com/docs/ios-sdk/time-machine/ios-time-machine-air/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| historicalAir | 历史空气质量     | [HistoricalAirResponse](https://dev.qweather.com/docs/api/time-machine/time-machine-air/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
 
 ## 参数
 
@@ -61,4 +61,4 @@ HistoricalAirParameter *parameter = [HistoricalAirParameter instanceWithLocation
 
 ## 返回数据
 
-[HistoricalAirResponse](https://dev.qweather.com/docs/ios-sdk/time-machine/ios-time-machine-air/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) 
+[HistoricalAirResponse](https://dev.qweather.com/docs/api/time-machine/time-machine-air/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) 

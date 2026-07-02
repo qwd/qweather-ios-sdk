@@ -4,11 +4,11 @@
 
 台风预报提供全球主要海洋流域的热带低气压（台风）的预报信息，包括台风预测位置、等级、气压、风力、速度。
 
-> 如果查询的台风已经结束，则返回的数据为空，建议先通过[台风列表](https://dev.qweather.com/docs/ios-sdk/tropical-cyclone/ios-storm-list/)获取台风的状态
+> 如果查询的台风已经结束，则返回的数据为空，建议先通过[台风列表](https://dev.qweather.com/docs/api/tropical-cyclone/storm-list/)获取台风的状态
 
 | 接口代码                | 接口      | 数据类                 |
 | ---------------------- | -------- | --------------------- |
-| tropicalStormForecast | 台风预报   | [StormForecastResponse](https://dev.qweather.com/docs/ios-sdk/tropical-cyclone/ios-storm-forecast/#%E5%8F%B0%E9%A3%8E%E7%AD%89%E7%BA%A7) |
+| tropicalStormForecast | 台风预报   | [StormForecastResponse](https://dev.qweather.com/docs/api/tropical-cyclone/storm-forecast/#%E5%8F%B0%E9%A3%8E%E7%AD%89%E7%BA%A7) |
 
 ## 参数
 
@@ -51,7 +51,7 @@ StormParameter *parameter = [StormParameter instanceWithStormid:@"NP_2421"];
      
 ## 返回数据
 
-[StormForecastResponse](https://dev.qweather.com/docs/ios-sdk/tropical-cyclone/ios-storm-forecast/#%E5%8F%B0%E9%A3%8E%E7%AD%89%E7%BA%A7)
+[StormForecastResponse](https://dev.qweather.com/docs/api/tropical-cyclone/storm-forecast/#%E5%8F%B0%E9%A3%8E%E7%AD%89%E7%BA%A7)
 
 ### 台风等级
 

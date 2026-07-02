@@ -6,7 +6,7 @@
 
 | 接口代码 | 接口                    | 数据类       |
 | ----------- | ------------------ | ------------ |
-| geoPoiLookup | POI搜索  | [GeoPoiResponse](https://dev.qweather.com/docs/ios-sdk/geoapi/ios-poi-lookup/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| geoPoiLookup | POI搜索  | [GeoPoiResponse](https://dev.qweather.com/docs/api/geoapi/poi-lookup/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
 
 ## 参数
 
@@ -61,4 +61,4 @@ GeoPoiLookupParameter *parameter = [GeoPoiLookupParameter instanceWithLocation:@
 
 ## 返回数据
 
-[GeoPoiResponse](https://dev.qweather.com/docs/ios-sdk/geoapi/ios-poi-lookup/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
+[GeoPoiResponse](https://dev.qweather.com/docs/api/geoapi/poi-lookup/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
