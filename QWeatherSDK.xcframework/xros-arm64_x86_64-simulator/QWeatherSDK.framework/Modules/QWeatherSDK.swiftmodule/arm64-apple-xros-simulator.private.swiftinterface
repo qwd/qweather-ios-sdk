@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-xros1.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name QWeatherSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.3 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-xros1.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 6 -O -enable-experimental-feature DebugDescriptionMacro -module-name QWeatherSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import Combine
 import CryptoKit
 import Foundation
@@ -16,9 +16,7 @@ import _SwiftConcurrencyShims
   case SP = 3
   case NI = 4
   case SI = 5
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -47,9 +45,7 @@ extension QWeatherSDK.Basin {
   case DC = 14
   case PTFC = 15
   case SPI = 16
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -87,9 +83,7 @@ extension QWeatherSDK.Basin {
   case HE = 28
   case IS = 29
   case NB = 30
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -104,9 +98,7 @@ extension QWeatherSDK.Lang {
   case SCENIC = 0
   case CSTA = 1
   case TSTA = 2
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -367,9 +359,7 @@ extension QWeatherSDK.Poi {
   case YE = 246
   case ZM = 247
   case ZW = 248
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -383,9 +373,7 @@ extension QWeatherSDK.Range {
 @objc public enum Unit : Swift.Int, Swift.Sendable {
   case METRIC = 0
   case IMPERIAL = 1
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -399,47 +387,31 @@ extension QWeatherSDK.Unit {
 @objc final public class AirParameter : ObjectiveC.NSObject {
   final public let location: Swift.String
   final public let lang: QWeatherSDK.Lang?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(location: Swift.String, lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(location: Swift.String, lang: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @objc final public class AirV1Parameter : ObjectiveC.NSObject {
   final public let longitude: Swift.Double
   final public let latitude: Swift.Double
   final public let lang: QWeatherSDK.Lang?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(longitude: Swift.Double, latitude: Swift.Double, lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(longitude: Swift.Double, latitude: Swift.Double, lang: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @objc final public class AirV1StationParameter : ObjectiveC.NSObject {
   final public let locationID: Swift.String
   final public let lang: QWeatherSDK.Lang?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(locationID: Swift.String, lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(locationID: Swift.String, lang: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @objc final public class AstronomyMoonParameter : ObjectiveC.NSObject {
   final public let location: Swift.String
   final public let date: Swift.String
   final public let lang: QWeatherSDK.Lang?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(location: Swift.String, date: Swift.String, lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(location: Swift.String, date: Swift.String, lang: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @objc final public class AstronomySunParameter : ObjectiveC.NSObject {
@@ -465,24 +437,16 @@ extension QWeatherSDK.Unit {
   final public let range: QWeatherSDK.Range?
   final public let number: Swift.Int?
   final public let lang: QWeatherSDK.Lang?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(location: Swift.String, adm: Swift.String? = nil, range: QWeatherSDK.Range? = nil, number: Swift.Int? = nil, lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(location: Swift.String, adm: Swift.String?, range: Foundation.NSNumber?, number: Foundation.NSNumber?, lang: Foundation.NSNumber?) -> QWeatherSDK.GeoCityLookupParameter
-  #endif
   @objc deinit
 }
 @objc final public class GeoCityTopParameter : ObjectiveC.NSObject {
   final public let range: QWeatherSDK.Range?
   final public let number: Swift.Int?
   final public let lang: QWeatherSDK.Lang?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(range: QWeatherSDK.Range? = nil, number: Swift.Int? = nil, lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(range: Foundation.NSNumber?, number: Foundation.NSNumber?, lang: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @objc final public class GeoPoiLookupParameter : ObjectiveC.NSObject {
@@ -491,12 +455,8 @@ extension QWeatherSDK.Unit {
   final public let city: Swift.String?
   final public let number: Swift.Int?
   final public let lang: QWeatherSDK.Lang?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(location: Swift.String, type: QWeatherSDK.Poi, city: Swift.String? = nil, number: Swift.Int? = nil, lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(location: Swift.String, type: QWeatherSDK.Poi, city: Swift.String? = nil, number: Foundation.NSNumber?, lang: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @objc final public class GeoPoiRangeParameter : ObjectiveC.NSObject {
@@ -505,12 +465,8 @@ extension QWeatherSDK.Unit {
   final public let radius: Swift.Int?
   final public let number: Swift.Int?
   final public let lang: QWeatherSDK.Lang?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(location: Swift.String, type: QWeatherSDK.Poi, radius: Swift.Int? = nil, number: Swift.Int? = nil, lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(location: Swift.String, type: QWeatherSDK.Poi, radius: Foundation.NSNumber?, number: Foundation.NSNumber?, lang: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @objc final public class GridWeatherParameter : ObjectiveC.NSObject {
@@ -518,24 +474,16 @@ extension QWeatherSDK.Unit {
   final public let latitude: Swift.Double
   final public let lang: QWeatherSDK.Lang?
   final public let unit: QWeatherSDK.Unit?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(longitude: Swift.Double, latitude: Swift.Double, lang: QWeatherSDK.Lang? = nil, unit: QWeatherSDK.Unit? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(longitude: Swift.Double, latitude: Swift.Double, lang: Foundation.NSNumber?, unit: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @objc final public class HistoricalAirParameter : ObjectiveC.NSObject {
   final public let location: Swift.String
   final public let date: Swift.String
   final public let lang: QWeatherSDK.Lang?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(location: Swift.String, date: Swift.String, lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(location: Swift.String, date: Swift.String, lang: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @objc final public class HistoricalWeatherParameter : ObjectiveC.NSObject {
@@ -543,36 +491,24 @@ extension QWeatherSDK.Unit {
   final public let date: Swift.String
   final public let lang: QWeatherSDK.Lang?
   final public let unit: QWeatherSDK.Unit?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(location: Swift.String, date: Swift.String, lang: QWeatherSDK.Lang? = nil, unit: QWeatherSDK.Unit? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(location: Swift.String, date: Swift.String, lang: Foundation.NSNumber?, unit: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @objc final public class IndicesParameter : ObjectiveC.NSObject {
   final public let location: Swift.String
   final public let type: [QWeatherSDK.Indices]
   final public let lang: QWeatherSDK.Lang?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(location: Swift.String, type: [QWeatherSDK.Indices], lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(location: Swift.String, type: Swift.Array<Swift.Int>, lang: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @objc final public class MinutelyParameter : ObjectiveC.NSObject {
   final public let longitude: Swift.Double
   final public let latitude: Swift.Double
   final public let lang: QWeatherSDK.Lang?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(longitude: Swift.Double, latitude: Swift.Double, lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(longitude: Swift.Double, latitude: Swift.Double, lang: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @objc final public class OceanParameter : ObjectiveC.NSObject {
@@ -604,12 +540,8 @@ extension QWeatherSDK.Unit {
 @objc final public class WarningNowParameter : ObjectiveC.NSObject {
   final public let location: Swift.String
   final public let lang: QWeatherSDK.Lang?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(location: Swift.String, lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(location: Swift.String, lang: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc final public class WeatherAlertCurrentParameter : ObjectiveC.NSObject {
@@ -619,12 +551,8 @@ extension QWeatherSDK.Unit {
   final public let lang: QWeatherSDK.Lang?
   final public let color: Swift.String?
   final public let topLevel: Swift.Bool?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(longitude: Swift.Double, latitude: Swift.Double, localTime: Swift.Bool, lang: QWeatherSDK.Lang? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(longitude: Swift.Double, latitude: Swift.Double, localTime: Swift.Bool, lang: Foundation.NSNumber?) -> Self
-  #endif
   @objc final public func setColor(_ color: Swift.String) -> QWeatherSDK.WeatherAlertCurrentParameter
   @objc final public func setTopLevel(_ value: Swift.Bool) -> QWeatherSDK.WeatherAlertCurrentParameter
   @objc deinit
@@ -633,12 +561,8 @@ extension QWeatherSDK.Unit {
   @objc final public let location: Swift.String
   final public let lang: QWeatherSDK.Lang?
   final public let unit: QWeatherSDK.Unit?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(location: Swift.String, lang: QWeatherSDK.Lang? = nil, unit: QWeatherSDK.Unit? = nil)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func instance(location: Swift.String, lang: Foundation.NSNumber?, unit: Foundation.NSNumber?) -> Self
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ApiIndices {
@@ -902,9 +826,7 @@ extension QWeatherSDK.Unit {
   @objc final public let detail: Swift.String
   @objc final public let invalidParams: Swift.Array<Swift.String>?
   @objc final public let referenceDoc: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func fromMap(_ map: [Swift.String : Any]) -> QWeatherSDK.ErrorDetail?
-  #endif
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -1558,30 +1480,22 @@ public enum QWeatherError : Swift.Error {
   case notToken = 101
   case common = 102
   case errorResponse = 103
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 extension QWeatherSDK.QWeatherError : Foundation.LocalizedError {
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var failureReason: Swift.String? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var recoverySuggestion: Swift.String? {
     get
   }
-  #endif
 }
 public protocol TokenGenerator {
   func generator() throws -> Swift.String
@@ -1589,9 +1503,7 @@ public protocol TokenGenerator {
 @_hasMissingDesignatedInitializers public actor QWeather {
   @_Concurrency.MainActor public static var instance: QWeatherSDK.QWeather!
   @_Concurrency.MainActor public static func getInstance(_ host: Swift.String) throws -> QWeatherSDK.QWeather
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(host: Swift.String, tokenGenerator: (any QWeatherSDK.TokenGenerator)? = nil, logEnable: Swift.Bool = false)
-  #endif
   public func setupTokenGenerator(_ generator: @escaping @Sendable () -> Swift.String) -> Self
   public func setupTokenGenerator(_ generator: any QWeatherSDK.TokenGenerator) -> Self
   public func setupHost(_ host: Swift.String) -> Self
@@ -1652,130 +1564,50 @@ public protocol TokenGenerator {
   @objc public static func setupTokenGenerator(generater: @escaping @Sendable () -> Swift.String)
   @objc public static func setupTokenGenerator(privateKey: Swift.String, pid: Swift.String, kid: Swift.String)
   @objc public static func setupLogEnable(_ enable: Swift.Bool)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func geoCityLookup(_ parameter: QWeatherSDK.GeoCityLookupParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GeoCityLookupResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func geoCityTop(_ parameter: QWeatherSDK.GeoCityTopParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GeoCityTopResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func geoPoiLookup(_ parameter: QWeatherSDK.GeoPoiLookupParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GeoPoiResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func geoPoiRange(_ parameter: QWeatherSDK.GeoPoiRangeParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GeoPoiResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func weatherNow(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherNowResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func weather3d(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func weather7d(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func weather10d(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func weather15d(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func weather30d(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func weather24h(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherHourlyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func weather72h(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherHourlyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func weather168h(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherHourlyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func minutely(_ parameter: QWeatherSDK.MinutelyParameter, completionHandler: @escaping @Sendable (QWeatherSDK.MinutelyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func gridNow(_ parameter: QWeatherSDK.GridWeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GridNowResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func grid3d(_ parameter: QWeatherSDK.GridWeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GridDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func grid7d(_ parameter: QWeatherSDK.GridWeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GridDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func grid24h(_ parameter: QWeatherSDK.GridWeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GridHourlyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func grid72h(_ parameter: QWeatherSDK.GridWeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GridHourlyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use 'weatherAlertCurrent(::)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.")
   @objc public static func warningNow(_ parameter: QWeatherSDK.WarningNowParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WarningResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Deprecated as of version 5.2.1. Scheduled for removal in a future release.")
   @objc public static func warningList(_ parameter: QWeatherSDK.WarningListParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WarningListResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func weatherAlertCurrent(_ parameter: QWeatherSDK.WeatherAlertCurrentParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherAlertCurrentResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func indices1d(_ parameter: QWeatherSDK.IndicesParameter, completionHandler: @escaping @Sendable (QWeatherSDK.IndicesDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func indices3d(_ parameter: QWeatherSDK.IndicesParameter, completionHandler: @escaping @Sendable (QWeatherSDK.IndicesDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use 'airCurrent(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.")
   @objc public static func airNow(_ parameter: QWeatherSDK.AirParameter, completionHandler: @escaping @Sendable (QWeatherSDK.AirNowResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use 'airDaily(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.")
   @objc public static func air5d(_ parameter: QWeatherSDK.AirParameter, completionHandler: @escaping @Sendable (QWeatherSDK.AirDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func airCurrent(_ parameter: QWeatherSDK.AirV1Parameter, completionHandler: @escaping @Sendable (QWeatherSDK.AirV1CurrentResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func airDaily(_ parameter: QWeatherSDK.AirV1Parameter, completionHandler: @escaping @Sendable (QWeatherSDK.AirV1DailyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func airHourly(_ parameter: QWeatherSDK.AirV1Parameter, completionHandler: @escaping @Sendable (QWeatherSDK.AirV1HourlyResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func airStation(_ parameter: QWeatherSDK.AirV1StationParameter, completionHandler: @escaping @Sendable (QWeatherSDK.AirV1StationResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func historicalWeather(_ parameter: QWeatherSDK.HistoricalWeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.HistoricalWeatherResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func historicalAir(_ parameter: QWeatherSDK.HistoricalAirParameter, completionHandler: @escaping @Sendable (QWeatherSDK.HistoricalAirResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func tropicalStormList(_ parameter: QWeatherSDK.StormListParameter, completionHandler: @escaping @Sendable (QWeatherSDK.StormListResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func tropicalStormForecast(_ parameter: QWeatherSDK.StormParameter, completionHandler: @escaping @Sendable (QWeatherSDK.StormForecastResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func tropicalStormTrack(_ parameter: QWeatherSDK.StormParameter, completionHandler: @escaping @Sendable (QWeatherSDK.StormTrackResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func oceanTide(_ parameter: QWeatherSDK.OceanParameter, completionHandler: @escaping @Sendable (QWeatherSDK.OceanTideResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func oceanCurrents(_ parameter: QWeatherSDK.OceanParameter, completionHandler: @escaping @Sendable (QWeatherSDK.OceanCurrentsResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func astronomySun(_ parameter: QWeatherSDK.AstronomySunParameter, completionHandler: @escaping @Sendable (QWeatherSDK.AstronomySunResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func astronomyMoon(_ parameter: QWeatherSDK.AstronomyMoonParameter, completionHandler: @escaping @Sendable (QWeatherSDK.AstronomyMoonResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public static func astronomySolarElevationAngle(_ parameter: QWeatherSDK.SolarElevationAngleParameter, completionHandler: @escaping @Sendable (QWeatherSDK.AstronomySolarElevationAngleResponse?, Foundation.NSError?) -> Swift.Void)
-  #endif
   @objc deinit
 }
 extension QWeatherSDK.Basin : Swift.Equatable {}

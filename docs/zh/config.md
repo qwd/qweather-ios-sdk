@@ -13,7 +13,7 @@
 
 ## 2、安装SDK
 
-当前iOS SDK的最新版本是`5.2.2`([更新记录](https://github.com/qwd/qweather-ios-sdk/releases))
+当前iOS SDK的最新版本是`5.2.3`([更新记录](https://github.com/qwd/qweather-ios-sdk/releases))
 
 ### Swift Package Manager
 
@@ -33,7 +33,7 @@
 
      ```
      target '{YOUR_iOS_TARGET}' do
-        pod 'QWeather-SDK','~> 5.2.2'
+        pod 'QWeather-SDK','~> 5.2.3'
      end
      ```
 
@@ -41,7 +41,7 @@
 
      ```
      target '{YOUR_macOS_TARGET}' do
-        pod 'QWeather-SDK','~> 5.2.2'
+        pod 'QWeather-SDK','~> 5.2.3'
      end
      ```
 
@@ -49,7 +49,7 @@
 
 ### 手动安装
 
-- 下载SDK：[QWeatherSDK 5.2.2](https://github.com/qwd/qweather-ios-sdk/releases/tag/5.2.2)
+- 下载SDK：[QWeatherSDK 5.2.3](https://github.com/qwd/qweather-ios-sdk/releases/tag/5.2.3)
 - 将 `QWeatherSDK.xcframework` 包导入到目标 Target 中
 
 ## 3、添加 API Host 和 Token
