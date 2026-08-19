@@ -13,7 +13,7 @@ Make sure you have created a Project and Credential, see [Project and KEY](https
 
 ## 2. Installation
 
-The latest version of iOS SDK is `5.2.2` ([Release note](https://github.com/qwd/qweather-ios-sdk/releases))
+The latest version of iOS SDK is `5.2.3` ([Release note](https://github.com/qwd/qweather-ios-sdk/releases))
 
 ### Swift Package Manager
 
@@ -33,7 +33,7 @@ QWeatherSDK can be installed via [CocoaPods](https://cocoapods.org/). CocoaPods 
 
      ```
      target '{YOUR_iOS_TARGET}' do
-        pod 'QWeather-SDK','~> 5.2.2'
+        pod 'QWeather-SDK','~> 5.2.3'
      end
      ```
 
@@ -41,7 +41,7 @@ QWeatherSDK can be installed via [CocoaPods](https://cocoapods.org/). CocoaPods 
 
      ```
      target '{YOUR_macOS_TARGET}' do
-         pod 'QWeather-SDK','~> 5.2.2'
+         pod 'QWeather-SDK','~> 5.2.3'
      end
      ```
 
@@ -49,7 +49,7 @@ QWeatherSDK can be installed via [CocoaPods](https://cocoapods.org/). CocoaPods 
 
 ### Manual install
 
-- Download SDK: [QWeatherSDK 5.2.2](https://github.com/qwd/qweather-ios-sdk/releases/tag/5.2.2)
+- Download SDK: [QWeatherSDK 5.2.3](https://github.com/qwd/qweather-ios-sdk/releases/tag/5.2.3)
 - Add `QWeatherSDK.xcframework` to iOS/macOS target.
 
 ## 3. Add API Host and token
