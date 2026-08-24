@@ -1,6 +1,6 @@
-[English](../../en/weather/weather-now.md) | [中文](weather-now.md) · [← Back](../../../README-zh.md)
+[English](../../en/weather/city-weather-now.md) | [中文](city-weather-now.md) · [← Back](../../../README-zh.md)
 
-# 实时天气
+# 城市实时天气
 
 获取中国3000+市县区和海外20万个城市实时天气数据，包括实时温度、体感温度、风力风向、相对湿度、大气压强、降水量、能见度、露点温度、云量等。
 
@@ -8,7 +8,7 @@
 
 | 接口代码      | 接口          | 数据类           |
 | ------------ | ------------- | ---------------- |
-| weatherNow  | 实况天气      | [WeatherNowResponse](https://dev.qweather.com/docs/api/weather/weather-now/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| weatherNow  | 城市实时天气      | [WeatherNowResponse](https://dev.qweather.com/docs/api/weather/weather-now-webapi-v7/#response) |
 
 ## 参数
 
@@ -54,4 +54,4 @@ WeatherParameter *parameter = [WeatherParameter instanceWithLocation:@"101010100
 
 ## 返回数据
 
-[WeatherNowResponse](https://dev.qweather.com/docs/api/weather/weather-now/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
+[WeatherNowResponse](https://dev.qweather.com/docs/api/weather/weather-now-webapi-v7/#response)

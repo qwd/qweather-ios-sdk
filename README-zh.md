@@ -19,13 +19,12 @@
 - [POI范围搜索](./docs/zh/geoapi/poi-range.md)
 
 ### 天气预报
-
-- [实时天气](./docs/zh/weather/weather-now.md)
+- [实时天气](./docs/zh/weather/weather-current.md)
 - [每日天气预报](./docs/zh/weather/weather-daily-forecast.md)
-- [逐小时天气预报](./docs/zh/weather/weather-hourly-forecast.md)
-- [格点实时天气](./docs/zh/weather/grid-weather-now.md)
-- [格点每日天气预报](./docs/zh/weather/grid-weather-daily-forecast.md)
-- [格点逐小时天气预报](./docs/zh/weather/grid-weather-hourly-forecast.md)
+- [每日小时预报](./docs/zh/weather/weather-hourly-forecast.md)
+- [城市实时天气](./docs/zh/weather/city-weather-now.md)
+- [城市每日预报](./docs/zh/weather/city-weather-daily-forecast.md)
+- [城市小时预报](./docs/zh/weather/city-weather-hourly-forecast.md)
 
 ### 分钟预报
 
@@ -42,14 +41,10 @@
 ### 空气质量
 
 - [实时空气质量](./docs/zh/air-quality/air-current.md)
-- [空气质量小时预报](./docs/zh/air-quality/air-hourly-forecast.md)
-- [空气质量每日预报](./docs/zh/air-quality/air-daily-forecast.md)
-- [监测站数据](./docs/zh/air-quality/air-station.md)
 
 ### 时光机
 
 - [天气时光机](./docs/zh/time-machine/time-machine-weather.md)
-- [历史空气质量](./docs/zh/time-machine/time-machine-air.md)
 
 ### 热带气旋（台风）
 

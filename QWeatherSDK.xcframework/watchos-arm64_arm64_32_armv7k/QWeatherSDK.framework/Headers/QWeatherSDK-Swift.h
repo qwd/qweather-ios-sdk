@@ -379,27 +379,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK8AirColor")
 @end
 
 @class NSString;
-SWIFT_CLASS("_TtC11QWeatherSDK8AirDaily")
-@interface AirDaily : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxDate;
-@property (nonatomic, readonly, copy) NSString * _Nonnull aqi;
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-@property (nonatomic, readonly, copy) NSString * _Nonnull category;
-@property (nonatomic, readonly, copy) NSString * _Nonnull primary;
-@end
-
-@class Refer;
-SWIFT_CLASS("_TtC11QWeatherSDK16AirDailyResponse")
-@interface AirDailyResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<AirDaily *> * _Nonnull daily;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 @class AirIndex;
 @class Pollutant;
 SWIFT_CLASS("_TtC11QWeatherSDK9AirHourly")
@@ -422,59 +401,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK8AirIndex")
 @property (nonatomic, readonly, strong) AirColor * _Nonnull color;
 @property (nonatomic, readonly, strong) PrimaryPollutant * _Nullable primaryPollutant;
 @property (nonatomic, readonly, strong) Health * _Nullable health;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK6AirNow")
-@interface AirNow : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull pubTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull aqi;
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-@property (nonatomic, readonly, copy) NSString * _Nonnull category;
-@property (nonatomic, readonly, copy) NSString * _Nonnull primary;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm10;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm2p5;
-@property (nonatomic, readonly, copy) NSString * _Nonnull no2;
-@property (nonatomic, readonly, copy) NSString * _Nonnull so2;
-@property (nonatomic, readonly, copy) NSString * _Nonnull co;
-@property (nonatomic, readonly, copy) NSString * _Nonnull o3;
-@end
-
-@class AirStation;
-SWIFT_CLASS("_TtC11QWeatherSDK14AirNowResponse")
-@interface AirNowResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, strong) AirNow * _Nonnull now;
-@property (nonatomic, readonly, copy) NSArray<AirStation *> * _Nonnull station;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class NSNumber;
-SWIFT_CLASS("_TtC11QWeatherSDK12AirParameter")
-@interface AirParameter : NSObject
-+ (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK10AirStation")
-@interface AirStation : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull pubTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull name;
-@property (nonatomic, readonly, copy) NSString * _Nonnull stationId;
-@property (nonatomic, readonly, copy) NSString * _Nonnull aqi;
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-@property (nonatomic, readonly, copy) NSString * _Nonnull category;
-@property (nonatomic, readonly, copy) NSString * _Nonnull primary;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm10;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm2p5;
-@property (nonatomic, readonly, copy) NSString * _Nonnull no2;
-@property (nonatomic, readonly, copy) NSString * _Nonnull so2;
-@property (nonatomic, readonly, copy) NSString * _Nonnull co;
-@property (nonatomic, readonly, copy) NSString * _Nonnull o3;
 @end
 
 @class Metadata;
@@ -513,6 +439,7 @@ SWIFT_CLASS("_TtC11QWeatherSDK19AirV1HourlyResponse")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSNumber;
 SWIFT_CLASS("_TtC11QWeatherSDK14AirV1Parameter")
 @interface AirV1Parameter : NSObject
 + (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
@@ -520,20 +447,23 @@ SWIFT_CLASS("_TtC11QWeatherSDK14AirV1Parameter")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC11QWeatherSDK21AirV1StationParameter")
-@interface AirV1StationParameter : NSObject
-+ (nonnull instancetype)instanceWithLocationID:(NSString * _Nonnull)locationID lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class StationPollutant;
-SWIFT_CLASS("_TtC11QWeatherSDK20AirV1StationResponse")
-@interface AirV1StationResponse : NSObject
-@property (nonatomic, readonly, strong) Metadata * _Nonnull metadata;
-@property (nonatomic, readonly, copy) NSArray<StationPollutant *> * _Nonnull pollutants;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+SWIFT_CLASS("_TtC11QWeatherSDK5Astro")
+@interface Astro : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable sunrise;
+@property (nonatomic, readonly, copy) NSString * _Nullable sunset;
+@property (nonatomic, readonly, copy) NSString * _Nullable astronomicalDawn;
+@property (nonatomic, readonly, copy) NSString * _Nullable nauticalDawn;
+@property (nonatomic, readonly, copy) NSString * _Nullable civilDawn;
+@property (nonatomic, readonly, copy) NSString * _Nullable astronomicalDusk;
+@property (nonatomic, readonly, copy) NSString * _Nullable nauticalDusk;
+@property (nonatomic, readonly, copy) NSString * _Nullable civilDusk;
+@property (nonatomic, readonly, copy) NSString * _Nullable solarNoon;
+@property (nonatomic, readonly, copy) NSString * _Nullable solarMidnight;
+@property (nonatomic, readonly, copy) NSString * _Nullable moonrise;
+@property (nonatomic, readonly, copy) NSString * _Nullable moonset;
+@property (nonatomic, readonly, copy) NSString * _Nullable moonTransit;
+@property (nonatomic, readonly, copy) NSString * _Nullable moonUnderfoot;
+@property (nonatomic, readonly, copy) NSString * _Nonnull moonPhase;
 @end
 
 SWIFT_CLASS("_TtC11QWeatherSDK22AstronomyMoonParameter")
@@ -544,6 +474,7 @@ SWIFT_CLASS("_TtC11QWeatherSDK22AstronomyMoonParameter")
 @end
 
 @class MoonPhase;
+@class Refer;
 SWIFT_CLASS("_TtC11QWeatherSDK21AstronomyMoonResponse")
 @interface AstronomyMoonResponse : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull code;
@@ -598,20 +529,6 @@ typedef SWIFT_ENUM(NSInteger, Basin, open) {
 /// South Indian Ocean
   BasinSI = 5,
 };
-
-SWIFT_CLASS("_TtC11QWeatherSDK14CurrentsHourly")
-@interface CurrentsHourly : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull speed;
-@property (nonatomic, readonly, copy) NSString * _Nonnull dir360;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK13CurrentsTable")
-@interface CurrentsTable : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull speedMax;
-@property (nonatomic, readonly, copy) NSString * _Nonnull dir360;
-@end
 
 SWIFT_CLASS("_TtC11QWeatherSDK11ErrorDetail")
 @interface ErrorDetail : NSObject
@@ -688,102 +605,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK14GeoPoiResponse")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC11QWeatherSDK9GridDaily")
-@interface GridDaily : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxDate;
-@property (nonatomic, readonly, copy) NSString * _Nonnull tempMax;
-@property (nonatomic, readonly, copy) NSString * _Nonnull tempMin;
-@property (nonatomic, readonly, copy) NSString * _Nonnull iconDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull iconNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull textDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull textNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull wind360Day;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windDirDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windScaleDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windSpeedDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull wind360Night;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windDirNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windScaleNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windSpeedNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull humidity;
-@property (nonatomic, readonly, copy) NSString * _Nonnull precip;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pressure;
-@property (nonatomic, readonly, copy) NSString * _Nonnull cloud;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK17GridDailyResponse")
-@interface GridDailyResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<GridDaily *> * _Nonnull daily;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK10GridHourly")
-@interface GridHourly : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull temp;
-@property (nonatomic, readonly, copy) NSString * _Nonnull icon;
-@property (nonatomic, readonly, copy) NSString * _Nonnull text;
-@property (nonatomic, readonly, copy) NSString * _Nonnull wind360;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windDir;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windScale;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windSpeed;
-@property (nonatomic, readonly, copy) NSString * _Nonnull humidity;
-@property (nonatomic, readonly, copy) NSString * _Nonnull precip;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pressure;
-@property (nonatomic, readonly, copy) NSString * _Nonnull cloud;
-@property (nonatomic, readonly, copy) NSString * _Nonnull dew;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK18GridHourlyResponse")
-@interface GridHourlyResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<GridHourly *> * _Nonnull hourly;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK7GridNow")
-@interface GridNow : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull obsTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull temp;
-@property (nonatomic, readonly, copy) NSString * _Nonnull feelsLike;
-@property (nonatomic, readonly, copy) NSString * _Nonnull icon;
-@property (nonatomic, readonly, copy) NSString * _Nonnull text;
-@property (nonatomic, readonly, copy) NSString * _Nonnull wind360;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windDir;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windScale;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windSpeed;
-@property (nonatomic, readonly, copy) NSString * _Nonnull humidity;
-@property (nonatomic, readonly, copy) NSString * _Nonnull precip;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pressure;
-@property (nonatomic, readonly, copy) NSString * _Nonnull cloud;
-@property (nonatomic, readonly, copy) NSString * _Nonnull dew;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK15GridNowResponse")
-@interface GridNowResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, strong) GridNow * _Nonnull now;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK20GridWeatherParameter")
-@interface GridWeatherParameter : NSObject
-+ (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude lang:(NSNumber * _Nullable)lang unit:(NSNumber * _Nullable)unit SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 @class HealthAdvice;
 SWIFT_CLASS("_TtC11QWeatherSDK6Health")
 @interface Health : NSObject
@@ -795,49 +616,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK12HealthAdvice")
 @interface HealthAdvice : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable generalPopulation;
 @property (nonatomic, readonly, copy) NSString * _Nullable sensitivePopulation;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK19HistoricalAirHourly")
-@interface HistoricalAirHourly : NSObject
-/// 空气质量数据发布时间
-@property (nonatomic, readonly, copy) NSString * _Nonnull pubTime;
-/// 空气质量指数
-@property (nonatomic, readonly, copy) NSString * _Nonnull aqi;
-/// 空气质量指数等级
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-/// 空气质量指数级别
-@property (nonatomic, readonly, copy) NSString * _Nonnull category;
-/// 空气质量的主要污染物，空气质量为优时，返回值为NA
-@property (nonatomic, readonly, copy) NSString * _Nonnull primary;
-/// PM10
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm10;
-/// PM2.5
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm2p5;
-/// 二氧化氮
-@property (nonatomic, readonly, copy) NSString * _Nonnull no2;
-/// 二氧化硫
-@property (nonatomic, readonly, copy) NSString * _Nonnull so2;
-/// 一氧化碳
-@property (nonatomic, readonly, copy) NSString * _Nonnull co;
-/// 臭氧
-@property (nonatomic, readonly, copy) NSString * _Nonnull o3;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK22HistoricalAirParameter")
-@interface HistoricalAirParameter : NSObject
-+ (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location date:(NSString * _Nonnull)date lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK21HistoricalAirResponse")
-@interface HistoricalAirResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<HistoricalAirHourly *> * _Nonnull airHourly;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC11QWeatherSDK22HistoricalWeatherDaily")
@@ -1038,18 +816,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK9MoonPhase")
 @property (nonatomic, readonly, copy) NSString * _Nonnull icon;
 @end
 
-SWIFT_CLASS("_TtC11QWeatherSDK21OceanCurrentsResponse")
-@interface OceanCurrentsResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<CurrentsTable *> * _Nonnull currentsTable;
-@property (nonatomic, readonly, copy) NSArray<CurrentsHourly *> * _Nonnull currentsHourly;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 SWIFT_CLASS("_TtC11QWeatherSDK14OceanParameter")
 @interface OceanParameter : NSObject
 + (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location date:(NSString * _Nonnull)date SWIFT_WARN_UNUSED_RESULT;
@@ -1074,8 +840,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK17OceanTideResponse")
 typedef SWIFT_ENUM(NSInteger, Poi, open) {
 /// 景点
   PoiSCENIC = 0,
-/// 潮流站点
-  PoiCSTA = 1,
 /// 潮汐站点
   PoiTSTA = 2,
 };
@@ -1099,6 +863,27 @@ SWIFT_CLASS("_TtC11QWeatherSDK22PollutantConcentration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull unit;
 @end
 
+@class ValueUnit;
+SWIFT_CLASS("_TtC11QWeatherSDK20PrecipitationCurrent")
+@interface PrecipitationCurrent : NSObject
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull amount;
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull intensity;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK18PrecipitationDaily")
+@interface PrecipitationDaily : NSObject
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull amount;
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK19PrecipitationHourly")
+@interface PrecipitationHourly : NSObject
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull amount;
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull intensity;
+@end
+
 SWIFT_CLASS("_TtC11QWeatherSDK16PrimaryPollutant")
 @interface PrimaryPollutant : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull code;
@@ -1113,14 +898,16 @@ typedef SWIFT_ENUM(NSInteger, QWeatherErrorStatus, open) {
 };
 
 @class NSError;
+@class WeatherCurrentParameter;
+@class WeatherCurrentResponse;
+@class WeatherHourlyParameter;
+@class WeatherForecastHourlyResponse;
+@class WeatherDailyParameter;
+@class WeatherForecastDailyResponse;
 @class WeatherParameter;
 @class WeatherNowResponse;
 @class WeatherDailyResponse;
 @class WeatherHourlyResponse;
-@class WarningNowParameter;
-@class WarningResponse;
-@class WarningListParameter;
-@class WarningListResponse;
 @class WeatherAlertCurrentParameter;
 @class WeatherAlertCurrentResponse;
 @class StormListParameter;
@@ -1136,12 +923,33 @@ SWIFT_CLASS("_TtC11QWeatherSDK12QWeatherObjc")
 + (void)initConfigWithHost:(NSString * _Nonnull)host SWIFT_METHOD_FAMILY(none);
 + (void)setupHost:(NSString * _Nonnull)host;
 + (void)setupTokenGeneratorWithGenerater:(NSString * _Nonnull (^ _Nonnull)(void))generater;
-+ (void)setupTokenGeneratorWithPrivateKey:(NSString * _Nonnull)privateKey pid:(NSString * _Nonnull)pid kid:(NSString * _Nonnull)kid;
+/// Token generator
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     privateKey: Private Key
+///   </li>
+///   <li>
+///     sub: Project ID
+///   </li>
+///   <li>
+///     kid: Credential ID
+///   </li>
+///   <li>
+///     iss: Developer ID
+///   </li>
+/// </ul>
++ (void)setupTokenGeneratorWithPrivateKey:(NSString * _Nonnull)privateKey sub:(NSString * _Nonnull)sub kid:(NSString * _Nonnull)kid iss:(NSString * _Nonnull)iss;
 + (void)setupLogEnable:(BOOL)enable;
 + (void)geoCityLookup:(GeoCityLookupParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoCityLookupResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)geoCityTop:(GeoCityTopParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoCityTopResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)geoPoiLookup:(GeoPoiLookupParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoPoiResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)geoPoiRange:(GeoPoiRangeParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoPoiResponse * _Nullable, NSError * _Nullable))completionHandler;
++ (void)weatherCurrent:(WeatherCurrentParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherCurrentResponse * _Nullable, NSError * _Nullable))completionHandler;
++ (void)weatherHourly:(WeatherHourlyParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherForecastHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
++ (void)weatherDaily:(WeatherDailyParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherForecastDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)weatherNow:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherNowResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)weather3d:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)weather7d:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
@@ -1152,29 +960,17 @@ SWIFT_CLASS("_TtC11QWeatherSDK12QWeatherObjc")
 + (void)weather72h:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)weather168h:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)minutely:(MinutelyParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(MinutelyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)gridNow:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridNowResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)grid3d:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)grid7d:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)grid24h:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)grid72h:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)warningNow:(WarningNowParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WarningResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Use 'weatherAlertCurrent(::)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.");
-+ (void)warningList:(WarningListParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WarningListResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Deprecated as of version 5.2.1. Scheduled for removal in a future release.");
 + (void)weatherAlertCurrent:(WeatherAlertCurrentParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherAlertCurrentResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)indices1d:(IndicesParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(IndicesDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)indices3d:(IndicesParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(IndicesDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)airNow:(AirParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirNowResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Use 'airCurrent(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.");
-+ (void)air5d:(AirParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirDailyResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Use 'airDaily(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.");
 + (void)airCurrent:(AirV1Parameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirV1CurrentResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)airDaily:(AirV1Parameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirV1DailyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)airHourly:(AirV1Parameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirV1HourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)airStation:(AirV1StationParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirV1StationResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)historicalWeather:(HistoricalWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(HistoricalWeatherResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)historicalAir:(HistoricalAirParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(HistoricalAirResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)tropicalStormList:(StormListParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(StormListResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)tropicalStormForecast:(StormParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(StormForecastResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)tropicalStormTrack:(StormParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(StormTrackResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)oceanTide:(OceanParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(OceanTideResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)oceanCurrents:(OceanParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(OceanCurrentsResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)astronomySun:(AstronomySunParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AstronomySunResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)astronomyMoon:(AstronomyMoonParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AstronomyMoonResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)astronomySolarElevationAngle:(SolarElevationAngleParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AstronomySolarElevationAngleResponse * _Nullable, NSError * _Nullable))completionHandler;
@@ -1639,66 +1435,10 @@ typedef SWIFT_ENUM(NSInteger, Unit, open) {
   UnitIMPERIAL = 1,
 };
 
-SWIFT_CLASS("_TtC11QWeatherSDK7Warning")
-@interface Warning : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull warningId;
-@property (nonatomic, readonly, copy) NSString * _Nonnull sender;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pubTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull title;
-@property (nonatomic, readonly, copy) NSString * _Nonnull startTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull endTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull status;
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-@property (nonatomic, readonly, copy) NSString * _Nonnull severity;
-@property (nonatomic, readonly, copy) NSString * _Nonnull severityColor;
-@property (nonatomic, readonly, copy) NSString * _Nonnull type;
-@property (nonatomic, readonly, copy) NSString * _Nonnull typeName;
-@property (nonatomic, readonly, copy) NSString * _Nonnull urgency;
-@property (nonatomic, readonly, copy) NSString * _Nonnull certainty;
-@property (nonatomic, readonly, copy) NSString * _Nonnull text;
-@property (nonatomic, readonly, copy) NSString * _Nonnull related;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK20WarningListParameter")
-@interface WarningListParameter : NSObject
-+ (nonnull instancetype)instanceWithRange:(enum Range)range SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class WarningLocation;
-SWIFT_CLASS("_TtC11QWeatherSDK19WarningListResponse")
-@interface WarningListResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSArray<WarningLocation *> * _Nonnull warningLocList;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK15WarningLocation")
-@interface WarningLocation : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull locationId;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK19WarningNowParameter")
-@interface WarningNowParameter : NSObject
-+ (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK15WarningResponse")
-@interface WarningResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<Warning *> * _Nonnull warning;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+SWIFT_CLASS("_TtC11QWeatherSDK9ValueUnit")
+@interface ValueUnit : NSObject
+@property (nonatomic, readonly) double value;
+@property (nonatomic, readonly, copy) NSString * _Nonnull unit;
 @end
 
 @class WeatherAlertMessageType;
@@ -1762,6 +1502,43 @@ SWIFT_CLASS("_TtC11QWeatherSDK23WeatherAlertMessageType")
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull supersedes;
 @end
 
+SWIFT_CLASS("_TtC11QWeatherSDK16WeatherCondition")
+@interface WeatherCondition : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull text;
+@property (nonatomic, readonly, copy) NSString * _Nonnull code;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK23WeatherCurrentParameter")
+@interface WeatherCurrentParameter : NSObject
+@property (nonatomic, readonly) double longitude;
+@property (nonatomic, readonly) double latitude;
+@property (nonatomic, readonly) BOOL localTime;
++ (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLang:(enum Lang)lang SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLocalTime:(BOOL)localTime SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toMap SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class Wind;
+SWIFT_CLASS("_TtC11QWeatherSDK22WeatherCurrentResponse")
+@interface WeatherCurrentResponse : NSObject
+@property (nonatomic, readonly, strong) Metadata * _Nonnull metadata;
+@property (nonatomic, readonly, strong) WeatherCondition * _Nonnull condition;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperature;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull feelsLike;
+@property (nonatomic, readonly) double humidity;
+@property (nonatomic, readonly, strong) Wind * _Nonnull wind;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull windGust;
+@property (nonatomic, readonly, strong) PrecipitationCurrent * _Nonnull precipitation;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull pressure;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull visibility;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull dewPoint;
+@property (nonatomic, readonly) double cloudCover;
+@property (nonatomic, readonly) NSInteger uvIndex;
+@end
+
 SWIFT_CLASS("_TtC11QWeatherSDK12WeatherDaily")
 @interface WeatherDaily : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull fxDate;
@@ -1793,6 +1570,21 @@ SWIFT_CLASS("_TtC11QWeatherSDK12WeatherDaily")
 @property (nonatomic, readonly, copy) NSString * _Nonnull uvIndex;
 @end
 
+SWIFT_CLASS("_TtC11QWeatherSDK21WeatherDailyParameter")
+@interface WeatherDailyParameter : NSObject
+@property (nonatomic, readonly) double longitude;
+@property (nonatomic, readonly) double latitude;
+@property (nonatomic, readonly) NSInteger days;
+@property (nonatomic, readonly) BOOL localTime;
++ (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLang:(enum Lang)lang SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLocalTime:(BOOL)localTime SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setDays:(NSInteger)days SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toMap SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 SWIFT_CLASS("_TtC11QWeatherSDK20WeatherDailyResponse")
 @interface WeatherDailyResponse : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull code;
@@ -1800,6 +1592,53 @@ SWIFT_CLASS("_TtC11QWeatherSDK20WeatherDailyResponse")
 @property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
 @property (nonatomic, readonly, copy) NSArray<WeatherDaily *> * _Nonnull daily;
 @property (nonatomic, readonly, strong) Refer * _Nullable refer;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class WeatherPeriodForecast;
+SWIFT_CLASS("_TtC11QWeatherSDK20WeatherForecastDaily")
+@interface WeatherForecastDaily : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastStartTime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastEndTime;
+@property (nonatomic, readonly, strong) Astro * _Nonnull astro;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureMax;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureMin;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureAvg;
+@property (nonatomic, readonly) NSInteger uvIndexMax;
+@property (nonatomic, readonly, strong) WeatherPeriodForecast * _Nonnull daytime;
+@property (nonatomic, readonly, strong) WeatherPeriodForecast * _Nonnull nighttime;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK28WeatherForecastDailyResponse")
+@interface WeatherForecastDailyResponse : NSObject
+@property (nonatomic, readonly, strong) Metadata * _Nonnull metadata;
+@property (nonatomic, readonly, copy) NSArray<WeatherForecastDaily *> * _Nonnull days;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK21WeatherForecastHourly")
+@interface WeatherForecastHourly : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastTime;
+@property (nonatomic, readonly, strong) WeatherCondition * _Nonnull condition;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperature;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull feelsLike;
+@property (nonatomic, readonly) double humidity;
+@property (nonatomic, readonly, strong) Wind * _Nonnull wind;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull windGust;
+@property (nonatomic, readonly, strong) PrecipitationHourly * _Nonnull precipitation;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull pressure;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull visibility;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull dewPoint;
+@property (nonatomic, readonly) double cloudCover;
+@property (nonatomic, readonly) NSInteger uvIndex;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK29WeatherForecastHourlyResponse")
+@interface WeatherForecastHourlyResponse : NSObject
+@property (nonatomic, readonly, strong) Metadata * _Nonnull metadata;
+@property (nonatomic, readonly, copy) NSArray<WeatherForecastHourly *> * _Nonnull hours;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1820,6 +1659,21 @@ SWIFT_CLASS("_TtC11QWeatherSDK13WeatherHourly")
 @property (nonatomic, readonly, copy) NSString * _Nonnull pressure;
 @property (nonatomic, readonly, copy) NSString * _Nonnull cloud;
 @property (nonatomic, readonly, copy) NSString * _Nonnull dew;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK22WeatherHourlyParameter")
+@interface WeatherHourlyParameter : NSObject
+@property (nonatomic, readonly) double longitude;
+@property (nonatomic, readonly) double latitude;
+@property (nonatomic, readonly) NSInteger hours;
+@property (nonatomic, readonly) BOOL localTime;
++ (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLang:(enum Lang)lang SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLocalTime:(BOOL)localTime SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setHours:(NSInteger)hours SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toMap SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC11QWeatherSDK21WeatherHourlyResponse")
@@ -1882,6 +1736,33 @@ SWIFT_CLASS("_TtC11QWeatherSDK16WeatherParameter")
 + (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location lang:(NSNumber * _Nullable)lang unit:(NSNumber * _Nullable)unit SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK21WeatherPeriodForecast")
+@interface WeatherPeriodForecast : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastStartTime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastEndTime;
+@property (nonatomic, readonly, strong) WeatherCondition * _Nonnull condition;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureMax;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureMin;
+@property (nonatomic, readonly, strong) Wind * _Nonnull wind;
+@property (nonatomic, readonly, strong) ValueUnit * _Nullable windGustMax;
+@property (nonatomic, readonly, strong) PrecipitationDaily * _Nonnull precipitation;
+@property (nonatomic, readonly) double cloudCover;
+@property (nonatomic, readonly) double humidity;
+@end
+
+@class WindDirection;
+SWIFT_CLASS("_TtC11QWeatherSDK4Wind")
+@interface Wind : NSObject
+@property (nonatomic, readonly, strong) WindDirection * _Nonnull direction;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull speed;
+@property (nonatomic, readonly) NSInteger scale;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK13WindDirection")
+@interface WindDirection : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull compass;
 @end
 
 #endif // defined(__OBJC__)
@@ -2273,27 +2154,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK8AirColor")
 @end
 
 @class NSString;
-SWIFT_CLASS("_TtC11QWeatherSDK8AirDaily")
-@interface AirDaily : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxDate;
-@property (nonatomic, readonly, copy) NSString * _Nonnull aqi;
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-@property (nonatomic, readonly, copy) NSString * _Nonnull category;
-@property (nonatomic, readonly, copy) NSString * _Nonnull primary;
-@end
-
-@class Refer;
-SWIFT_CLASS("_TtC11QWeatherSDK16AirDailyResponse")
-@interface AirDailyResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<AirDaily *> * _Nonnull daily;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 @class AirIndex;
 @class Pollutant;
 SWIFT_CLASS("_TtC11QWeatherSDK9AirHourly")
@@ -2316,59 +2176,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK8AirIndex")
 @property (nonatomic, readonly, strong) AirColor * _Nonnull color;
 @property (nonatomic, readonly, strong) PrimaryPollutant * _Nullable primaryPollutant;
 @property (nonatomic, readonly, strong) Health * _Nullable health;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK6AirNow")
-@interface AirNow : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull pubTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull aqi;
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-@property (nonatomic, readonly, copy) NSString * _Nonnull category;
-@property (nonatomic, readonly, copy) NSString * _Nonnull primary;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm10;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm2p5;
-@property (nonatomic, readonly, copy) NSString * _Nonnull no2;
-@property (nonatomic, readonly, copy) NSString * _Nonnull so2;
-@property (nonatomic, readonly, copy) NSString * _Nonnull co;
-@property (nonatomic, readonly, copy) NSString * _Nonnull o3;
-@end
-
-@class AirStation;
-SWIFT_CLASS("_TtC11QWeatherSDK14AirNowResponse")
-@interface AirNowResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, strong) AirNow * _Nonnull now;
-@property (nonatomic, readonly, copy) NSArray<AirStation *> * _Nonnull station;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class NSNumber;
-SWIFT_CLASS("_TtC11QWeatherSDK12AirParameter")
-@interface AirParameter : NSObject
-+ (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK10AirStation")
-@interface AirStation : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull pubTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull name;
-@property (nonatomic, readonly, copy) NSString * _Nonnull stationId;
-@property (nonatomic, readonly, copy) NSString * _Nonnull aqi;
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-@property (nonatomic, readonly, copy) NSString * _Nonnull category;
-@property (nonatomic, readonly, copy) NSString * _Nonnull primary;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm10;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm2p5;
-@property (nonatomic, readonly, copy) NSString * _Nonnull no2;
-@property (nonatomic, readonly, copy) NSString * _Nonnull so2;
-@property (nonatomic, readonly, copy) NSString * _Nonnull co;
-@property (nonatomic, readonly, copy) NSString * _Nonnull o3;
 @end
 
 @class Metadata;
@@ -2407,6 +2214,7 @@ SWIFT_CLASS("_TtC11QWeatherSDK19AirV1HourlyResponse")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSNumber;
 SWIFT_CLASS("_TtC11QWeatherSDK14AirV1Parameter")
 @interface AirV1Parameter : NSObject
 + (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
@@ -2414,20 +2222,23 @@ SWIFT_CLASS("_TtC11QWeatherSDK14AirV1Parameter")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC11QWeatherSDK21AirV1StationParameter")
-@interface AirV1StationParameter : NSObject
-+ (nonnull instancetype)instanceWithLocationID:(NSString * _Nonnull)locationID lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class StationPollutant;
-SWIFT_CLASS("_TtC11QWeatherSDK20AirV1StationResponse")
-@interface AirV1StationResponse : NSObject
-@property (nonatomic, readonly, strong) Metadata * _Nonnull metadata;
-@property (nonatomic, readonly, copy) NSArray<StationPollutant *> * _Nonnull pollutants;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+SWIFT_CLASS("_TtC11QWeatherSDK5Astro")
+@interface Astro : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable sunrise;
+@property (nonatomic, readonly, copy) NSString * _Nullable sunset;
+@property (nonatomic, readonly, copy) NSString * _Nullable astronomicalDawn;
+@property (nonatomic, readonly, copy) NSString * _Nullable nauticalDawn;
+@property (nonatomic, readonly, copy) NSString * _Nullable civilDawn;
+@property (nonatomic, readonly, copy) NSString * _Nullable astronomicalDusk;
+@property (nonatomic, readonly, copy) NSString * _Nullable nauticalDusk;
+@property (nonatomic, readonly, copy) NSString * _Nullable civilDusk;
+@property (nonatomic, readonly, copy) NSString * _Nullable solarNoon;
+@property (nonatomic, readonly, copy) NSString * _Nullable solarMidnight;
+@property (nonatomic, readonly, copy) NSString * _Nullable moonrise;
+@property (nonatomic, readonly, copy) NSString * _Nullable moonset;
+@property (nonatomic, readonly, copy) NSString * _Nullable moonTransit;
+@property (nonatomic, readonly, copy) NSString * _Nullable moonUnderfoot;
+@property (nonatomic, readonly, copy) NSString * _Nonnull moonPhase;
 @end
 
 SWIFT_CLASS("_TtC11QWeatherSDK22AstronomyMoonParameter")
@@ -2438,6 +2249,7 @@ SWIFT_CLASS("_TtC11QWeatherSDK22AstronomyMoonParameter")
 @end
 
 @class MoonPhase;
+@class Refer;
 SWIFT_CLASS("_TtC11QWeatherSDK21AstronomyMoonResponse")
 @interface AstronomyMoonResponse : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull code;
@@ -2492,20 +2304,6 @@ typedef SWIFT_ENUM(NSInteger, Basin, open) {
 /// South Indian Ocean
   BasinSI = 5,
 };
-
-SWIFT_CLASS("_TtC11QWeatherSDK14CurrentsHourly")
-@interface CurrentsHourly : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull speed;
-@property (nonatomic, readonly, copy) NSString * _Nonnull dir360;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK13CurrentsTable")
-@interface CurrentsTable : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull speedMax;
-@property (nonatomic, readonly, copy) NSString * _Nonnull dir360;
-@end
 
 SWIFT_CLASS("_TtC11QWeatherSDK11ErrorDetail")
 @interface ErrorDetail : NSObject
@@ -2582,102 +2380,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK14GeoPoiResponse")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC11QWeatherSDK9GridDaily")
-@interface GridDaily : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxDate;
-@property (nonatomic, readonly, copy) NSString * _Nonnull tempMax;
-@property (nonatomic, readonly, copy) NSString * _Nonnull tempMin;
-@property (nonatomic, readonly, copy) NSString * _Nonnull iconDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull iconNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull textDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull textNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull wind360Day;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windDirDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windScaleDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windSpeedDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull wind360Night;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windDirNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windScaleNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windSpeedNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull humidity;
-@property (nonatomic, readonly, copy) NSString * _Nonnull precip;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pressure;
-@property (nonatomic, readonly, copy) NSString * _Nonnull cloud;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK17GridDailyResponse")
-@interface GridDailyResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<GridDaily *> * _Nonnull daily;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK10GridHourly")
-@interface GridHourly : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull temp;
-@property (nonatomic, readonly, copy) NSString * _Nonnull icon;
-@property (nonatomic, readonly, copy) NSString * _Nonnull text;
-@property (nonatomic, readonly, copy) NSString * _Nonnull wind360;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windDir;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windScale;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windSpeed;
-@property (nonatomic, readonly, copy) NSString * _Nonnull humidity;
-@property (nonatomic, readonly, copy) NSString * _Nonnull precip;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pressure;
-@property (nonatomic, readonly, copy) NSString * _Nonnull cloud;
-@property (nonatomic, readonly, copy) NSString * _Nonnull dew;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK18GridHourlyResponse")
-@interface GridHourlyResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<GridHourly *> * _Nonnull hourly;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK7GridNow")
-@interface GridNow : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull obsTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull temp;
-@property (nonatomic, readonly, copy) NSString * _Nonnull feelsLike;
-@property (nonatomic, readonly, copy) NSString * _Nonnull icon;
-@property (nonatomic, readonly, copy) NSString * _Nonnull text;
-@property (nonatomic, readonly, copy) NSString * _Nonnull wind360;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windDir;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windScale;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windSpeed;
-@property (nonatomic, readonly, copy) NSString * _Nonnull humidity;
-@property (nonatomic, readonly, copy) NSString * _Nonnull precip;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pressure;
-@property (nonatomic, readonly, copy) NSString * _Nonnull cloud;
-@property (nonatomic, readonly, copy) NSString * _Nonnull dew;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK15GridNowResponse")
-@interface GridNowResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, strong) GridNow * _Nonnull now;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK20GridWeatherParameter")
-@interface GridWeatherParameter : NSObject
-+ (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude lang:(NSNumber * _Nullable)lang unit:(NSNumber * _Nullable)unit SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 @class HealthAdvice;
 SWIFT_CLASS("_TtC11QWeatherSDK6Health")
 @interface Health : NSObject
@@ -2689,49 +2391,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK12HealthAdvice")
 @interface HealthAdvice : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable generalPopulation;
 @property (nonatomic, readonly, copy) NSString * _Nullable sensitivePopulation;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK19HistoricalAirHourly")
-@interface HistoricalAirHourly : NSObject
-/// 空气质量数据发布时间
-@property (nonatomic, readonly, copy) NSString * _Nonnull pubTime;
-/// 空气质量指数
-@property (nonatomic, readonly, copy) NSString * _Nonnull aqi;
-/// 空气质量指数等级
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-/// 空气质量指数级别
-@property (nonatomic, readonly, copy) NSString * _Nonnull category;
-/// 空气质量的主要污染物，空气质量为优时，返回值为NA
-@property (nonatomic, readonly, copy) NSString * _Nonnull primary;
-/// PM10
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm10;
-/// PM2.5
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm2p5;
-/// 二氧化氮
-@property (nonatomic, readonly, copy) NSString * _Nonnull no2;
-/// 二氧化硫
-@property (nonatomic, readonly, copy) NSString * _Nonnull so2;
-/// 一氧化碳
-@property (nonatomic, readonly, copy) NSString * _Nonnull co;
-/// 臭氧
-@property (nonatomic, readonly, copy) NSString * _Nonnull o3;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK22HistoricalAirParameter")
-@interface HistoricalAirParameter : NSObject
-+ (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location date:(NSString * _Nonnull)date lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK21HistoricalAirResponse")
-@interface HistoricalAirResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<HistoricalAirHourly *> * _Nonnull airHourly;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC11QWeatherSDK22HistoricalWeatherDaily")
@@ -2932,18 +2591,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK9MoonPhase")
 @property (nonatomic, readonly, copy) NSString * _Nonnull icon;
 @end
 
-SWIFT_CLASS("_TtC11QWeatherSDK21OceanCurrentsResponse")
-@interface OceanCurrentsResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<CurrentsTable *> * _Nonnull currentsTable;
-@property (nonatomic, readonly, copy) NSArray<CurrentsHourly *> * _Nonnull currentsHourly;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 SWIFT_CLASS("_TtC11QWeatherSDK14OceanParameter")
 @interface OceanParameter : NSObject
 + (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location date:(NSString * _Nonnull)date SWIFT_WARN_UNUSED_RESULT;
@@ -2968,8 +2615,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK17OceanTideResponse")
 typedef SWIFT_ENUM(NSInteger, Poi, open) {
 /// 景点
   PoiSCENIC = 0,
-/// 潮流站点
-  PoiCSTA = 1,
 /// 潮汐站点
   PoiTSTA = 2,
 };
@@ -2993,6 +2638,27 @@ SWIFT_CLASS("_TtC11QWeatherSDK22PollutantConcentration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull unit;
 @end
 
+@class ValueUnit;
+SWIFT_CLASS("_TtC11QWeatherSDK20PrecipitationCurrent")
+@interface PrecipitationCurrent : NSObject
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull amount;
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull intensity;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK18PrecipitationDaily")
+@interface PrecipitationDaily : NSObject
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull amount;
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK19PrecipitationHourly")
+@interface PrecipitationHourly : NSObject
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull amount;
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull intensity;
+@end
+
 SWIFT_CLASS("_TtC11QWeatherSDK16PrimaryPollutant")
 @interface PrimaryPollutant : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull code;
@@ -3007,14 +2673,16 @@ typedef SWIFT_ENUM(NSInteger, QWeatherErrorStatus, open) {
 };
 
 @class NSError;
+@class WeatherCurrentParameter;
+@class WeatherCurrentResponse;
+@class WeatherHourlyParameter;
+@class WeatherForecastHourlyResponse;
+@class WeatherDailyParameter;
+@class WeatherForecastDailyResponse;
 @class WeatherParameter;
 @class WeatherNowResponse;
 @class WeatherDailyResponse;
 @class WeatherHourlyResponse;
-@class WarningNowParameter;
-@class WarningResponse;
-@class WarningListParameter;
-@class WarningListResponse;
 @class WeatherAlertCurrentParameter;
 @class WeatherAlertCurrentResponse;
 @class StormListParameter;
@@ -3030,12 +2698,33 @@ SWIFT_CLASS("_TtC11QWeatherSDK12QWeatherObjc")
 + (void)initConfigWithHost:(NSString * _Nonnull)host SWIFT_METHOD_FAMILY(none);
 + (void)setupHost:(NSString * _Nonnull)host;
 + (void)setupTokenGeneratorWithGenerater:(NSString * _Nonnull (^ _Nonnull)(void))generater;
-+ (void)setupTokenGeneratorWithPrivateKey:(NSString * _Nonnull)privateKey pid:(NSString * _Nonnull)pid kid:(NSString * _Nonnull)kid;
+/// Token generator
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     privateKey: Private Key
+///   </li>
+///   <li>
+///     sub: Project ID
+///   </li>
+///   <li>
+///     kid: Credential ID
+///   </li>
+///   <li>
+///     iss: Developer ID
+///   </li>
+/// </ul>
++ (void)setupTokenGeneratorWithPrivateKey:(NSString * _Nonnull)privateKey sub:(NSString * _Nonnull)sub kid:(NSString * _Nonnull)kid iss:(NSString * _Nonnull)iss;
 + (void)setupLogEnable:(BOOL)enable;
 + (void)geoCityLookup:(GeoCityLookupParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoCityLookupResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)geoCityTop:(GeoCityTopParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoCityTopResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)geoPoiLookup:(GeoPoiLookupParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoPoiResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)geoPoiRange:(GeoPoiRangeParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoPoiResponse * _Nullable, NSError * _Nullable))completionHandler;
++ (void)weatherCurrent:(WeatherCurrentParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherCurrentResponse * _Nullable, NSError * _Nullable))completionHandler;
++ (void)weatherHourly:(WeatherHourlyParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherForecastHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
++ (void)weatherDaily:(WeatherDailyParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherForecastDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)weatherNow:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherNowResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)weather3d:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)weather7d:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
@@ -3046,29 +2735,17 @@ SWIFT_CLASS("_TtC11QWeatherSDK12QWeatherObjc")
 + (void)weather72h:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)weather168h:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)minutely:(MinutelyParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(MinutelyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)gridNow:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridNowResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)grid3d:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)grid7d:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)grid24h:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)grid72h:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)warningNow:(WarningNowParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WarningResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Use 'weatherAlertCurrent(::)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.");
-+ (void)warningList:(WarningListParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WarningListResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Deprecated as of version 5.2.1. Scheduled for removal in a future release.");
 + (void)weatherAlertCurrent:(WeatherAlertCurrentParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherAlertCurrentResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)indices1d:(IndicesParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(IndicesDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)indices3d:(IndicesParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(IndicesDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)airNow:(AirParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirNowResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Use 'airCurrent(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.");
-+ (void)air5d:(AirParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirDailyResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Use 'airDaily(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.");
 + (void)airCurrent:(AirV1Parameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirV1CurrentResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)airDaily:(AirV1Parameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirV1DailyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)airHourly:(AirV1Parameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirV1HourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)airStation:(AirV1StationParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirV1StationResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)historicalWeather:(HistoricalWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(HistoricalWeatherResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)historicalAir:(HistoricalAirParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(HistoricalAirResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)tropicalStormList:(StormListParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(StormListResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)tropicalStormForecast:(StormParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(StormForecastResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)tropicalStormTrack:(StormParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(StormTrackResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)oceanTide:(OceanParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(OceanTideResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)oceanCurrents:(OceanParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(OceanCurrentsResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)astronomySun:(AstronomySunParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AstronomySunResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)astronomyMoon:(AstronomyMoonParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AstronomyMoonResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)astronomySolarElevationAngle:(SolarElevationAngleParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AstronomySolarElevationAngleResponse * _Nullable, NSError * _Nullable))completionHandler;
@@ -3533,66 +3210,10 @@ typedef SWIFT_ENUM(NSInteger, Unit, open) {
   UnitIMPERIAL = 1,
 };
 
-SWIFT_CLASS("_TtC11QWeatherSDK7Warning")
-@interface Warning : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull warningId;
-@property (nonatomic, readonly, copy) NSString * _Nonnull sender;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pubTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull title;
-@property (nonatomic, readonly, copy) NSString * _Nonnull startTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull endTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull status;
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-@property (nonatomic, readonly, copy) NSString * _Nonnull severity;
-@property (nonatomic, readonly, copy) NSString * _Nonnull severityColor;
-@property (nonatomic, readonly, copy) NSString * _Nonnull type;
-@property (nonatomic, readonly, copy) NSString * _Nonnull typeName;
-@property (nonatomic, readonly, copy) NSString * _Nonnull urgency;
-@property (nonatomic, readonly, copy) NSString * _Nonnull certainty;
-@property (nonatomic, readonly, copy) NSString * _Nonnull text;
-@property (nonatomic, readonly, copy) NSString * _Nonnull related;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK20WarningListParameter")
-@interface WarningListParameter : NSObject
-+ (nonnull instancetype)instanceWithRange:(enum Range)range SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class WarningLocation;
-SWIFT_CLASS("_TtC11QWeatherSDK19WarningListResponse")
-@interface WarningListResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSArray<WarningLocation *> * _Nonnull warningLocList;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK15WarningLocation")
-@interface WarningLocation : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull locationId;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK19WarningNowParameter")
-@interface WarningNowParameter : NSObject
-+ (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK15WarningResponse")
-@interface WarningResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<Warning *> * _Nonnull warning;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+SWIFT_CLASS("_TtC11QWeatherSDK9ValueUnit")
+@interface ValueUnit : NSObject
+@property (nonatomic, readonly) double value;
+@property (nonatomic, readonly, copy) NSString * _Nonnull unit;
 @end
 
 @class WeatherAlertMessageType;
@@ -3656,6 +3277,43 @@ SWIFT_CLASS("_TtC11QWeatherSDK23WeatherAlertMessageType")
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull supersedes;
 @end
 
+SWIFT_CLASS("_TtC11QWeatherSDK16WeatherCondition")
+@interface WeatherCondition : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull text;
+@property (nonatomic, readonly, copy) NSString * _Nonnull code;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK23WeatherCurrentParameter")
+@interface WeatherCurrentParameter : NSObject
+@property (nonatomic, readonly) double longitude;
+@property (nonatomic, readonly) double latitude;
+@property (nonatomic, readonly) BOOL localTime;
++ (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLang:(enum Lang)lang SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLocalTime:(BOOL)localTime SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toMap SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class Wind;
+SWIFT_CLASS("_TtC11QWeatherSDK22WeatherCurrentResponse")
+@interface WeatherCurrentResponse : NSObject
+@property (nonatomic, readonly, strong) Metadata * _Nonnull metadata;
+@property (nonatomic, readonly, strong) WeatherCondition * _Nonnull condition;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperature;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull feelsLike;
+@property (nonatomic, readonly) double humidity;
+@property (nonatomic, readonly, strong) Wind * _Nonnull wind;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull windGust;
+@property (nonatomic, readonly, strong) PrecipitationCurrent * _Nonnull precipitation;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull pressure;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull visibility;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull dewPoint;
+@property (nonatomic, readonly) double cloudCover;
+@property (nonatomic, readonly) NSInteger uvIndex;
+@end
+
 SWIFT_CLASS("_TtC11QWeatherSDK12WeatherDaily")
 @interface WeatherDaily : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull fxDate;
@@ -3687,6 +3345,21 @@ SWIFT_CLASS("_TtC11QWeatherSDK12WeatherDaily")
 @property (nonatomic, readonly, copy) NSString * _Nonnull uvIndex;
 @end
 
+SWIFT_CLASS("_TtC11QWeatherSDK21WeatherDailyParameter")
+@interface WeatherDailyParameter : NSObject
+@property (nonatomic, readonly) double longitude;
+@property (nonatomic, readonly) double latitude;
+@property (nonatomic, readonly) NSInteger days;
+@property (nonatomic, readonly) BOOL localTime;
++ (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLang:(enum Lang)lang SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLocalTime:(BOOL)localTime SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setDays:(NSInteger)days SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toMap SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 SWIFT_CLASS("_TtC11QWeatherSDK20WeatherDailyResponse")
 @interface WeatherDailyResponse : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull code;
@@ -3694,6 +3367,53 @@ SWIFT_CLASS("_TtC11QWeatherSDK20WeatherDailyResponse")
 @property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
 @property (nonatomic, readonly, copy) NSArray<WeatherDaily *> * _Nonnull daily;
 @property (nonatomic, readonly, strong) Refer * _Nullable refer;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class WeatherPeriodForecast;
+SWIFT_CLASS("_TtC11QWeatherSDK20WeatherForecastDaily")
+@interface WeatherForecastDaily : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastStartTime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastEndTime;
+@property (nonatomic, readonly, strong) Astro * _Nonnull astro;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureMax;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureMin;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureAvg;
+@property (nonatomic, readonly) NSInteger uvIndexMax;
+@property (nonatomic, readonly, strong) WeatherPeriodForecast * _Nonnull daytime;
+@property (nonatomic, readonly, strong) WeatherPeriodForecast * _Nonnull nighttime;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK28WeatherForecastDailyResponse")
+@interface WeatherForecastDailyResponse : NSObject
+@property (nonatomic, readonly, strong) Metadata * _Nonnull metadata;
+@property (nonatomic, readonly, copy) NSArray<WeatherForecastDaily *> * _Nonnull days;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK21WeatherForecastHourly")
+@interface WeatherForecastHourly : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastTime;
+@property (nonatomic, readonly, strong) WeatherCondition * _Nonnull condition;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperature;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull feelsLike;
+@property (nonatomic, readonly) double humidity;
+@property (nonatomic, readonly, strong) Wind * _Nonnull wind;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull windGust;
+@property (nonatomic, readonly, strong) PrecipitationHourly * _Nonnull precipitation;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull pressure;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull visibility;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull dewPoint;
+@property (nonatomic, readonly) double cloudCover;
+@property (nonatomic, readonly) NSInteger uvIndex;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK29WeatherForecastHourlyResponse")
+@interface WeatherForecastHourlyResponse : NSObject
+@property (nonatomic, readonly, strong) Metadata * _Nonnull metadata;
+@property (nonatomic, readonly, copy) NSArray<WeatherForecastHourly *> * _Nonnull hours;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3714,6 +3434,21 @@ SWIFT_CLASS("_TtC11QWeatherSDK13WeatherHourly")
 @property (nonatomic, readonly, copy) NSString * _Nonnull pressure;
 @property (nonatomic, readonly, copy) NSString * _Nonnull cloud;
 @property (nonatomic, readonly, copy) NSString * _Nonnull dew;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK22WeatherHourlyParameter")
+@interface WeatherHourlyParameter : NSObject
+@property (nonatomic, readonly) double longitude;
+@property (nonatomic, readonly) double latitude;
+@property (nonatomic, readonly) NSInteger hours;
+@property (nonatomic, readonly) BOOL localTime;
++ (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLang:(enum Lang)lang SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLocalTime:(BOOL)localTime SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setHours:(NSInteger)hours SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toMap SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC11QWeatherSDK21WeatherHourlyResponse")
@@ -3776,6 +3511,33 @@ SWIFT_CLASS("_TtC11QWeatherSDK16WeatherParameter")
 + (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location lang:(NSNumber * _Nullable)lang unit:(NSNumber * _Nullable)unit SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK21WeatherPeriodForecast")
+@interface WeatherPeriodForecast : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastStartTime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastEndTime;
+@property (nonatomic, readonly, strong) WeatherCondition * _Nonnull condition;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureMax;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureMin;
+@property (nonatomic, readonly, strong) Wind * _Nonnull wind;
+@property (nonatomic, readonly, strong) ValueUnit * _Nullable windGustMax;
+@property (nonatomic, readonly, strong) PrecipitationDaily * _Nonnull precipitation;
+@property (nonatomic, readonly) double cloudCover;
+@property (nonatomic, readonly) double humidity;
+@end
+
+@class WindDirection;
+SWIFT_CLASS("_TtC11QWeatherSDK4Wind")
+@interface Wind : NSObject
+@property (nonatomic, readonly, strong) WindDirection * _Nonnull direction;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull speed;
+@property (nonatomic, readonly) NSInteger scale;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK13WindDirection")
+@interface WindDirection : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull compass;
 @end
 
 #endif // defined(__OBJC__)
@@ -4167,27 +3929,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK8AirColor")
 @end
 
 @class NSString;
-SWIFT_CLASS("_TtC11QWeatherSDK8AirDaily")
-@interface AirDaily : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxDate;
-@property (nonatomic, readonly, copy) NSString * _Nonnull aqi;
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-@property (nonatomic, readonly, copy) NSString * _Nonnull category;
-@property (nonatomic, readonly, copy) NSString * _Nonnull primary;
-@end
-
-@class Refer;
-SWIFT_CLASS("_TtC11QWeatherSDK16AirDailyResponse")
-@interface AirDailyResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<AirDaily *> * _Nonnull daily;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 @class AirIndex;
 @class Pollutant;
 SWIFT_CLASS("_TtC11QWeatherSDK9AirHourly")
@@ -4210,59 +3951,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK8AirIndex")
 @property (nonatomic, readonly, strong) AirColor * _Nonnull color;
 @property (nonatomic, readonly, strong) PrimaryPollutant * _Nullable primaryPollutant;
 @property (nonatomic, readonly, strong) Health * _Nullable health;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK6AirNow")
-@interface AirNow : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull pubTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull aqi;
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-@property (nonatomic, readonly, copy) NSString * _Nonnull category;
-@property (nonatomic, readonly, copy) NSString * _Nonnull primary;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm10;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm2p5;
-@property (nonatomic, readonly, copy) NSString * _Nonnull no2;
-@property (nonatomic, readonly, copy) NSString * _Nonnull so2;
-@property (nonatomic, readonly, copy) NSString * _Nonnull co;
-@property (nonatomic, readonly, copy) NSString * _Nonnull o3;
-@end
-
-@class AirStation;
-SWIFT_CLASS("_TtC11QWeatherSDK14AirNowResponse")
-@interface AirNowResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, strong) AirNow * _Nonnull now;
-@property (nonatomic, readonly, copy) NSArray<AirStation *> * _Nonnull station;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class NSNumber;
-SWIFT_CLASS("_TtC11QWeatherSDK12AirParameter")
-@interface AirParameter : NSObject
-+ (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK10AirStation")
-@interface AirStation : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull pubTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull name;
-@property (nonatomic, readonly, copy) NSString * _Nonnull stationId;
-@property (nonatomic, readonly, copy) NSString * _Nonnull aqi;
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-@property (nonatomic, readonly, copy) NSString * _Nonnull category;
-@property (nonatomic, readonly, copy) NSString * _Nonnull primary;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm10;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm2p5;
-@property (nonatomic, readonly, copy) NSString * _Nonnull no2;
-@property (nonatomic, readonly, copy) NSString * _Nonnull so2;
-@property (nonatomic, readonly, copy) NSString * _Nonnull co;
-@property (nonatomic, readonly, copy) NSString * _Nonnull o3;
 @end
 
 @class Metadata;
@@ -4301,6 +3989,7 @@ SWIFT_CLASS("_TtC11QWeatherSDK19AirV1HourlyResponse")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSNumber;
 SWIFT_CLASS("_TtC11QWeatherSDK14AirV1Parameter")
 @interface AirV1Parameter : NSObject
 + (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
@@ -4308,20 +3997,23 @@ SWIFT_CLASS("_TtC11QWeatherSDK14AirV1Parameter")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC11QWeatherSDK21AirV1StationParameter")
-@interface AirV1StationParameter : NSObject
-+ (nonnull instancetype)instanceWithLocationID:(NSString * _Nonnull)locationID lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class StationPollutant;
-SWIFT_CLASS("_TtC11QWeatherSDK20AirV1StationResponse")
-@interface AirV1StationResponse : NSObject
-@property (nonatomic, readonly, strong) Metadata * _Nonnull metadata;
-@property (nonatomic, readonly, copy) NSArray<StationPollutant *> * _Nonnull pollutants;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+SWIFT_CLASS("_TtC11QWeatherSDK5Astro")
+@interface Astro : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nullable sunrise;
+@property (nonatomic, readonly, copy) NSString * _Nullable sunset;
+@property (nonatomic, readonly, copy) NSString * _Nullable astronomicalDawn;
+@property (nonatomic, readonly, copy) NSString * _Nullable nauticalDawn;
+@property (nonatomic, readonly, copy) NSString * _Nullable civilDawn;
+@property (nonatomic, readonly, copy) NSString * _Nullable astronomicalDusk;
+@property (nonatomic, readonly, copy) NSString * _Nullable nauticalDusk;
+@property (nonatomic, readonly, copy) NSString * _Nullable civilDusk;
+@property (nonatomic, readonly, copy) NSString * _Nullable solarNoon;
+@property (nonatomic, readonly, copy) NSString * _Nullable solarMidnight;
+@property (nonatomic, readonly, copy) NSString * _Nullable moonrise;
+@property (nonatomic, readonly, copy) NSString * _Nullable moonset;
+@property (nonatomic, readonly, copy) NSString * _Nullable moonTransit;
+@property (nonatomic, readonly, copy) NSString * _Nullable moonUnderfoot;
+@property (nonatomic, readonly, copy) NSString * _Nonnull moonPhase;
 @end
 
 SWIFT_CLASS("_TtC11QWeatherSDK22AstronomyMoonParameter")
@@ -4332,6 +4024,7 @@ SWIFT_CLASS("_TtC11QWeatherSDK22AstronomyMoonParameter")
 @end
 
 @class MoonPhase;
+@class Refer;
 SWIFT_CLASS("_TtC11QWeatherSDK21AstronomyMoonResponse")
 @interface AstronomyMoonResponse : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull code;
@@ -4386,20 +4079,6 @@ typedef SWIFT_ENUM(NSInteger, Basin, open) {
 /// South Indian Ocean
   BasinSI = 5,
 };
-
-SWIFT_CLASS("_TtC11QWeatherSDK14CurrentsHourly")
-@interface CurrentsHourly : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull speed;
-@property (nonatomic, readonly, copy) NSString * _Nonnull dir360;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK13CurrentsTable")
-@interface CurrentsTable : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull speedMax;
-@property (nonatomic, readonly, copy) NSString * _Nonnull dir360;
-@end
 
 SWIFT_CLASS("_TtC11QWeatherSDK11ErrorDetail")
 @interface ErrorDetail : NSObject
@@ -4476,102 +4155,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK14GeoPoiResponse")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_CLASS("_TtC11QWeatherSDK9GridDaily")
-@interface GridDaily : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxDate;
-@property (nonatomic, readonly, copy) NSString * _Nonnull tempMax;
-@property (nonatomic, readonly, copy) NSString * _Nonnull tempMin;
-@property (nonatomic, readonly, copy) NSString * _Nonnull iconDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull iconNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull textDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull textNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull wind360Day;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windDirDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windScaleDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windSpeedDay;
-@property (nonatomic, readonly, copy) NSString * _Nonnull wind360Night;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windDirNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windScaleNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windSpeedNight;
-@property (nonatomic, readonly, copy) NSString * _Nonnull humidity;
-@property (nonatomic, readonly, copy) NSString * _Nonnull precip;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pressure;
-@property (nonatomic, readonly, copy) NSString * _Nonnull cloud;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK17GridDailyResponse")
-@interface GridDailyResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<GridDaily *> * _Nonnull daily;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK10GridHourly")
-@interface GridHourly : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull temp;
-@property (nonatomic, readonly, copy) NSString * _Nonnull icon;
-@property (nonatomic, readonly, copy) NSString * _Nonnull text;
-@property (nonatomic, readonly, copy) NSString * _Nonnull wind360;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windDir;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windScale;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windSpeed;
-@property (nonatomic, readonly, copy) NSString * _Nonnull humidity;
-@property (nonatomic, readonly, copy) NSString * _Nonnull precip;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pressure;
-@property (nonatomic, readonly, copy) NSString * _Nonnull cloud;
-@property (nonatomic, readonly, copy) NSString * _Nonnull dew;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK18GridHourlyResponse")
-@interface GridHourlyResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<GridHourly *> * _Nonnull hourly;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK7GridNow")
-@interface GridNow : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull obsTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull temp;
-@property (nonatomic, readonly, copy) NSString * _Nonnull feelsLike;
-@property (nonatomic, readonly, copy) NSString * _Nonnull icon;
-@property (nonatomic, readonly, copy) NSString * _Nonnull text;
-@property (nonatomic, readonly, copy) NSString * _Nonnull wind360;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windDir;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windScale;
-@property (nonatomic, readonly, copy) NSString * _Nonnull windSpeed;
-@property (nonatomic, readonly, copy) NSString * _Nonnull humidity;
-@property (nonatomic, readonly, copy) NSString * _Nonnull precip;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pressure;
-@property (nonatomic, readonly, copy) NSString * _Nonnull cloud;
-@property (nonatomic, readonly, copy) NSString * _Nonnull dew;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK15GridNowResponse")
-@interface GridNowResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, strong) GridNow * _Nonnull now;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK20GridWeatherParameter")
-@interface GridWeatherParameter : NSObject
-+ (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude lang:(NSNumber * _Nullable)lang unit:(NSNumber * _Nullable)unit SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 @class HealthAdvice;
 SWIFT_CLASS("_TtC11QWeatherSDK6Health")
 @interface Health : NSObject
@@ -4583,49 +4166,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK12HealthAdvice")
 @interface HealthAdvice : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable generalPopulation;
 @property (nonatomic, readonly, copy) NSString * _Nullable sensitivePopulation;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK19HistoricalAirHourly")
-@interface HistoricalAirHourly : NSObject
-/// 空气质量数据发布时间
-@property (nonatomic, readonly, copy) NSString * _Nonnull pubTime;
-/// 空气质量指数
-@property (nonatomic, readonly, copy) NSString * _Nonnull aqi;
-/// 空气质量指数等级
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-/// 空气质量指数级别
-@property (nonatomic, readonly, copy) NSString * _Nonnull category;
-/// 空气质量的主要污染物，空气质量为优时，返回值为NA
-@property (nonatomic, readonly, copy) NSString * _Nonnull primary;
-/// PM10
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm10;
-/// PM2.5
-@property (nonatomic, readonly, copy) NSString * _Nonnull pm2p5;
-/// 二氧化氮
-@property (nonatomic, readonly, copy) NSString * _Nonnull no2;
-/// 二氧化硫
-@property (nonatomic, readonly, copy) NSString * _Nonnull so2;
-/// 一氧化碳
-@property (nonatomic, readonly, copy) NSString * _Nonnull co;
-/// 臭氧
-@property (nonatomic, readonly, copy) NSString * _Nonnull o3;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK22HistoricalAirParameter")
-@interface HistoricalAirParameter : NSObject
-+ (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location date:(NSString * _Nonnull)date lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK21HistoricalAirResponse")
-@interface HistoricalAirResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<HistoricalAirHourly *> * _Nonnull airHourly;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC11QWeatherSDK22HistoricalWeatherDaily")
@@ -4826,18 +4366,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK9MoonPhase")
 @property (nonatomic, readonly, copy) NSString * _Nonnull icon;
 @end
 
-SWIFT_CLASS("_TtC11QWeatherSDK21OceanCurrentsResponse")
-@interface OceanCurrentsResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<CurrentsTable *> * _Nonnull currentsTable;
-@property (nonatomic, readonly, copy) NSArray<CurrentsHourly *> * _Nonnull currentsHourly;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 SWIFT_CLASS("_TtC11QWeatherSDK14OceanParameter")
 @interface OceanParameter : NSObject
 + (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location date:(NSString * _Nonnull)date SWIFT_WARN_UNUSED_RESULT;
@@ -4862,8 +4390,6 @@ SWIFT_CLASS("_TtC11QWeatherSDK17OceanTideResponse")
 typedef SWIFT_ENUM(NSInteger, Poi, open) {
 /// 景点
   PoiSCENIC = 0,
-/// 潮流站点
-  PoiCSTA = 1,
 /// 潮汐站点
   PoiTSTA = 2,
 };
@@ -4887,6 +4413,27 @@ SWIFT_CLASS("_TtC11QWeatherSDK22PollutantConcentration")
 @property (nonatomic, readonly, copy) NSString * _Nonnull unit;
 @end
 
+@class ValueUnit;
+SWIFT_CLASS("_TtC11QWeatherSDK20PrecipitationCurrent")
+@interface PrecipitationCurrent : NSObject
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull amount;
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull intensity;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK18PrecipitationDaily")
+@interface PrecipitationDaily : NSObject
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull amount;
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK19PrecipitationHourly")
+@interface PrecipitationHourly : NSObject
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull amount;
+@property (nonatomic, readonly, copy) NSString * _Nonnull type;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull intensity;
+@end
+
 SWIFT_CLASS("_TtC11QWeatherSDK16PrimaryPollutant")
 @interface PrimaryPollutant : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull code;
@@ -4901,14 +4448,16 @@ typedef SWIFT_ENUM(NSInteger, QWeatherErrorStatus, open) {
 };
 
 @class NSError;
+@class WeatherCurrentParameter;
+@class WeatherCurrentResponse;
+@class WeatherHourlyParameter;
+@class WeatherForecastHourlyResponse;
+@class WeatherDailyParameter;
+@class WeatherForecastDailyResponse;
 @class WeatherParameter;
 @class WeatherNowResponse;
 @class WeatherDailyResponse;
 @class WeatherHourlyResponse;
-@class WarningNowParameter;
-@class WarningResponse;
-@class WarningListParameter;
-@class WarningListResponse;
 @class WeatherAlertCurrentParameter;
 @class WeatherAlertCurrentResponse;
 @class StormListParameter;
@@ -4924,12 +4473,33 @@ SWIFT_CLASS("_TtC11QWeatherSDK12QWeatherObjc")
 + (void)initConfigWithHost:(NSString * _Nonnull)host SWIFT_METHOD_FAMILY(none);
 + (void)setupHost:(NSString * _Nonnull)host;
 + (void)setupTokenGeneratorWithGenerater:(NSString * _Nonnull (^ _Nonnull)(void))generater;
-+ (void)setupTokenGeneratorWithPrivateKey:(NSString * _Nonnull)privateKey pid:(NSString * _Nonnull)pid kid:(NSString * _Nonnull)kid;
+/// Token generator
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     privateKey: Private Key
+///   </li>
+///   <li>
+///     sub: Project ID
+///   </li>
+///   <li>
+///     kid: Credential ID
+///   </li>
+///   <li>
+///     iss: Developer ID
+///   </li>
+/// </ul>
++ (void)setupTokenGeneratorWithPrivateKey:(NSString * _Nonnull)privateKey sub:(NSString * _Nonnull)sub kid:(NSString * _Nonnull)kid iss:(NSString * _Nonnull)iss;
 + (void)setupLogEnable:(BOOL)enable;
 + (void)geoCityLookup:(GeoCityLookupParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoCityLookupResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)geoCityTop:(GeoCityTopParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoCityTopResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)geoPoiLookup:(GeoPoiLookupParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoPoiResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)geoPoiRange:(GeoPoiRangeParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GeoPoiResponse * _Nullable, NSError * _Nullable))completionHandler;
++ (void)weatherCurrent:(WeatherCurrentParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherCurrentResponse * _Nullable, NSError * _Nullable))completionHandler;
++ (void)weatherHourly:(WeatherHourlyParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherForecastHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
++ (void)weatherDaily:(WeatherDailyParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherForecastDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)weatherNow:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherNowResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)weather3d:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)weather7d:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
@@ -4940,29 +4510,17 @@ SWIFT_CLASS("_TtC11QWeatherSDK12QWeatherObjc")
 + (void)weather72h:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)weather168h:(WeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)minutely:(MinutelyParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(MinutelyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)gridNow:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridNowResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)grid3d:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)grid7d:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)grid24h:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)grid72h:(GridWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(GridHourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)warningNow:(WarningNowParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WarningResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Use 'weatherAlertCurrent(::)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.");
-+ (void)warningList:(WarningListParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WarningListResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Deprecated as of version 5.2.1. Scheduled for removal in a future release.");
 + (void)weatherAlertCurrent:(WeatherAlertCurrentParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(WeatherAlertCurrentResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)indices1d:(IndicesParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(IndicesDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)indices3d:(IndicesParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(IndicesDailyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)airNow:(AirParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirNowResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Use 'airCurrent(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.");
-+ (void)air5d:(AirParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirDailyResponse * _Nullable, NSError * _Nullable))completionHandler SWIFT_DEPRECATED_MSG("Use 'airDaily(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.");
 + (void)airCurrent:(AirV1Parameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirV1CurrentResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)airDaily:(AirV1Parameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirV1DailyResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)airHourly:(AirV1Parameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirV1HourlyResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)airStation:(AirV1StationParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AirV1StationResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)historicalWeather:(HistoricalWeatherParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(HistoricalWeatherResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)historicalAir:(HistoricalAirParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(HistoricalAirResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)tropicalStormList:(StormListParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(StormListResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)tropicalStormForecast:(StormParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(StormForecastResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)tropicalStormTrack:(StormParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(StormTrackResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)oceanTide:(OceanParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(OceanTideResponse * _Nullable, NSError * _Nullable))completionHandler;
-+ (void)oceanCurrents:(OceanParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(OceanCurrentsResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)astronomySun:(AstronomySunParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AstronomySunResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)astronomyMoon:(AstronomyMoonParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AstronomyMoonResponse * _Nullable, NSError * _Nullable))completionHandler;
 + (void)astronomySolarElevationAngle:(SolarElevationAngleParameter * _Nonnull)parameter completionHandler:(void (^ _Nonnull)(AstronomySolarElevationAngleResponse * _Nullable, NSError * _Nullable))completionHandler;
@@ -5427,66 +4985,10 @@ typedef SWIFT_ENUM(NSInteger, Unit, open) {
   UnitIMPERIAL = 1,
 };
 
-SWIFT_CLASS("_TtC11QWeatherSDK7Warning")
-@interface Warning : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull warningId;
-@property (nonatomic, readonly, copy) NSString * _Nonnull sender;
-@property (nonatomic, readonly, copy) NSString * _Nonnull pubTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull title;
-@property (nonatomic, readonly, copy) NSString * _Nonnull startTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull endTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull status;
-@property (nonatomic, readonly, copy) NSString * _Nonnull level;
-@property (nonatomic, readonly, copy) NSString * _Nonnull severity;
-@property (nonatomic, readonly, copy) NSString * _Nonnull severityColor;
-@property (nonatomic, readonly, copy) NSString * _Nonnull type;
-@property (nonatomic, readonly, copy) NSString * _Nonnull typeName;
-@property (nonatomic, readonly, copy) NSString * _Nonnull urgency;
-@property (nonatomic, readonly, copy) NSString * _Nonnull certainty;
-@property (nonatomic, readonly, copy) NSString * _Nonnull text;
-@property (nonatomic, readonly, copy) NSString * _Nonnull related;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK20WarningListParameter")
-@interface WarningListParameter : NSObject
-+ (nonnull instancetype)instanceWithRange:(enum Range)range SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class WarningLocation;
-SWIFT_CLASS("_TtC11QWeatherSDK19WarningListResponse")
-@interface WarningListResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSArray<WarningLocation *> * _Nonnull warningLocList;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK15WarningLocation")
-@interface WarningLocation : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull locationId;
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK19WarningNowParameter")
-@interface WarningNowParameter : NSObject
-+ (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location lang:(NSNumber * _Nullable)lang SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC11QWeatherSDK15WarningResponse")
-@interface WarningResponse : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull code;
-@property (nonatomic, readonly, copy) NSString * _Nonnull updateTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
-@property (nonatomic, readonly, copy) NSArray<Warning *> * _Nonnull warning;
-@property (nonatomic, readonly, strong) Refer * _Nullable refer;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+SWIFT_CLASS("_TtC11QWeatherSDK9ValueUnit")
+@interface ValueUnit : NSObject
+@property (nonatomic, readonly) double value;
+@property (nonatomic, readonly, copy) NSString * _Nonnull unit;
 @end
 
 @class WeatherAlertMessageType;
@@ -5550,6 +5052,43 @@ SWIFT_CLASS("_TtC11QWeatherSDK23WeatherAlertMessageType")
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull supersedes;
 @end
 
+SWIFT_CLASS("_TtC11QWeatherSDK16WeatherCondition")
+@interface WeatherCondition : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull text;
+@property (nonatomic, readonly, copy) NSString * _Nonnull code;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK23WeatherCurrentParameter")
+@interface WeatherCurrentParameter : NSObject
+@property (nonatomic, readonly) double longitude;
+@property (nonatomic, readonly) double latitude;
+@property (nonatomic, readonly) BOOL localTime;
++ (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLang:(enum Lang)lang SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLocalTime:(BOOL)localTime SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toMap SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class Wind;
+SWIFT_CLASS("_TtC11QWeatherSDK22WeatherCurrentResponse")
+@interface WeatherCurrentResponse : NSObject
+@property (nonatomic, readonly, strong) Metadata * _Nonnull metadata;
+@property (nonatomic, readonly, strong) WeatherCondition * _Nonnull condition;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperature;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull feelsLike;
+@property (nonatomic, readonly) double humidity;
+@property (nonatomic, readonly, strong) Wind * _Nonnull wind;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull windGust;
+@property (nonatomic, readonly, strong) PrecipitationCurrent * _Nonnull precipitation;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull pressure;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull visibility;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull dewPoint;
+@property (nonatomic, readonly) double cloudCover;
+@property (nonatomic, readonly) NSInteger uvIndex;
+@end
+
 SWIFT_CLASS("_TtC11QWeatherSDK12WeatherDaily")
 @interface WeatherDaily : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull fxDate;
@@ -5581,6 +5120,21 @@ SWIFT_CLASS("_TtC11QWeatherSDK12WeatherDaily")
 @property (nonatomic, readonly, copy) NSString * _Nonnull uvIndex;
 @end
 
+SWIFT_CLASS("_TtC11QWeatherSDK21WeatherDailyParameter")
+@interface WeatherDailyParameter : NSObject
+@property (nonatomic, readonly) double longitude;
+@property (nonatomic, readonly) double latitude;
+@property (nonatomic, readonly) NSInteger days;
+@property (nonatomic, readonly) BOOL localTime;
++ (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLang:(enum Lang)lang SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLocalTime:(BOOL)localTime SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setDays:(NSInteger)days SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toMap SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 SWIFT_CLASS("_TtC11QWeatherSDK20WeatherDailyResponse")
 @interface WeatherDailyResponse : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull code;
@@ -5588,6 +5142,53 @@ SWIFT_CLASS("_TtC11QWeatherSDK20WeatherDailyResponse")
 @property (nonatomic, readonly, copy) NSString * _Nonnull fxLink;
 @property (nonatomic, readonly, copy) NSArray<WeatherDaily *> * _Nonnull daily;
 @property (nonatomic, readonly, strong) Refer * _Nullable refer;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class WeatherPeriodForecast;
+SWIFT_CLASS("_TtC11QWeatherSDK20WeatherForecastDaily")
+@interface WeatherForecastDaily : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastStartTime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastEndTime;
+@property (nonatomic, readonly, strong) Astro * _Nonnull astro;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureMax;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureMin;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureAvg;
+@property (nonatomic, readonly) NSInteger uvIndexMax;
+@property (nonatomic, readonly, strong) WeatherPeriodForecast * _Nonnull daytime;
+@property (nonatomic, readonly, strong) WeatherPeriodForecast * _Nonnull nighttime;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK28WeatherForecastDailyResponse")
+@interface WeatherForecastDailyResponse : NSObject
+@property (nonatomic, readonly, strong) Metadata * _Nonnull metadata;
+@property (nonatomic, readonly, copy) NSArray<WeatherForecastDaily *> * _Nonnull days;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK21WeatherForecastHourly")
+@interface WeatherForecastHourly : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastTime;
+@property (nonatomic, readonly, strong) WeatherCondition * _Nonnull condition;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperature;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull feelsLike;
+@property (nonatomic, readonly) double humidity;
+@property (nonatomic, readonly, strong) Wind * _Nonnull wind;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull windGust;
+@property (nonatomic, readonly, strong) PrecipitationHourly * _Nonnull precipitation;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull pressure;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull visibility;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull dewPoint;
+@property (nonatomic, readonly) double cloudCover;
+@property (nonatomic, readonly) NSInteger uvIndex;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK29WeatherForecastHourlyResponse")
+@interface WeatherForecastHourlyResponse : NSObject
+@property (nonatomic, readonly, strong) Metadata * _Nonnull metadata;
+@property (nonatomic, readonly, copy) NSArray<WeatherForecastHourly *> * _Nonnull hours;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -5608,6 +5209,21 @@ SWIFT_CLASS("_TtC11QWeatherSDK13WeatherHourly")
 @property (nonatomic, readonly, copy) NSString * _Nonnull pressure;
 @property (nonatomic, readonly, copy) NSString * _Nonnull cloud;
 @property (nonatomic, readonly, copy) NSString * _Nonnull dew;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK22WeatherHourlyParameter")
+@interface WeatherHourlyParameter : NSObject
+@property (nonatomic, readonly) double longitude;
+@property (nonatomic, readonly) double latitude;
+@property (nonatomic, readonly) NSInteger hours;
+@property (nonatomic, readonly) BOOL localTime;
++ (nonnull instancetype)instanceWithLongitude:(double)longitude latitude:(double)latitude SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLang:(enum Lang)lang SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setLocalTime:(BOOL)localTime SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)setHours:(NSInteger)hours SWIFT_WARN_UNUSED_RESULT;
+- (NSDictionary<NSString *, NSString *> * _Nonnull)toMap SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC11QWeatherSDK21WeatherHourlyResponse")
@@ -5670,6 +5286,33 @@ SWIFT_CLASS("_TtC11QWeatherSDK16WeatherParameter")
 + (nonnull instancetype)instanceWithLocation:(NSString * _Nonnull)location lang:(NSNumber * _Nullable)lang unit:(NSNumber * _Nullable)unit SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK21WeatherPeriodForecast")
+@interface WeatherPeriodForecast : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastStartTime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull forecastEndTime;
+@property (nonatomic, readonly, strong) WeatherCondition * _Nonnull condition;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureMax;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull temperatureMin;
+@property (nonatomic, readonly, strong) Wind * _Nonnull wind;
+@property (nonatomic, readonly, strong) ValueUnit * _Nullable windGustMax;
+@property (nonatomic, readonly, strong) PrecipitationDaily * _Nonnull precipitation;
+@property (nonatomic, readonly) double cloudCover;
+@property (nonatomic, readonly) double humidity;
+@end
+
+@class WindDirection;
+SWIFT_CLASS("_TtC11QWeatherSDK4Wind")
+@interface Wind : NSObject
+@property (nonatomic, readonly, strong) WindDirection * _Nonnull direction;
+@property (nonatomic, readonly, strong) ValueUnit * _Nonnull speed;
+@property (nonatomic, readonly) NSInteger scale;
+@end
+
+SWIFT_CLASS("_TtC11QWeatherSDK13WindDirection")
+@interface WindDirection : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull compass;
 @end
 
 #endif // defined(__OBJC__)

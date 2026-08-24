@@ -13,7 +13,7 @@ Make sure you have created a Project and Credential, see [Project and KEY](https
 
 ## 2. Installation
 
-The latest version of iOS SDK is `5.2.3` ([Release note](https://github.com/qwd/qweather-ios-sdk/releases))
+The latest version of iOS SDK is `5.3.0` ([Release note](https://github.com/qwd/qweather-ios-sdk/releases))
 
 ### Swift Package Manager
 
@@ -33,7 +33,7 @@ QWeatherSDK can be installed via [CocoaPods](https://cocoapods.org/). CocoaPods 
 
      ```
      target '{YOUR_iOS_TARGET}' do
-        pod 'QWeather-SDK','~> 5.2.3'
+        pod 'QWeather-SDK','~> 5.3.0'
      end
      ```
 
@@ -41,7 +41,7 @@ QWeatherSDK can be installed via [CocoaPods](https://cocoapods.org/). CocoaPods 
 
      ```
      target '{YOUR_macOS_TARGET}' do
-         pod 'QWeather-SDK','~> 5.2.3'
+         pod 'QWeather-SDK','~> 5.3.0'
      end
      ```
 
@@ -49,7 +49,7 @@ QWeatherSDK can be installed via [CocoaPods](https://cocoapods.org/). CocoaPods 
 
 ### Manual install
 
-- Download SDK: [QWeatherSDK 5.2.3](https://github.com/qwd/qweather-ios-sdk/releases/tag/5.2.3)
+- Download SDK: [QWeatherSDK 5.3.0](https://github.com/qwd/qweather-ios-sdk/releases/tag/5.3.0)
 - Add `QWeatherSDK.xcframework` to iOS/macOS target.
 
 ## 3. Add API Host and token
@@ -94,8 +94,9 @@ The SDK provides two token generation mechanisms: TokenGenerator and closure-bas
 ```swift
 // Configure the token generator using the JWTGenerator class provided by the SDK
 let jwt = JWTGenerator(privateKey: "{YOUR_PRIVATE_KEY}", // Pravite Key
-                              pid: "{YOUR_PROJECT_ID}", // Project ID
-                              kid: "{YOUR_KID}") // Credential ID
+                              sub: "{YOUR_PROJECT_ID}", // Project ID
+                              kid: "{YOUR_KID}", // Credential ID
+                              iss: "{YOUR_DEVELOPER_ID}") // Developer ID
 instance.setupTokenGenerator(jwt)
 
 //NOTE: Developers can also customize a token generator by conforming to the TokenGenerator protocol.
@@ -110,13 +111,18 @@ instance.setupTokenGenerator({
 ***Objective-C***
 
 ```objc
-#import <QWeatherSDK/QWeatherSDK-Swift.h>
 
-...
+// Configure the token generator using the JWTGenerator class provided by the SDK
+[QWeatherObjc setupTokenGeneratorWithPrivateKey:@"{YOUR_PRIVATE_KEY}" // Pravite Key
+                                            sub:@"{YOUR_PROJECT_ID}"  // Project ID
+                                            kid:@"{YOUR_CREDENTIAL_ID}" // Credential ID
+                                            iss:@"{YOUR_DEVELOPER_ID}"];  // Developer ID
 
-// Initialize api host
-[QWeatherObjc initConfigWithHost:@"{YOUR_HOST}"];
 
-// Enable debug logging (set false for production environments)
-[QWeatherObjc setupLogEnable:YES];
+// Set the token generator via a closure.
+[QWeatherObjc setupTokenGeneratorWithGenerater:^NSString * _Nonnull{
+    //  Update jwt token should be implemented here in production environments
+    return @"{YOUR_TOKEN}";
+}];
+                            
 ```

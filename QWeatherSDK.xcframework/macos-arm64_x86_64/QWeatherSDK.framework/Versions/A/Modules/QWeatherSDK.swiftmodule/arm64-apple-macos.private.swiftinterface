@@ -96,7 +96,6 @@ extension QWeatherSDK.Lang {
 }
 @objc public enum Poi : Swift.Int, Swift.Sendable {
   case SCENIC = 0
-  case CSTA = 1
   case TSTA = 2
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
@@ -384,13 +383,6 @@ extension QWeatherSDK.Unit {
     get
   }
 }
-@objc final public class AirParameter : ObjectiveC.NSObject {
-  final public let location: Swift.String
-  final public let lang: QWeatherSDK.Lang?
-  public init(location: Swift.String, lang: QWeatherSDK.Lang? = nil)
-  @objc public static func instance(location: Swift.String, lang: Foundation.NSNumber?) -> Self
-  @objc deinit
-}
 @objc final public class AirV1Parameter : ObjectiveC.NSObject {
   final public let longitude: Swift.Double
   final public let latitude: Swift.Double
@@ -399,11 +391,17 @@ extension QWeatherSDK.Unit {
   @objc public static func instance(longitude: Swift.Double, latitude: Swift.Double, lang: Foundation.NSNumber?) -> Self
   @objc deinit
 }
-@objc final public class AirV1StationParameter : ObjectiveC.NSObject {
-  final public let locationID: Swift.String
+@_hasMissingDesignatedInitializers @objc final public class WeatherAlertCurrentParameter : ObjectiveC.NSObject {
+  final public let longitude: Swift.Double
+  final public let latitude: Swift.Double
+  final public let localTime: Swift.Bool
   final public let lang: QWeatherSDK.Lang?
-  public init(locationID: Swift.String, lang: QWeatherSDK.Lang? = nil)
-  @objc public static func instance(locationID: Swift.String, lang: Foundation.NSNumber?) -> Self
+  final public let color: Swift.String?
+  final public let topLevel: Swift.Bool?
+  public init(longitude: Swift.Double, latitude: Swift.Double, localTime: Swift.Bool, lang: QWeatherSDK.Lang? = nil)
+  @objc public static func instance(longitude: Swift.Double, latitude: Swift.Double, localTime: Swift.Bool, lang: Foundation.NSNumber?) -> Self
+  @objc final public func setColor(_ color: Swift.String) -> QWeatherSDK.WeatherAlertCurrentParameter
+  @objc final public func setTopLevel(_ value: Swift.Bool) -> QWeatherSDK.WeatherAlertCurrentParameter
   @objc deinit
 }
 @objc final public class AstronomyMoonParameter : ObjectiveC.NSObject {
@@ -469,23 +467,6 @@ extension QWeatherSDK.Unit {
   @objc public static func instance(location: Swift.String, type: QWeatherSDK.Poi, radius: Foundation.NSNumber?, number: Foundation.NSNumber?, lang: Foundation.NSNumber?) -> Self
   @objc deinit
 }
-@objc final public class GridWeatherParameter : ObjectiveC.NSObject {
-  final public let longitude: Swift.Double
-  final public let latitude: Swift.Double
-  final public let lang: QWeatherSDK.Lang?
-  final public let unit: QWeatherSDK.Unit?
-  public init(longitude: Swift.Double, latitude: Swift.Double, lang: QWeatherSDK.Lang? = nil, unit: QWeatherSDK.Unit? = nil)
-  @objc public static func instance(longitude: Swift.Double, latitude: Swift.Double, lang: Foundation.NSNumber?, unit: Foundation.NSNumber?) -> Self
-  @objc deinit
-}
-@objc final public class HistoricalAirParameter : ObjectiveC.NSObject {
-  final public let location: Swift.String
-  final public let date: Swift.String
-  final public let lang: QWeatherSDK.Lang?
-  public init(location: Swift.String, date: Swift.String, lang: QWeatherSDK.Lang? = nil)
-  @objc public static func instance(location: Swift.String, date: Swift.String, lang: Foundation.NSNumber?) -> Self
-  @objc deinit
-}
 @objc final public class HistoricalWeatherParameter : ObjectiveC.NSObject {
   final public let location: Swift.String
   final public let date: Swift.String
@@ -531,30 +512,44 @@ extension QWeatherSDK.Unit {
   @objc public static func instance(stormid: Swift.String) -> Self
   @objc deinit
 }
-@objc final public class WarningListParameter : ObjectiveC.NSObject {
-  final public let range: QWeatherSDK.Range
-  public init(range: QWeatherSDK.Range)
-  @objc public static func instance(range: QWeatherSDK.Range) -> Self
+@objc @objcMembers final public class WeatherCurrentParameter : ObjectiveC.NSObject {
+  @objc final public let longitude: Swift.Double
+  @objc final public let latitude: Swift.Double
+  @objc final public let localTime: Swift.Bool
+  final public let lang: QWeatherSDK.Lang?
+  public init(longitude: Swift.Double, latitude: Swift.Double, localTime: Swift.Bool = false, lang: QWeatherSDK.Lang? = nil)
+  @objc public static func instance(longitude: Swift.Double, latitude: Swift.Double) -> Self
+  @objc final public func setLang(_ lang: QWeatherSDK.Lang) -> Self
+  @objc final public func setLocalTime(_ localTime: Swift.Bool) -> Self
+  @objc final public func toMap() -> [Swift.String : Swift.String]
   @objc deinit
 }
-@objc final public class WarningNowParameter : ObjectiveC.NSObject {
-  final public let location: Swift.String
+@objc @objcMembers final public class WeatherDailyParameter : ObjectiveC.NSObject {
+  @objc final public let longitude: Swift.Double
+  @objc final public let latitude: Swift.Double
+  @objc final public let days: Swift.Int
+  @objc final public let localTime: Swift.Bool
   final public let lang: QWeatherSDK.Lang?
-  public init(location: Swift.String, lang: QWeatherSDK.Lang? = nil)
-  @objc public static func instance(location: Swift.String, lang: Foundation.NSNumber?) -> Self
+  public init(longitude: Swift.Double, latitude: Swift.Double, days: Swift.Int = 7, localTime: Swift.Bool = false, lang: QWeatherSDK.Lang? = nil)
+  @objc public static func instance(longitude: Swift.Double, latitude: Swift.Double) -> Self
+  @objc final public func setLang(_ lang: QWeatherSDK.Lang) -> Self
+  @objc final public func setLocalTime(_ localTime: Swift.Bool) -> Self
+  @objc final public func setDays(_ days: Swift.Int) -> Self
+  @objc final public func toMap() -> [Swift.String : Swift.String]
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc final public class WeatherAlertCurrentParameter : ObjectiveC.NSObject {
-  final public let longitude: Swift.Double
-  final public let latitude: Swift.Double
-  final public let localTime: Swift.Bool
+@objc @objcMembers final public class WeatherHourlyParameter : ObjectiveC.NSObject {
+  @objc final public let longitude: Swift.Double
+  @objc final public let latitude: Swift.Double
+  @objc final public let hours: Swift.Int
+  @objc final public let localTime: Swift.Bool
   final public let lang: QWeatherSDK.Lang?
-  final public let color: Swift.String?
-  final public let topLevel: Swift.Bool?
-  public init(longitude: Swift.Double, latitude: Swift.Double, localTime: Swift.Bool, lang: QWeatherSDK.Lang? = nil)
-  @objc public static func instance(longitude: Swift.Double, latitude: Swift.Double, localTime: Swift.Bool, lang: Foundation.NSNumber?) -> Self
-  @objc final public func setColor(_ color: Swift.String) -> QWeatherSDK.WeatherAlertCurrentParameter
-  @objc final public func setTopLevel(_ value: Swift.Bool) -> QWeatherSDK.WeatherAlertCurrentParameter
+  public init(longitude: Swift.Double, latitude: Swift.Double, hours: Swift.Int = 24, localTime: Swift.Bool = false, lang: QWeatherSDK.Lang? = nil)
+  @objc public static func instance(longitude: Swift.Double, latitude: Swift.Double) -> Self
+  @objc final public func setLang(_ lang: QWeatherSDK.Lang) -> Self
+  @objc final public func setLocalTime(_ localTime: Swift.Bool) -> Self
+  @objc final public func setHours(_ hours: Swift.Int) -> Self
+  @objc final public func toMap() -> [Swift.String : Swift.String]
   @objc deinit
 }
 @objc @objcMembers final public class WeatherParameter : ObjectiveC.NSObject {
@@ -572,9 +567,6 @@ extension QWeatherSDK.Unit {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ApiOcean {
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class ApiWarning {
   @objc deinit
 }
 @objc @objcMembers final public class AirColor : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
@@ -636,13 +628,6 @@ extension QWeatherSDK.Unit {
 @objc @objcMembers final public class AirV1HourlyResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
   @objc final public let metadata: QWeatherSDK.Metadata
   @objc final public let hours: [QWeatherSDK.AirHourly]
-  public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-@objc @objcMembers final public class AirV1StationResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let metadata: QWeatherSDK.Metadata
-  @objc final public let pollutants: [QWeatherSDK.StationPollutant]
   public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
@@ -710,67 +695,56 @@ extension QWeatherSDK.Unit {
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @objcMembers final public class AirDaily : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let fxDate: Swift.String
-  @objc final public let aqi: Swift.String
-  @objc final public let level: Swift.String
-  @objc final public let category: Swift.String
-  @objc final public let primary: Swift.String
+@objc @objcMembers final public class WeatherAlertCurrentResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let metadata: QWeatherSDK.Metadata
+  @objc final public let alerts: [QWeatherSDK.WeatherAlert]?
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @objcMembers final public class AirDailyResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+@objc @objcMembers final public class WeatherAlertMessageType : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
   @objc final public let code: Swift.String
-  @objc final public let updateTime: Swift.String
-  @objc final public let fxLink: Swift.String
-  @objc final public let daily: [QWeatherSDK.AirDaily]
-  @objc final public let refer: QWeatherSDK.Refer?
-  public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-@objc @objcMembers final public class AirNow : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let pubTime: Swift.String
-  @objc final public let aqi: Swift.String
-  @objc final public let level: Swift.String
-  @objc final public let category: Swift.String
-  @objc final public let primary: Swift.String
-  @objc final public let pm10: Swift.String
-  @objc final public let pm2p5: Swift.String
-  @objc final public let no2: Swift.String
-  @objc final public let so2: Swift.String
-  @objc final public let co: Swift.String
-  @objc final public let o3: Swift.String
+  @objc final public let supersedes: [Swift.String]
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @objcMembers final public class AirNowResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let code: Swift.String
-  @objc final public let updateTime: Swift.String
-  @objc final public let fxLink: Swift.String
-  @objc final public let now: QWeatherSDK.AirNow
-  @objc final public let station: [QWeatherSDK.AirStation]
-  @objc final public let refer: QWeatherSDK.Refer?
-  public init(from decoder: any Swift.Decoder) throws
+@objc @objcMembers final public class WeatherAlert : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let alertId: Swift.String
+  @objc final public let senderName: Swift.String
+  @objc final public let issuedTime: Swift.String
+  @objc final public let messageType: QWeatherSDK.WeatherAlertMessageType
+  @objc final public let eventType: QWeatherSDK.WeatherAlertEventType
+  @objc final public let urgency: Swift.String?
+  @objc final public let severity: Swift.String
+  @objc final public let certainty: Swift.String?
+  @objc final public let icon: Swift.String
+  @objc final public let color: QWeatherSDK.WeatherAlertColor?
+  @objc final public let effectiveTime: Swift.String
+  @objc final public let onsetTime: Swift.String
+  @objc final public let expireTime: Swift.String
+  @objc final public let headline: Swift.String
+  @objc final public let desc: Swift.String
+  @objc final public let criteria: Swift.String?
+  @objc final public let responseTypes: [Swift.String]
+  @objc final public let instruction: Swift.String?
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
-@objc @objcMembers final public class AirStation : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let pubTime: Swift.String
+@objc @objcMembers final public class WeatherAlertEventType : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
   @objc final public let name: Swift.String
-  @objc final public let stationId: Swift.String
-  @objc final public let aqi: Swift.String
-  @objc final public let level: Swift.String
-  @objc final public let category: Swift.String
-  @objc final public let primary: Swift.String
-  @objc final public let pm10: Swift.String
-  @objc final public let pm2p5: Swift.String
-  @objc final public let no2: Swift.String
-  @objc final public let so2: Swift.String
-  @objc final public let co: Swift.String
-  @objc final public let o3: Swift.String
+  @objc final public let code: Swift.String
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class WeatherAlertColor : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let code: Swift.String
+  @objc final public let red: Swift.Int
+  @objc final public let green: Swift.Int
+  @objc final public let blue: Swift.Int
+  @objc final public let alpha: Swift.Double
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -879,122 +853,6 @@ extension QWeatherSDK.Unit {
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @objcMembers final public class GridDaily : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let fxDate: Swift.String
-  @objc final public let tempMax: Swift.String
-  @objc final public let tempMin: Swift.String
-  @objc final public let iconDay: Swift.String
-  @objc final public let iconNight: Swift.String
-  @objc final public let textDay: Swift.String
-  @objc final public let textNight: Swift.String
-  @objc final public let wind360Day: Swift.String
-  @objc final public let windDirDay: Swift.String
-  @objc final public let windScaleDay: Swift.String
-  @objc final public let windSpeedDay: Swift.String
-  @objc final public let wind360Night: Swift.String
-  @objc final public let windDirNight: Swift.String
-  @objc final public let windScaleNight: Swift.String
-  @objc final public let windSpeedNight: Swift.String
-  @objc final public let humidity: Swift.String
-  @objc final public let precip: Swift.String
-  @objc final public let pressure: Swift.String
-  @objc final public let cloud: Swift.String
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @objcMembers final public class GridDailyResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let code: Swift.String
-  @objc final public let updateTime: Swift.String
-  @objc final public let fxLink: Swift.String
-  @objc final public let daily: [QWeatherSDK.GridDaily]
-  @objc final public let refer: QWeatherSDK.Refer?
-  public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-@objc @objcMembers final public class GridHourly : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let fxTime: Swift.String
-  @objc final public let temp: Swift.String
-  @objc final public let icon: Swift.String
-  @objc final public let text: Swift.String
-  @objc final public let wind360: Swift.String
-  @objc final public let windDir: Swift.String
-  @objc final public let windScale: Swift.String
-  @objc final public let windSpeed: Swift.String
-  @objc final public let humidity: Swift.String
-  @objc final public let precip: Swift.String
-  @objc final public let pressure: Swift.String
-  @objc final public let cloud: Swift.String
-  @objc final public let dew: Swift.String
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @objcMembers final public class GridHourlyResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let code: Swift.String
-  @objc final public let updateTime: Swift.String
-  @objc final public let fxLink: Swift.String
-  @objc final public let hourly: [QWeatherSDK.GridHourly]
-  @objc final public let refer: QWeatherSDK.Refer?
-  public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-@objc @objcMembers final public class GridNow : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let obsTime: Swift.String
-  @objc final public let temp: Swift.String
-  @objc final public let feelsLike: Swift.String
-  @objc final public let icon: Swift.String
-  @objc final public let text: Swift.String
-  @objc final public let wind360: Swift.String
-  @objc final public let windDir: Swift.String
-  @objc final public let windScale: Swift.String
-  @objc final public let windSpeed: Swift.String
-  @objc final public let humidity: Swift.String
-  @objc final public let precip: Swift.String
-  @objc final public let pressure: Swift.String
-  @objc final public let cloud: Swift.String
-  @objc final public let dew: Swift.String
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @objcMembers final public class GridNowResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let code: Swift.String
-  @objc final public let updateTime: Swift.String
-  @objc final public let fxLink: Swift.String
-  @objc final public let now: QWeatherSDK.GridNow
-  @objc final public let refer: QWeatherSDK.Refer?
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @objcMembers final public class HistoricalAirHourly : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let pubTime: Swift.String
-  @objc final public let aqi: Swift.String
-  @objc final public let level: Swift.String
-  @objc final public let category: Swift.String
-  @objc final public let primary: Swift.String
-  @objc final public let pm10: Swift.String
-  @objc final public let pm2p5: Swift.String
-  @objc final public let no2: Swift.String
-  @objc final public let so2: Swift.String
-  @objc final public let co: Swift.String
-  @objc final public let o3: Swift.String
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @objcMembers final public class HistoricalAirResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let code: Swift.String
-  @objc final public let fxLink: Swift.String
-  @objc final public let airHourly: [QWeatherSDK.HistoricalAirHourly]
-  @objc final public let refer: QWeatherSDK.Refer?
-  public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
 @objc @objcMembers final public class HistoricalWeatherDaily : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
   @objc final public let date: Swift.String
   @objc final public let sunrise: Swift.String
@@ -1072,33 +930,6 @@ extension QWeatherSDK.Unit {
   @objc final public let fxLink: Swift.String
   @objc final public let summary: Swift.String
   @objc final public let minutely: [QWeatherSDK.Minutely]
-  @objc final public let refer: QWeatherSDK.Refer?
-  public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-@objc @objcMembers final public class CurrentsHourly : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let fxTime: Swift.String
-  @objc final public let speed: Swift.String
-  @objc final public let dir360: Swift.String
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @objcMembers final public class CurrentsTable : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let fxTime: Swift.String
-  @objc final public let speedMax: Swift.String
-  @objc final public let dir360: Swift.String
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @objcMembers final public class OceanCurrentsResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let code: Swift.String
-  @objc final public let updateTime: Swift.String
-  @objc final public let fxLink: Swift.String
-  @objc final public let currentsTable: [QWeatherSDK.CurrentsTable]
-  @objc final public let currentsHourly: [QWeatherSDK.CurrentsHourly]
   @objc final public let refer: QWeatherSDK.Refer?
   public init(from decoder: any Swift.Decoder) throws
   @objc deinit
@@ -1229,103 +1060,79 @@ extension QWeatherSDK.Unit {
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @objcMembers final public class Warning : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let warningId: Swift.String
-  @objc final public let sender: Swift.String
-  @objc final public let pubTime: Swift.String
-  @objc final public let title: Swift.String
-  @objc final public let startTime: Swift.String
-  @objc final public let endTime: Swift.String
-  @objc final public let status: Swift.String
-  @objc final public let level: Swift.String
-  @objc final public let severity: Swift.String
-  @objc final public let severityColor: Swift.String
+@objc @objcMembers final public class Astro : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let sunrise: Swift.String?
+  @objc final public let sunset: Swift.String?
+  @objc final public let astronomicalDawn: Swift.String?
+  @objc final public let nauticalDawn: Swift.String?
+  @objc final public let civilDawn: Swift.String?
+  @objc final public let astronomicalDusk: Swift.String?
+  @objc final public let nauticalDusk: Swift.String?
+  @objc final public let civilDusk: Swift.String?
+  @objc final public let solarNoon: Swift.String?
+  @objc final public let solarMidnight: Swift.String?
+  @objc final public let moonrise: Swift.String?
+  @objc final public let moonset: Swift.String?
+  @objc final public let moonTransit: Swift.String?
+  @objc final public let moonUnderfoot: Swift.String?
+  @objc final public let moonPhase: Swift.String
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class PrecipitationCurrent : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let amount: QWeatherSDK.ValueUnit
   @objc final public let type: Swift.String
-  @objc final public let typeName: Swift.String
-  @objc final public let urgency: Swift.String
-  @objc final public let certainty: Swift.String
+  @objc final public let intensity: QWeatherSDK.ValueUnit
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class PrecipitationHourly : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let amount: QWeatherSDK.ValueUnit
+  @objc final public let type: Swift.String
+  @objc final public let intensity: QWeatherSDK.ValueUnit
+  final public let probability: Swift.Double?
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class PrecipitationDaily : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let amount: QWeatherSDK.ValueUnit
+  @objc final public let type: Swift.String
+  final public let probability: Swift.Double?
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class ValueUnit : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let value: Swift.Double
+  @objc final public let unit: Swift.String
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class WeatherCondition : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
   @objc final public let text: Swift.String
-  @objc final public let related: Swift.String
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @objcMembers final public class WarningListResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
   @objc final public let code: Swift.String
-  @objc final public let updateTime: Swift.String
-  @objc final public let warningLocList: [QWeatherSDK.WarningLocation]
-  @objc final public let fxLink: Swift.String
-  @objc final public let refer: QWeatherSDK.Refer?
-  public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-@objc @objcMembers final public class WarningLocation : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let locationId: Swift.String
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@objc @objcMembers final public class WarningResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let code: Swift.String
-  @objc final public let updateTime: Swift.String
-  @objc final public let fxLink: Swift.String
-  @objc final public let warning: [QWeatherSDK.Warning]
-  @objc final public let refer: QWeatherSDK.Refer?
-  public init(from decoder: any Swift.Decoder) throws
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-}
-@objc @objcMembers final public class WeatherAlertCurrentResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+@objc @objcMembers final public class WeatherCurrentResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
   @objc final public let metadata: QWeatherSDK.Metadata
-  @objc final public let alerts: [QWeatherSDK.WeatherAlert]?
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @objcMembers final public class WeatherAlertMessageType : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let code: Swift.String
-  @objc final public let supersedes: [Swift.String]
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @objcMembers final public class WeatherAlert : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let alertId: Swift.String
-  @objc final public let senderName: Swift.String
-  @objc final public let issuedTime: Swift.String
-  @objc final public let messageType: QWeatherSDK.WeatherAlertMessageType
-  @objc final public let eventType: QWeatherSDK.WeatherAlertEventType
-  @objc final public let urgency: Swift.String?
-  @objc final public let severity: Swift.String
-  @objc final public let certainty: Swift.String?
-  @objc final public let icon: Swift.String
-  @objc final public let color: QWeatherSDK.WeatherAlertColor?
-  @objc final public let effectiveTime: Swift.String
-  @objc final public let onsetTime: Swift.String
-  @objc final public let expireTime: Swift.String
-  @objc final public let headline: Swift.String
-  @objc final public let desc: Swift.String
-  @objc final public let criteria: Swift.String?
-  @objc final public let responseTypes: [Swift.String]
-  @objc final public let instruction: Swift.String?
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @objcMembers final public class WeatherAlertEventType : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let name: Swift.String
-  @objc final public let code: Swift.String
-  @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-@objc @objcMembers final public class WeatherAlertColor : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
-  @objc final public let code: Swift.String
-  @objc final public let red: Swift.Int
-  @objc final public let green: Swift.Int
-  @objc final public let blue: Swift.Int
-  @objc final public let alpha: Swift.Double
+  @objc final public let condition: QWeatherSDK.WeatherCondition
+  @objc final public let temperature: QWeatherSDK.ValueUnit
+  @objc final public let feelsLike: QWeatherSDK.ValueUnit
+  @objc final public let humidity: Swift.Double
+  @objc final public let wind: QWeatherSDK.Wind
+  @objc final public let windGust: QWeatherSDK.ValueUnit
+  @objc final public let precipitation: QWeatherSDK.PrecipitationCurrent
+  @objc final public let pressure: QWeatherSDK.ValueUnit
+  @objc final public let visibility: QWeatherSDK.ValueUnit
+  @objc final public let dewPoint: QWeatherSDK.ValueUnit
+  @objc final public let cloudCover: Swift.Double
+  @objc final public let uvIndex: Swift.Int
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
@@ -1368,6 +1175,67 @@ extension QWeatherSDK.Unit {
   @objc final public let fxLink: Swift.String
   @objc final public let daily: [QWeatherSDK.WeatherDaily]
   @objc final public let refer: QWeatherSDK.Refer?
+  public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @objcMembers final public class WeatherForecastDaily : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let forecastStartTime: Swift.String
+  @objc final public let forecastEndTime: Swift.String
+  @objc final public let astro: QWeatherSDK.Astro
+  @objc final public let temperatureMax: QWeatherSDK.ValueUnit
+  @objc final public let temperatureMin: QWeatherSDK.ValueUnit
+  @objc final public let temperatureAvg: QWeatherSDK.ValueUnit
+  @objc final public let uvIndexMax: Swift.Int
+  @objc final public let daytime: QWeatherSDK.WeatherPeriodForecast
+  @objc final public let nighttime: QWeatherSDK.WeatherPeriodForecast
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class WeatherPeriodForecast : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let forecastStartTime: Swift.String
+  @objc final public let forecastEndTime: Swift.String
+  @objc final public let condition: QWeatherSDK.WeatherCondition
+  @objc final public let temperatureMax: QWeatherSDK.ValueUnit
+  @objc final public let temperatureMin: QWeatherSDK.ValueUnit
+  @objc final public let wind: QWeatherSDK.Wind
+  @objc final public let windGustMax: QWeatherSDK.ValueUnit?
+  @objc final public let precipitation: QWeatherSDK.PrecipitationDaily
+  @objc final public let cloudCover: Swift.Double
+  @objc final public let humidity: Swift.Double
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class WeatherForecastDailyResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let metadata: QWeatherSDK.Metadata
+  @objc final public let days: [QWeatherSDK.WeatherForecastDaily]
+  public init(from decoder: any Swift.Decoder) throws
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+@objc @objcMembers final public class WeatherForecastHourly : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let forecastTime: Swift.String
+  @objc final public let condition: QWeatherSDK.WeatherCondition
+  @objc final public let temperature: QWeatherSDK.ValueUnit
+  @objc final public let feelsLike: QWeatherSDK.ValueUnit
+  @objc final public let humidity: Swift.Double
+  @objc final public let wind: QWeatherSDK.Wind
+  @objc final public let windGust: QWeatherSDK.ValueUnit
+  @objc final public let precipitation: QWeatherSDK.PrecipitationHourly
+  @objc final public let pressure: QWeatherSDK.ValueUnit
+  @objc final public let visibility: QWeatherSDK.ValueUnit
+  @objc final public let dewPoint: QWeatherSDK.ValueUnit
+  @objc final public let cloudCover: Swift.Double
+  @objc final public let uvIndex: Swift.Int
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class WeatherForecastHourlyResponse : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let metadata: QWeatherSDK.Metadata
+  @objc final public let hours: [QWeatherSDK.WeatherForecastHourly]
   public init(from decoder: any Swift.Decoder) throws
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
@@ -1431,6 +1299,21 @@ extension QWeatherSDK.Unit {
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+@objc @objcMembers final public class WindDirection : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  final public let degree: Swift.Int?
+  @objc final public let compass: Swift.String
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @objcMembers final public class Wind : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
+  @objc final public let direction: QWeatherSDK.WindDirection
+  @objc final public let speed: QWeatherSDK.ValueUnit
+  @objc final public let scale: Swift.Int
+  @objc deinit
+  final public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @objc @objcMembers final public class Metadata : ObjectiveC.NSObject, Swift.Codable, Swift.Sendable {
   @objc final public let tag: Swift.String
   final public let zeroResult: Swift.Bool?
@@ -1462,7 +1345,7 @@ public enum JWTError : Swift.Error {
   }
 }
 public class JWTGenerator : QWeatherSDK.TokenGenerator {
-  public init(privateKey: Swift.String, pid: Swift.String, kid: Swift.String)
+  public init(privateKey: Swift.String, sub: Swift.String, kid: Swift.String, iss: Swift.String)
   public func generator() throws -> Swift.String
   @objc deinit
 }
@@ -1512,6 +1395,9 @@ public protocol TokenGenerator {
   public func geoCityTop(_ parameter: QWeatherSDK.GeoCityTopParameter) async throws -> QWeatherSDK.GeoCityTopResponse
   public func geoPoiLookup(_ parameter: QWeatherSDK.GeoPoiLookupParameter) async throws -> QWeatherSDK.GeoPoiResponse
   public func geoPoiRange(_ parameter: QWeatherSDK.GeoPoiRangeParameter) async throws -> QWeatherSDK.GeoPoiResponse
+  public func weatherCurrent(_ parameter: QWeatherSDK.WeatherCurrentParameter) async throws -> QWeatherSDK.WeatherCurrentResponse
+  public func weatherHourly(_ parameter: QWeatherSDK.WeatherHourlyParameter) async throws -> QWeatherSDK.WeatherForecastHourlyResponse
+  public func weatherDaily(_ parameter: QWeatherSDK.WeatherDailyParameter) async throws -> QWeatherSDK.WeatherForecastDailyResponse
   public func weatherNow(_ parameter: QWeatherSDK.WeatherParameter) async throws -> QWeatherSDK.WeatherNowResponse
   public func weather3d(_ parameter: QWeatherSDK.WeatherParameter) async throws -> QWeatherSDK.WeatherDailyResponse
   public func weather7d(_ parameter: QWeatherSDK.WeatherParameter) async throws -> QWeatherSDK.WeatherDailyResponse
@@ -1522,33 +1408,17 @@ public protocol TokenGenerator {
   public func weather72h(_ parameter: QWeatherSDK.WeatherParameter) async throws -> QWeatherSDK.WeatherHourlyResponse
   public func weather168h(_ parameter: QWeatherSDK.WeatherParameter) async throws -> QWeatherSDK.WeatherHourlyResponse
   public func minutely(_ parameter: QWeatherSDK.MinutelyParameter) async throws -> QWeatherSDK.MinutelyResponse
-  public func gridNow(_ parameter: QWeatherSDK.GridWeatherParameter) async throws -> QWeatherSDK.GridNowResponse
-  public func grid3d(_ parameter: QWeatherSDK.GridWeatherParameter) async throws -> QWeatherSDK.GridDailyResponse
-  public func grid7d(_ parameter: QWeatherSDK.GridWeatherParameter) async throws -> QWeatherSDK.GridDailyResponse
-  public func grid24h(_ parameter: QWeatherSDK.GridWeatherParameter) async throws -> QWeatherSDK.GridHourlyResponse
-  public func grid72h(_ parameter: QWeatherSDK.GridWeatherParameter) async throws -> QWeatherSDK.GridHourlyResponse
-  @available(*, deprecated, message: "Use 'weatherAlertCurrent(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.")
-  public func warningNow(_ parameter: QWeatherSDK.WarningNowParameter) async throws -> QWeatherSDK.WarningResponse
-  @available(*, deprecated, message: "Deprecated as of version 5.2.1. Scheduled for removal in a future release.")
-  public func warningList(_ parameter: QWeatherSDK.WarningListParameter) async throws -> QWeatherSDK.WarningListResponse
   public func weatherAlertCurrent(_ parameter: QWeatherSDK.WeatherAlertCurrentParameter) async throws -> QWeatherSDK.WeatherAlertCurrentResponse
   public func indices1d(_ parameter: QWeatherSDK.IndicesParameter) async throws -> QWeatherSDK.IndicesDailyResponse
   public func indices3d(_ parameter: QWeatherSDK.IndicesParameter) async throws -> QWeatherSDK.IndicesDailyResponse
-  @available(*, deprecated, message: "Use 'airCurrent(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.")
-  public func airNow(_ parameter: QWeatherSDK.AirParameter) async throws -> QWeatherSDK.AirNowResponse
-  @available(*, deprecated, message: "Use 'airDaily(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.")
-  public func air5d(_ parameter: QWeatherSDK.AirParameter) async throws -> QWeatherSDK.AirDailyResponse
   public func airCurrent(_ parameter: QWeatherSDK.AirV1Parameter) async throws -> QWeatherSDK.AirV1CurrentResponse
   public func airDaily(_ parameter: QWeatherSDK.AirV1Parameter) async throws -> QWeatherSDK.AirV1DailyResponse
   public func airHourly(_ parameter: QWeatherSDK.AirV1Parameter) async throws -> QWeatherSDK.AirV1HourlyResponse
-  public func airStation(_ parameter: QWeatherSDK.AirV1StationParameter) async throws -> QWeatherSDK.AirV1StationResponse
   public func historicalWeather(_ parameter: QWeatherSDK.HistoricalWeatherParameter) async throws -> QWeatherSDK.HistoricalWeatherResponse
-  public func historicalAir(_ parameter: QWeatherSDK.HistoricalAirParameter) async throws -> QWeatherSDK.HistoricalAirResponse
   public func tropicalStormList(_ parameter: QWeatherSDK.StormListParameter) async throws -> QWeatherSDK.StormListResponse
   public func tropicalStormForecast(_ parameter: QWeatherSDK.StormParameter) async throws -> QWeatherSDK.StormForecastResponse
   public func tropicalStormTrack(_ parameter: QWeatherSDK.StormParameter) async throws -> QWeatherSDK.StormTrackResponse
   public func oceanTide(_ parameter: QWeatherSDK.OceanParameter) async throws -> QWeatherSDK.OceanTideResponse
-  public func oceanCurrents(_ parameter: QWeatherSDK.OceanParameter) async throws -> QWeatherSDK.OceanCurrentsResponse
   public func astronomySun(_ parameter: QWeatherSDK.AstronomySunParameter) async throws -> QWeatherSDK.AstronomySunResponse
   public func astronomyMoon(_ parameter: QWeatherSDK.AstronomyMoonParameter) async throws -> QWeatherSDK.AstronomyMoonResponse
   public func astronomySolarElevationAngle(_ parameter: QWeatherSDK.SolarElevationAngleParameter) async throws -> QWeatherSDK.AstronomySolarElevationAngleResponse
@@ -1562,12 +1432,15 @@ public protocol TokenGenerator {
   @_Concurrency.MainActor @objc public static func initConfig(host: Swift.String)
   @objc public static func setupHost(_ host: Swift.String)
   @objc public static func setupTokenGenerator(generater: @escaping @Sendable () -> Swift.String)
-  @objc public static func setupTokenGenerator(privateKey: Swift.String, pid: Swift.String, kid: Swift.String)
+  @objc public static func setupTokenGenerator(privateKey: Swift.String, sub: Swift.String, kid: Swift.String, iss: Swift.String)
   @objc public static func setupLogEnable(_ enable: Swift.Bool)
   @objc public static func geoCityLookup(_ parameter: QWeatherSDK.GeoCityLookupParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GeoCityLookupResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func geoCityTop(_ parameter: QWeatherSDK.GeoCityTopParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GeoCityTopResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func geoPoiLookup(_ parameter: QWeatherSDK.GeoPoiLookupParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GeoPoiResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func geoPoiRange(_ parameter: QWeatherSDK.GeoPoiRangeParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GeoPoiResponse?, Foundation.NSError?) -> Swift.Void)
+  @objc public static func weatherCurrent(_ parameter: QWeatherSDK.WeatherCurrentParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherCurrentResponse?, Foundation.NSError?) -> Swift.Void)
+  @objc public static func weatherHourly(_ parameter: QWeatherSDK.WeatherHourlyParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherForecastHourlyResponse?, Foundation.NSError?) -> Swift.Void)
+  @objc public static func weatherDaily(_ parameter: QWeatherSDK.WeatherDailyParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherForecastDailyResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func weatherNow(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherNowResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func weather3d(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherDailyResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func weather7d(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherDailyResponse?, Foundation.NSError?) -> Swift.Void)
@@ -1578,33 +1451,17 @@ public protocol TokenGenerator {
   @objc public static func weather72h(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherHourlyResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func weather168h(_ parameter: QWeatherSDK.WeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherHourlyResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func minutely(_ parameter: QWeatherSDK.MinutelyParameter, completionHandler: @escaping @Sendable (QWeatherSDK.MinutelyResponse?, Foundation.NSError?) -> Swift.Void)
-  @objc public static func gridNow(_ parameter: QWeatherSDK.GridWeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GridNowResponse?, Foundation.NSError?) -> Swift.Void)
-  @objc public static func grid3d(_ parameter: QWeatherSDK.GridWeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GridDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  @objc public static func grid7d(_ parameter: QWeatherSDK.GridWeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GridDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  @objc public static func grid24h(_ parameter: QWeatherSDK.GridWeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GridHourlyResponse?, Foundation.NSError?) -> Swift.Void)
-  @objc public static func grid72h(_ parameter: QWeatherSDK.GridWeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.GridHourlyResponse?, Foundation.NSError?) -> Swift.Void)
-  @available(*, deprecated, message: "Use 'weatherAlertCurrent(::)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.")
-  @objc public static func warningNow(_ parameter: QWeatherSDK.WarningNowParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WarningResponse?, Foundation.NSError?) -> Swift.Void)
-  @available(*, deprecated, message: "Deprecated as of version 5.2.1. Scheduled for removal in a future release.")
-  @objc public static func warningList(_ parameter: QWeatherSDK.WarningListParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WarningListResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func weatherAlertCurrent(_ parameter: QWeatherSDK.WeatherAlertCurrentParameter, completionHandler: @escaping @Sendable (QWeatherSDK.WeatherAlertCurrentResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func indices1d(_ parameter: QWeatherSDK.IndicesParameter, completionHandler: @escaping @Sendable (QWeatherSDK.IndicesDailyResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func indices3d(_ parameter: QWeatherSDK.IndicesParameter, completionHandler: @escaping @Sendable (QWeatherSDK.IndicesDailyResponse?, Foundation.NSError?) -> Swift.Void)
-  @available(*, deprecated, message: "Use 'airCurrent(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.")
-  @objc public static func airNow(_ parameter: QWeatherSDK.AirParameter, completionHandler: @escaping @Sendable (QWeatherSDK.AirNowResponse?, Foundation.NSError?) -> Swift.Void)
-  @available(*, deprecated, message: "Use 'airDaily(:)' instead. Deprecated as of version 5.2.1. Scheduled for removal in a future release.")
-  @objc public static func air5d(_ parameter: QWeatherSDK.AirParameter, completionHandler: @escaping @Sendable (QWeatherSDK.AirDailyResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func airCurrent(_ parameter: QWeatherSDK.AirV1Parameter, completionHandler: @escaping @Sendable (QWeatherSDK.AirV1CurrentResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func airDaily(_ parameter: QWeatherSDK.AirV1Parameter, completionHandler: @escaping @Sendable (QWeatherSDK.AirV1DailyResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func airHourly(_ parameter: QWeatherSDK.AirV1Parameter, completionHandler: @escaping @Sendable (QWeatherSDK.AirV1HourlyResponse?, Foundation.NSError?) -> Swift.Void)
-  @objc public static func airStation(_ parameter: QWeatherSDK.AirV1StationParameter, completionHandler: @escaping @Sendable (QWeatherSDK.AirV1StationResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func historicalWeather(_ parameter: QWeatherSDK.HistoricalWeatherParameter, completionHandler: @escaping @Sendable (QWeatherSDK.HistoricalWeatherResponse?, Foundation.NSError?) -> Swift.Void)
-  @objc public static func historicalAir(_ parameter: QWeatherSDK.HistoricalAirParameter, completionHandler: @escaping @Sendable (QWeatherSDK.HistoricalAirResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func tropicalStormList(_ parameter: QWeatherSDK.StormListParameter, completionHandler: @escaping @Sendable (QWeatherSDK.StormListResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func tropicalStormForecast(_ parameter: QWeatherSDK.StormParameter, completionHandler: @escaping @Sendable (QWeatherSDK.StormForecastResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func tropicalStormTrack(_ parameter: QWeatherSDK.StormParameter, completionHandler: @escaping @Sendable (QWeatherSDK.StormTrackResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func oceanTide(_ parameter: QWeatherSDK.OceanParameter, completionHandler: @escaping @Sendable (QWeatherSDK.OceanTideResponse?, Foundation.NSError?) -> Swift.Void)
-  @objc public static func oceanCurrents(_ parameter: QWeatherSDK.OceanParameter, completionHandler: @escaping @Sendable (QWeatherSDK.OceanCurrentsResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func astronomySun(_ parameter: QWeatherSDK.AstronomySunParameter, completionHandler: @escaping @Sendable (QWeatherSDK.AstronomySunResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func astronomyMoon(_ parameter: QWeatherSDK.AstronomyMoonParameter, completionHandler: @escaping @Sendable (QWeatherSDK.AstronomyMoonResponse?, Foundation.NSError?) -> Swift.Void)
   @objc public static func astronomySolarElevationAngle(_ parameter: QWeatherSDK.SolarElevationAngleParameter, completionHandler: @escaping @Sendable (QWeatherSDK.AstronomySolarElevationAngleResponse?, Foundation.NSError?) -> Swift.Void)
@@ -1628,9 +1485,8 @@ extension QWeatherSDK.Range : Swift.RawRepresentable {}
 extension QWeatherSDK.Unit : Swift.Equatable {}
 extension QWeatherSDK.Unit : Swift.Hashable {}
 extension QWeatherSDK.Unit : Swift.RawRepresentable {}
-extension QWeatherSDK.AirParameter : Swift.Sendable {}
 extension QWeatherSDK.AirV1Parameter : Swift.Sendable {}
-extension QWeatherSDK.AirV1StationParameter : Swift.Sendable {}
+extension QWeatherSDK.WeatherAlertCurrentParameter : Swift.Sendable {}
 extension QWeatherSDK.AstronomyMoonParameter : Swift.Sendable {}
 extension QWeatherSDK.AstronomySunParameter : Swift.Sendable {}
 extension QWeatherSDK.SolarElevationAngleParameter : Swift.Sendable {}
@@ -1638,17 +1494,15 @@ extension QWeatherSDK.GeoCityLookupParameter : Swift.Sendable {}
 extension QWeatherSDK.GeoCityTopParameter : Swift.Sendable {}
 extension QWeatherSDK.GeoPoiLookupParameter : Swift.Sendable {}
 extension QWeatherSDK.GeoPoiRangeParameter : Swift.Sendable {}
-extension QWeatherSDK.GridWeatherParameter : Swift.Sendable {}
-extension QWeatherSDK.HistoricalAirParameter : Swift.Sendable {}
 extension QWeatherSDK.HistoricalWeatherParameter : Swift.Sendable {}
 extension QWeatherSDK.IndicesParameter : Swift.Sendable {}
 extension QWeatherSDK.MinutelyParameter : Swift.Sendable {}
 extension QWeatherSDK.OceanParameter : Swift.Sendable {}
 extension QWeatherSDK.StormListParameter : Swift.Sendable {}
 extension QWeatherSDK.StormParameter : Swift.Sendable {}
-extension QWeatherSDK.WarningListParameter : Swift.Sendable {}
-extension QWeatherSDK.WarningNowParameter : Swift.Sendable {}
-extension QWeatherSDK.WeatherAlertCurrentParameter : Swift.Sendable {}
+extension QWeatherSDK.WeatherCurrentParameter : Swift.Sendable {}
+extension QWeatherSDK.WeatherDailyParameter : Swift.Sendable {}
+extension QWeatherSDK.WeatherHourlyParameter : Swift.Sendable {}
 extension QWeatherSDK.WeatherParameter : Swift.Sendable {}
 extension QWeatherSDK.JWTError : Swift.Equatable {}
 extension QWeatherSDK.JWTError : Swift.Hashable {}

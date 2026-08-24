@@ -9,13 +9,10 @@
 - 和风天气通用AQI
 - 污染物浓度值、分指数
 - 健康建议
-- 相关联的监测站信息
-
-我们推荐阅读[空气质量信息文档](https://dev.qweather.com/docs/resource/air-info/)，以便了解指数类型、污染物、支持的国家等信息。
 
 | 接口代码 | 接口                         | 数据类      |
 | --------------- | ---------------------------- | ------------ |
-| airCurrent | 实时空气质量    | [AirV1CurrentResponse](https://dev.qweather.com/docs/api/air-quality/air-hourly-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE) |
+| airCurrent | 实时空气质量    | [AirV1CurrentResponse](https://dev.qweather.com/docs/api/air-quality/air-current/#response) |
 
 ## 参数
 
@@ -60,4 +57,4 @@ AirV1Parameter *parameter = [AirV1Parameter instanceWithLongitude:116.41 latitud
 
 ## 返回数据
 
-[AirV1CurrentResponse](https://dev.qweather.com/docs/api/air-quality/air-hourly-forecast/#%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE)
+[AirV1CurrentResponse](https://dev.qweather.com/docs/api/air-quality/air-current/#response)

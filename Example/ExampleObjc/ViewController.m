@@ -27,8 +27,9 @@
     
     // Set the token generator using the method provided by the SDK.
     [QWeatherObjc setupTokenGeneratorWithPrivateKey:@"{YOUR_PRIVATE_KEY}" // Pravite Key
-                                              pid:@"{YOUR_PROJECT_ID}" // Project ID
-                                              kid:@"{YOUR_KID}"]; // Credential ID
+                                                sub:@"{YOUR_PROJECT_ID}" // Project ID
+                                                kid:@"{YOUR_KID}" // Credential ID
+                                                iss:@"{YOUR_DEVELOPER_ID}"]; // Developer ID
     /*
     [QWeatherObjc setupTokenGeneratorWithGenerater:^NSString * _Nonnull{
         // Provide a closure to dynamically generate authentication tokens
@@ -96,6 +97,51 @@
         }
     }];
 }
+
+- (void)testWeatherCurrent{
+    WeatherCurrentParameter * parameter = [WeatherCurrentParameter instanceWithLongitude:116.41 latitude:39.92];
+    parameter = [parameter setLocalTime:YES];
+    parameter = [parameter setLang: LangZH_HANS];
+    [QWeatherObjc weatherCurrent:parameter completionHandler:^(WeatherCurrentResponse * _Nullable response, NSError * _Nullable error) {
+        if (response) {
+            NSLog(@"%@", response.description);
+        }
+        if (error) {
+            NSLog(@"%@", error.localizedDescription);
+        }
+    }];
+}
+
+- (void)testWeatherHourly{
+    WeatherHourlyParameter * parameter =[WeatherHourlyParameter instanceWithLongitude:116.41 latitude:39.92];
+    parameter = [parameter setHours:24];
+    parameter = [parameter setLocalTime:YES];
+    parameter = [parameter setLang: LangZH_HANS];
+    [QWeatherObjc weatherHourly:parameter completionHandler:^(WeatherForecastHourlyResponse * _Nullable response, NSError * _Nullable error) {
+        if (response) {
+            NSLog(@"%@", response.description);
+        }
+        if (error) {
+            NSLog(@"%@", error.localizedDescription);
+        }
+    }];
+}
+
+- (void)testWeatherDaily {
+    WeatherDailyParameter * parameter = [WeatherDailyParameter instanceWithLongitude:116.41 latitude:39.92];
+    parameter = [parameter setDays:7];
+    parameter = [parameter setLocalTime:YES];
+    parameter = [parameter setLang: LangZH_HANS];
+    [QWeatherObjc weatherDaily:parameter completionHandler:^(WeatherForecastDailyResponse * _Nullable response, NSError * _Nullable error) {
+        if (response) {
+            NSLog(@"%@", response.description);
+        }
+        if (error) {
+            NSLog(@"%@", error.localizedDescription);
+        }
+    }];
+}
+
 
 - (void)testWeatherNow{
     WeatherParameter * parameter = [WeatherParameter instanceWithLocation:@"101120501" lang:@(LangZH_HANS) unit:@(UnitMETRIC)];
@@ -235,91 +281,6 @@
     }];
 }
 
--(void)testGridWeatherNow{
-    GridWeatherParameter *parameter = [GridWeatherParameter instanceWithLongitude:116.41 latitude:39.92 lang:@(LangZH_HANS) unit:@(UnitMETRIC)];
-    [QWeatherObjc gridNow:parameter completionHandler:^(GridNowResponse * _Nullable response, NSError * _Nullable error) {
-        if (response) {
-            NSLog(@"%@", response.description);
-        }
-        if (error) {
-            NSLog(@"%@", error.localizedDescription);
-        }
-    }];
-}
-
--(void)testGridWeather3d{
-    GridWeatherParameter *parameter = [GridWeatherParameter instanceWithLongitude:116.41 latitude:39.92 lang:@(LangZH_HANS) unit:@(UnitMETRIC)];
-    [QWeatherObjc grid3d:parameter completionHandler:^(GridDailyResponse * _Nullable response, NSError * _Nullable error) {
-        if (response) {
-            NSLog(@"%@", response.description);
-        }
-        if (error) {
-            NSLog(@"%@", error.localizedDescription);
-        }
-    }];
-}
-
--(void)testGridWeather7d{
-    GridWeatherParameter *parameter = [GridWeatherParameter instanceWithLongitude:116.41 latitude:39.92 lang:@(LangZH_HANS) unit:@(UnitMETRIC)];
-    [QWeatherObjc grid7d:parameter completionHandler:^(GridDailyResponse * _Nullable response, NSError * _Nullable error) {
-        if (response) {
-            NSLog(@"%@", response.description);
-        }
-        if (error) {
-            NSLog(@"%@", error.localizedDescription);
-        }
-    }];
-}
-
-
-
--(void)testGridWeather24h{
-    GridWeatherParameter *parameter = [GridWeatherParameter instanceWithLongitude:116.41 latitude:39.92 lang:@(LangZH_HANS) unit:@(UnitMETRIC)];
-    [QWeatherObjc grid24h:parameter completionHandler:^(GridHourlyResponse * _Nullable response, NSError * _Nullable error) {
-        if (response) {
-            NSLog(@"%@", response.description);
-        }
-        if (error) {
-            NSLog(@"%@", error.localizedDescription);
-        }
-    }];
-}
-
--(void)testGridWeather72h{
-    GridWeatherParameter *parameter = [GridWeatherParameter instanceWithLongitude:116.41 latitude:39.92 lang:@(LangZH_HANS) unit:@(UnitMETRIC)];
-    [QWeatherObjc grid24h:parameter completionHandler:^(GridHourlyResponse * _Nullable response, NSError * _Nullable error) {
-        if (response) {
-            NSLog(@"%@", response.description);
-        }
-        if (error) {
-            NSLog(@"%@", error.localizedDescription);
-        }
-    }];
-}
-
--(void)testWarningNow{
-    WarningNowParameter *parameter = [WarningNowParameter instanceWithLocation:@"101120501" lang:@(LangZH_HANS)];
-    [QWeatherObjc warningNow:parameter completionHandler:^(WarningResponse * _Nullable response, NSError * _Nullable error) {
-        if (response) {
-            NSLog(@"%@", response.description);
-        }
-        if (error) {
-            NSLog(@"%@", error.localizedDescription);
-        }
-    }];
-}
-
--(void)testWarningList{
-    WarningListParameter *parameter = [WarningListParameter instanceWithRange:RangeCN];
-    [QWeatherObjc warningList:parameter completionHandler:^(WarningListResponse * _Nullable response, NSError * _Nullable error) {
-        if (response) {
-            NSLog(@"%@", response.description);
-        }
-        if (error) {
-            NSLog(@"%@", error.localizedDescription);
-        }
-    }];
-}
 
 -(void)testWeatherAlertCurrent{
     WeatherAlertCurrentParameter *parameter = [WeatherAlertCurrentParameter instanceWithLongitude:112.64 latitude:41.28 localTime:YES lang:@(LangZH_HANS)];
@@ -394,44 +355,6 @@
     }];
 }
 
-
--(void)testAirStation{
-    AirV1StationParameter * parameter = [AirV1StationParameter instanceWithLocationID:@"P58911" lang:@(LangZH_HANS)];
-    [QWeatherObjc airStation:parameter completionHandler:^(AirV1StationResponse * _Nullable response, NSError * _Nullable error) {
-        if (response) {
-            NSLog(@"%@", response.description);
-        }
-        if (error) {
-            NSLog(@"%@", error.localizedDescription);
-        }
-    }];
-}
-
--(void)testAirNow{
-    AirParameter * parameter = [AirParameter instanceWithLocation:@"101120501" lang:@(LangZH_HANS)];
-    [QWeatherObjc airNow:parameter completionHandler:^(AirNowResponse * _Nullable response, NSError * _Nullable error) {
-        if (response) {
-            NSLog(@"%@", response.description);
-        }
-        if (error) {
-            NSLog(@"%@", error.localizedDescription);
-        }
-    }];
-}
-
--(void)testAir5d{
-    AirParameter * parameter = [AirParameter instanceWithLocation:@"101120501" lang:@(LangZH_HANS)];
-    [QWeatherObjc air5d:parameter completionHandler:^(AirDailyResponse * _Nullable response, NSError * _Nullable error) {
-        if (response) {
-            NSLog(@"%@", response.description);
-        }
-        if (error) {
-            NSLog(@"%@", error.localizedDescription);
-        }
-    }];
-}
-
-
 -(void)testHistoricalWeather{
     NSDate * threeDaysAgo = [[NSCalendar currentCalendar] dateByAddingUnit:NSCalendarUnitDay value:-3 toDate:[NSDate date] options:0];
     NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
@@ -439,23 +362,6 @@
     NSString * date = [formatter stringFromDate:threeDaysAgo];
     HistoricalWeatherParameter *parameter = [HistoricalWeatherParameter instanceWithLocation:@"101120501" date:date lang:@(LangZH_HANS) unit:@(UnitMETRIC)];
     [QWeatherObjc historicalWeather:parameter completionHandler:^(HistoricalWeatherResponse * _Nullable response, NSError * _Nullable error) {
-        if (response) {
-            NSLog(@"%@", response.description);
-        }
-        if (error) {
-            NSLog(@"%@", error.localizedDescription);
-        }
-    }];
-}
-
-
--(void)testHistoricalAir{
-    NSDate * threeDaysAgo = [[NSCalendar currentCalendar] dateByAddingUnit:NSCalendarUnitDay value:-3 toDate:[NSDate date] options:0];
-    NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyyMMdd"];
-    NSString * date = [formatter stringFromDate:threeDaysAgo];
-    HistoricalAirParameter *parameter = [HistoricalAirParameter instanceWithLocation:@"101120501" date:date lang:@(LangZH_HANS)];
-    [QWeatherObjc historicalAir:parameter completionHandler:^(HistoricalAirResponse * _Nullable response, NSError * _Nullable error) {
         if (response) {
             NSLog(@"%@", response.description);
         }
@@ -508,22 +414,6 @@
     NSString * date = [formatter stringFromDate:sevenDaysAfter];
     OceanParameter *parameter = [OceanParameter instanceWithLocation:@"P2236" date:date];
     [QWeatherObjc oceanTide:parameter completionHandler:^(OceanTideResponse * _Nullable response, NSError * _Nullable error) {
-        if (response) {
-            NSLog(@"%@", response.description);
-        }
-        if (error) {
-            NSLog(@"%@", error.localizedDescription);
-        }
-    }];
-}
-
--(void)testOceanCurrents {
-    NSDate * sevenDaysAfter = [[NSCalendar currentCalendar] dateByAddingUnit:NSCalendarUnitDay value:7 toDate:[NSDate date] options:0];
-    NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
-    [formatter setDateFormat:@"yyyyMMdd"];
-    NSString * date = [formatter stringFromDate:sevenDaysAfter];
-    OceanParameter *parameter = [OceanParameter instanceWithLocation:@"P66981" date:date];
-    [QWeatherObjc oceanCurrents:parameter completionHandler:^(OceanCurrentsResponse * _Nullable response, NSError * _Nullable error) {
         if (response) {
             NSLog(@"%@", response.description);
         }

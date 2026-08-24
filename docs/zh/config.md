@@ -13,7 +13,7 @@
 
 ## 2、安装SDK
 
-当前iOS SDK的最新版本是`5.2.3`([更新记录](https://github.com/qwd/qweather-ios-sdk/releases))
+当前iOS SDK的最新版本是`5.3.0`([更新记录](https://github.com/qwd/qweather-ios-sdk/releases))
 
 ### Swift Package Manager
 
@@ -33,7 +33,7 @@
 
      ```
      target '{YOUR_iOS_TARGET}' do
-        pod 'QWeather-SDK','~> 5.2.3'
+        pod 'QWeather-SDK','~> 5.3.0'
      end
      ```
 
@@ -41,7 +41,7 @@
 
      ```
      target '{YOUR_macOS_TARGET}' do
-        pod 'QWeather-SDK','~> 5.2.3'
+        pod 'QWeather-SDK','~> 5.3.0'
      end
      ```
 
@@ -49,7 +49,7 @@
 
 ### 手动安装
 
-- 下载SDK：[QWeatherSDK 5.2.3](https://github.com/qwd/qweather-ios-sdk/releases/tag/5.2.3)
+- 下载SDK：[QWeatherSDK 5.3.0](https://github.com/qwd/qweather-ios-sdk/releases/tag/5.3.0)
 - 将 `QWeatherSDK.xcframework` 包导入到目标 Target 中
 
 ## 3、添加 API Host 和 Token
@@ -94,8 +94,9 @@ SDK支持通过 TokenGenerator 和闭包两种机制生成访问令牌，开发�
 ```swift
 // 通过SDK提供的JWTGenerator设置令牌生成器，其遵从TokenGenerator协议
 let jwt = JWTGenerator(privateKey: "{YOUR_PRIVATE_KEY}", // 私钥
-                              pid: "{YOUR_PROJECT_ID}", // 项目ID
-                              kid: "{YOUR_KID}") // 凭据ID
+                              sub: "{YOUR_PROJECT_ID}", // 项目ID
+                              kid: "{YOUR_KID}", // 凭据ID
+                              iss: "{YOUR_DEVELOPER_ID}") // 开发者ID
 instance.setupTokenGenerator(jwt)
 
 //NOTE: 开发者也可以通过遵从TokenGenerator协议创建自己的令牌生成器
@@ -112,8 +113,9 @@ instance.setupTokenGenerator({
 ```objc
 // 通过SDK提供的方法设置令牌生成器
 [QWeatherObjc setupTokenGeneratorWithPrivateKey:@"{YOUR_PRIVATE_KEY}" // 私钥
-                                          pid:@"{YOUR_PROJECT_ID}" // 项目ID
-                                          kid:@"{YOUR_KID}"]; // 凭据ID
+                                                sub:@"{YOUR_PROJECT_ID}" // 项目ID
+                                                kid:@"{YOUR_CREDENTIAL_ID}" // 凭据ID
+                                                iss:@"{YOUR_DEVELOPER_ID}"]; // 开发者 ID
 
 
 // 通过闭包设置令牌生成器

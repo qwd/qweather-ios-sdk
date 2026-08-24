@@ -6,51 +6,51 @@
 	<dict>
 		<key>Headers/QWeatherSDK-Swift.h</key>
 		<data>
-		KB4AivrjDvQWaEaQ6dNhKGmK3LU=
+		+SJcajthazxLHFbGbLvw4/biag0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		oSH4DMnI2xsIc5i0dIVsTHnuA/Y=
+		QwH7cBVBeLvOQArfMpg5uo0yKUA=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		Fvl4QkqX6OVEX/KOi1Rj9zqFe2M=
+		dvWkmLLITL95657NCiRRsMVHVE8=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		fFn2knWX82GLl0WZIdH/lNUQoaA=
+		k6pcG8InKPk5ns+6061iyfC0D4g=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		LkbSlDalYQq2Wq6XZann4jWvHx0=
+		XAZHCHbpDu718F4uBogfb/SXRBk=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		fFn2knWX82GLl0WZIdH/lNUQoaA=
+		k6pcG8InKPk5ns+6061iyfC0D4g=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		IAxb7MVPssE1ELPqb14+Kfz4z2Y=
+		/nsaA2YB4xeChF1pTVUVgicbubQ=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		Fvl4QkqX6OVEX/KOi1Rj9zqFe2M=
+		dvWkmLLITL95657NCiRRsMVHVE8=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		mrntQJE8rfMaw/wuLgIbwBN/BfY=
+		b3o0AGabhbBLA15yc5eZRRTETBk=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		jMnsNWos+AbpJ2Kz2+WGnWDT760=
+		J48Tq9P+Pm0nhYk2lKwaIR5Bb5E=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		mrntQJE8rfMaw/wuLgIbwBN/BfY=
+		b3o0AGabhbBLA15yc5eZRRTETBk=
 		</data>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		uwLySZPncyXM2GMdAXXLURjGEL8=
+		VdlwKyP8IUk63zpTo44EU6DQ+X8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,77 +63,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6d1+b5qQTq8p0v6iA0gEOyS8eOHPPmyaiFrPKx8U8fY=
+			/QpR0p+GNBHKvO7er8ijFGWxtgaYT8UBXN1pWPgVP/I=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mXLFW+OG5+gYKOu49K0nKbuZ86d350v7f5NEYY+hxlg=
+			tPjGTc/xbnrXso2XjuJKhD2hzHbzQLYLHjrFbUitPyY=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6vR8mmXPiHvb78Z/pwYLq5BNXjLVlWFgUuhQI/S3LaE=
+			ImrMZYYzvhgL7HEev2J3iBi4psIqN8MzbBIbgs8/jn4=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1MPgeVSlMK+DAqKMBFWbybTCJ8BENqfwggUMzhckWA0=
+			Bxnnr/58fH/3oQj15Ryc16RztrCQgZ4pSJ8LCUBBRJQ=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6vR8mmXPiHvb78Z/pwYLq5BNXjLVlWFgUuhQI/S3LaE=
+			ImrMZYYzvhgL7HEev2J3iBi4psIqN8MzbBIbgs8/jn4=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3nuU1rWC3o+Og7lJ/m80xYLo1U/3/XyRu9ulQ1W/sdY=
+			yjmlusFX/XGb3xDA7Zm6my8knqpWEU9BHqCsJjoruCA=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mXLFW+OG5+gYKOu49K0nKbuZ86d350v7f5NEYY+hxlg=
+			tPjGTc/xbnrXso2XjuJKhD2hzHbzQLYLHjrFbUitPyY=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7acR0J+FAFp+nrFE4y28LipTdD41vrHbD4zV2NdqR1E=
+			vBWh5YXir8rmiqG2hntYerwWYUiCsLxXTalzyiZQotc=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MceQ6oFZ5T5nEQHapMJleMyYUDy+FicdMCOhrl62bZ4=
+			gO/NzR4c0U9WMfj7IY14McmM+o7Id2x/ayh3xkB30OY=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7acR0J+FAFp+nrFE4y28LipTdD41vrHbD4zV2NdqR1E=
+			vBWh5YXir8rmiqG2hntYerwWYUiCsLxXTalzyiZQotc=
 			</data>
 		</dict>
 		<key>Modules/QWeatherSDK.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xpX8L264G/DQ32WMMmMYSKCZCbpNdggoQt5hgDZJtjw=
+			jIvPEuXm9rvdI907qH7m3+5oTSB7GiN8qQUtx6cCUlI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -24,8 +24,9 @@ struct ContentView: View {
                 // The SDK provides two token generation mechanisms: TokenGenerator and closure-based implementation. Developers can choose either approach based on their needs. It is important to note that if both methods are configured simultaneously, the closure implementation will be automatically disabled. For security purposes, please ensure proper management of sensitive information such as private key, project ID, and credential ID, avoiding storage or transmission in plaintext.
                 
                 let jwt = JWTGenerator(privateKey: "{YOUR_PRIVATE_KEY}",
-                                       pid: "{YOUR_PROJECT_ID}",
-                                       kid: "{YOUR_KID}");
+                                       sub: "{YOUR_PROJECT_ID}",
+                                       kid: "{YOUR_KID}",
+                                       iss: "{YOUR_DEVELOPER_ID");
                 
                 // Developers can also customize a token generator by conforming to the TokenGenerator protocol.
                 
@@ -91,10 +92,10 @@ struct ContentView: View {
         }
     }
     
-    func testGeoPoiRangeCSTA() async {
-        do{
+    func testGeoPoiRangeTSTA() async {
+        do {
             let response = try await QWeather.instance
-                .geoPoiRange(.init(location: "113.88,22.45", type: .CSTA, radius: 50))
+                .geoPoiRange(.init(location: "113.88,22.45", type: .TSTA, radius: 50))
             print(response)
         } catch QWeatherError.errorResponse(let error) {
             print(error)
@@ -103,10 +104,47 @@ struct ContentView: View {
         }
     }
     
-    func testGeoPoiRangeTSTA() async {
+    
+    func testWeatherCurent() async {
         do {
+            let parameter = WeatherCurrentParameter(longitude: 116.41, latitude: 39.92)
+                .setLocalTime(true)
+                .setLang(.ZH_HANS)
             let response = try await QWeather.instance
-                .geoPoiRange(.init(location: "113.88,22.45", type: .TSTA, radius: 50))
+                .weatherCurrent(parameter)
+            print(response)
+        } catch QWeatherError.errorResponse(let error) {
+            print(error)
+        } catch {
+            print(error)
+        }
+    }
+    
+    
+    func testWeatherHoury() async {
+        do {
+            let parameter = WeatherHourlyParameter(longitude: 116.41, latitude: 39.92)
+                .setHours(24)
+                .setLocalTime(true)
+                .setLang(.ZH_HANS)
+            let response = try await QWeather.instance
+                .weatherHourly(parameter)
+            print(response)
+        } catch QWeatherError.errorResponse(let error) {
+            print(error)
+        } catch {
+            print(error)
+        }
+    }
+    
+    func testWeatherDaily() async {
+        do {
+            let parameter = WeatherDailyParameter(longitude: 116.41, latitude: 39.92)
+                .setDays(7)
+                .setLocalTime(true)
+                .setLang(.ZH_HANS)
+            let response = try await QWeather.instance
+                .weatherDaily(parameter)
             print(response)
         } catch QWeatherError.errorResponse(let error) {
             print(error)
@@ -245,99 +283,6 @@ struct ContentView: View {
         }
     }
     
-    func testGridWeatherNow() async {
-        do {
-            let parameter = GridWeatherParameter(longitude: 116.41, latitude: 39.92)
-            let response = try await QWeather.instance
-                .gridNow(parameter)
-            print(response)
-        } catch QWeatherError.errorResponse(let error) {
-            print(error)
-        } catch {
-            print(error)
-        }
-    }
-    
-    func testGrid3d() async {
-        do {
-            let parameter = GridWeatherParameter(longitude: 116.41, latitude: 39.92)
-            let response = try await QWeather.instance
-                .grid3d(parameter)
-            print(response)
-        } catch QWeatherError.errorResponse(let error) {
-            print(error)
-        } catch {
-            print(error)
-        }
-    }
-    
-    func testGrid7d() async {
-        do {
-            let parameter = GridWeatherParameter(longitude: 116.41, latitude: 39.92)
-            let response = try await QWeather.instance
-                .grid7d(parameter)
-            print(response)
-        } catch QWeatherError.errorResponse(let error) {
-            print(error)
-        } catch {
-            print(error)
-        }
-    }
-    
-    func testGrid24h() async {
-        do {
-            let parameter = GridWeatherParameter(longitude: 116.41, latitude: 39.92)
-            let response = try await QWeather.instance
-                .grid24h(parameter)
-            print(response)
-        } catch QWeatherError.errorResponse(let error) {
-            print(error)
-        } catch {
-            print(error)
-        }
-    }
-    
-    func testGrid72h() async {
-        do {
-            let parameter = GridWeatherParameter(longitude: 116.41, latitude: 39.92)
-            let response = try await QWeather.instance
-                .grid72h(parameter)
-            print(response)
-        } catch QWeatherError.errorResponse(let error) {
-            print(error)
-        } catch {
-            print(error)
-        }
-    }
-    
-    
-    func testWarningNow() async {
-        do {
-            let parameter = WarningNowParameter(location: "101120501")
-            let response = try await QWeather.instance
-                .warningNow(parameter)
-            print(response)
-        } catch QWeatherError.errorResponse(let error) {
-            print(error)
-        } catch {
-            print(error)
-        }
-    }
-    
-    
-    func testWarningList() async {
-        do {
-            let parameter = WarningListParameter(range: .CN)
-            let response = try await QWeather.instance
-                .warningList(parameter)
-            print(response)
-        } catch QWeatherError.errorResponse(let error) {
-            print(error)
-        } catch {
-            print(error)
-        }
-    }
-    
     func testWeatherAlertCurrent() async {
         do {
             let parameter = WeatherAlertCurrentParameter(longitude: 112.64, latitude: 41.28, localTime: true, lang: .ZH_HANS)
@@ -418,48 +363,6 @@ struct ContentView: View {
         }
     }
     
-    
-    func testAirStation() async {
-        do {
-            let parameter = AirV1StationParameter(locationID: "P58911")
-            let response = try await QWeather.instance
-                .airStation(parameter)
-            print(response)
-        } catch QWeatherError.errorResponse(let error) {
-            print(error)
-        } catch {
-            print(error)
-        }
-    }
-    
-
-    func testAirNow() async {
-        do {
-            let parameter = AirParameter(location: "101120501")
-            let response = try await QWeather.instance
-                .airNow(parameter)
-            print(response)
-        } catch QWeatherError.errorResponse(let error) {
-            print(error)
-        } catch {
-            print(error)
-        }
-    }
-    
-    
-    func testAir5d() async {
-        do {
-            let parameter = AirParameter(location: "101120501")
-            let response = try await QWeather.instance
-                .air5d(parameter)
-            print(response)
-        } catch QWeatherError.errorResponse(let error) {
-            print(error)
-        } catch {
-            print(error)
-        }
-    }
-    
     func testHistoricalWeather() async {
         do {
             let threeDaysAgo = Calendar.current.date(byAdding: .day, value: -3, to: Date())!
@@ -469,24 +372,6 @@ struct ContentView: View {
             let parameter = HistoricalWeatherParameter(location: "101120501", date: date)
             let response = try await QWeather.instance
                 .historicalWeather(parameter)
-            print(response)
-        } catch QWeatherError.errorResponse(let error) {
-            print(error)
-        } catch {
-            print(error)
-        }
-    }
-    
-    
-    func testHistoricalAir() async {
-        do {
-            let threeDaysAgo = Calendar.current.date(byAdding: .day, value: -3, to: Date())!
-            let formatter = DateFormatter()
-            formatter.dateFormat = "yyyMMdd"
-            let date = formatter.string(from: threeDaysAgo)
-            let parameter = HistoricalAirParameter(location: "101120501", date: date)
-            let response = try await QWeather.instance
-                .historicalAir(parameter)
             print(response)
         } catch QWeatherError.errorResponse(let error) {
             print(error)
@@ -547,24 +432,6 @@ struct ContentView: View {
             let parameter = OceanParameter(location: "P2236", date: date)
             let response = try await QWeather.instance
                 .oceanTide(parameter)
-            print(response)
-        } catch QWeatherError.errorResponse(let error) {
-            print(error)
-        } catch {
-            print(error)
-        }
-    }
-    
-    
-    func testOceanCurrents() async {
-        do {
-            let sevenDaysAfter = Calendar.current.date(byAdding: .day, value: 7, to: Date())!
-            let formatter = DateFormatter()
-            formatter.dateFormat = "yyyMMdd"
-            let date = formatter.string(from: sevenDaysAfter)
-            let parameter = OceanParameter(location: "P66981", date: date)
-            let response = try await QWeather.instance
-                .oceanCurrents(parameter)
             print(response)
         } catch QWeatherError.errorResponse(let error) {
             print(error)
